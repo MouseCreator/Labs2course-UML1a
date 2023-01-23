@@ -1,0 +1,24 @@
+StudySet
+	Index = 11
+	Name = 
+	NumTerms = 4
+	Mastered = 4
+	CreatedDate = 2022-11-05 24:46:34
+	StudiedDate = 2022-11-05 01:34:10
+end
+StudySet
+	Index = 14
+	Name = THird
+	NumTerms = 2
+	Mastered = 0
+	CreatedDate = 2022-11-05 03:14:32
+	StudiedDate = 2022-11-05 03:14:32
+end
+StudySet
+	Index = 16
+	Name = SetToExport
+	NumTerms = 3
+	Mastered = 0
+	CreatedDate = 2022-11-20 19:54:28
+	StudiedDate = 2022-11-20 19:54:28
+end

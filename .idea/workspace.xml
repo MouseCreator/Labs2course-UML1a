@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e5cf57ee-045d-45a8-8c9b-3b141fc334b5" name="Changes" comment="Added footer" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin Class" />
+        <option value="JUnit5 Test Class" />
+        <option value="FxmlFile" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2I5E2Uun1qH8qeT5S1DwbMc11nT" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "create.test.in.the.same.root": "true",
+    "last_opened_file_path": "C:/Users/mysha/IdeaProjects/Labs2course-UML1a",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\mysha\IdeaProjects\Lab23a\src\main\resources" />
+      <recent name="C:\Users\mysha\IdeaProjects\Lab23a\src\main\resources\com\example\lab23a" />
+      <recent name="C:\Users\mysha\IdeaProjects\Lab23a\src\main\java\com\example\lab23a\model" />
+      <recent name="C:\Users\mysha\IdeaProjects\Lab23a\src\main\java\com\example\lab23a" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\mysha\IdeaProjects\Lab23a\src\main\resources" />
+      <recent name="C:\Users\mysha\IdeaProjects\Lab23a\src\main\resources\com\example\lab23a" />
+      <recent name="C:\Users\mysha\IdeaProjects\Lab23a\src\main\java\com\example\lab23a\application" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.example.lab23a.PDF" />
+      <recent name="com.example.lab23a" />
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.example.lab23a.PDF" />
+      <recent name="com.example.lab23a.model" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.RunApplication">
+    <configuration name="RunApplication" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.example.lab23a.Main" />
+      <module name="Lab23a" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PDFCellTest.showSplitter" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Lab23a" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.lab23a.PDF.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.lab23a.PDF" />
+      <option name="MAIN_CLASS_NAME" value="com.example.lab23a.PDF.PDFCellTest" />
+      <option name="METHOD_NAME" value="showSplitter" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PDFCellTest.testSplitter" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Lab23a" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.lab23a.PDF.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.lab23a.PDF" />
+      <option name="MAIN_CLASS_NAME" value="com.example.lab23a.PDF.PDFCellTest" />
+      <option name="METHOD_NAME" value="testSplitter" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PDFConvertorTest.testImage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Lab23a" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.lab23a.PDF.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.lab23a.PDF" />
+      <option name="MAIN_CLASS_NAME" value="com.example.lab23a.PDF.PDFConvertorTest" />
+      <option name="METHOD_NAME" value="testImage" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.PDFCellTest.showSplitter" />
+        <item itemvalue="JUnit.PDFCellTest.testSplitter" />
+        <item itemvalue="JUnit.PDFConvertorTest.testImage" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e5cf57ee-045d-45a8-8c9b-3b141fc334b5" name="Changes" comment="" />
+      <created>1669462838387</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1669462838387</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Moved from Eclipse.">
+      <created>1669474935768</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1669474935768</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Added convert to PDF button">
+      <created>1669478533940</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1669478533940</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Refactoring in FileBuilder class">
+      <created>1670000570769</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1670000570769</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Added bounds calculation">
+      <created>1670084590539</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1670084590539</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Added table cells">
+      <created>1670101884578</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1670101884578</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Added title for table">
+      <created>1670104167881</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1670104167881</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Cleaned up code">
+      <created>1670104323503</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1670104323503</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Cleaned Editor Controller">
+      <created>1670107670178</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1670107670178</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Added save dialog">
+      <created>1670110984345</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1670110984345</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Added footer">
+      <created>1670119306421</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1670119306421</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
+    <MESSAGE value="Moved from Eclipse." />
+    <MESSAGE value="Added convert to PDF button" />
+    <MESSAGE value="Refactoring in FileBuilder class" />
+    <MESSAGE value="Added logo to document" />
+    <MESSAGE value="Added bounds calculation" />
+    <MESSAGE value="Added table cells" />
+    <MESSAGE value="Added title for table" />
+    <MESSAGE value="Cleaned up code" />
+    <MESSAGE value="Cleaned Editor Controller" />
+    <MESSAGE value="Added save dialog" />
+    <MESSAGE value="Added footer" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added footer" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="javax.imageio.IIOException" package="javax.imageio" />
+          <option name="timeStamp" value="2" />
+        </breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/lab23a/PDF/PDFConvertor.java</url>
+          <line>52</line>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

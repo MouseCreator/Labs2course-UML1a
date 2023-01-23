@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lab23a.SetOpenController">
+   <children>
+      <AnchorPane layoutX="-3.0" layoutY="65.0">
+         <children>
+            <HBox prefHeight="196.0" prefWidth="1280.0">
+               <children>
+                  <AnchorPane>
+                     <children>
+                        <TextField fx:id="searchTextField" layoutX="84.0" layoutY="89.0" onAction="#onEnter" prefHeight="43.0" prefWidth="360.0">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </TextField>
+                        <Button fx:id="searchBtn" layoutX="455.0" layoutY="92.0" mnemonicParsing="false" onAction="#searchData" prefHeight="37.0" prefWidth="90.0" text="Search">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                        <DatePicker fx:id="datePickerFrom" layoutX="84.0" layoutY="33.0" onAction="#onEnter" prefHeight="37.0" prefWidth="175.0" promptText="From" />
+                        <DatePicker fx:id="datePickerTo" layoutX="268.0" layoutY="33.0" onAction="#onEnter" prefHeight="37.0" prefWidth="175.0" promptText="To" />
+                        <Button fx:id="testBtn" layoutX="352.0" layoutY="158.0" mnemonicParsing="false" onAction="#test" prefHeight="37.0" prefWidth="90.0" text="Test">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="folderInfoPane">
+                     <children>
+                        <Button layoutX="473.0" layoutY="152.0" mnemonicParsing="false" onAction="#deleteFolder" prefHeight="32.0" prefWidth="131.0" text="Delete folder " textFill="RED">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                        <Label fx:id="folderNameLabel" layoutX="10.0" layoutY="12.0" prefHeight="41.0" prefWidth="588.0" text="Folder: folderName">
+                           <font>
+                              <Font name="System Bold" size="28.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="21.0" layoutY="280.0">
+         <children>
+            <ScrollPane fx:id="scroll" prefHeight="403.0" prefWidth="1234.0">
+               <content>
+                  <GridPane fx:id="grid">
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" />
+                     </rowConstraints>
+                  </GridPane>
+               </content>
+            </ScrollPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

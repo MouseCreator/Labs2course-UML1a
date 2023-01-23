@@ -1,0 +1,44 @@
+
+.button {
+	-fx-background-color: #E09EFF;
+	-fx-background-radius: 10px;
+}
+
+#deleteSetBtn {
+	-fx-text-fill: #D32E4A;
+}
+.button:focused {
+    -fx-background-color:#C67EEA;
+}
+
+.check-box .box {
+
+-fx-background-color: white;
+-fx-border-color:grey;
+-fx-border-radius:3px; 
+
+}
+
+.check-box:selected .mark {
+
+-fx-background-color: white;
+-fx-scale-x: 0.75;
+-fx-scale-y: 0.75;
+
+}
+
+.check-box:selected .box {
+
+-fx-background-color: #C74FFF;
+}
+
+.text-field {
+   -fx-border-color: #C74FFF;
+   -fx-border-width: 2;
+   -fx-border-radius: 10px;
+   -fx-background-radius: 10px;
+   -fx-background-color: transparent;
+}
+.text-field:focused {
+    -fx-background-color: -fx-focus-color, linear-gradient(#F9F9E9, #FFFFFF);
+}

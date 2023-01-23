@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="384.0" prefWidth="512.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lab23a.ExportController">
+   <children>
+      <Button layoutX="21.0" layoutY="343.0" mnemonicParsing="false" onAction="#export" prefHeight="26.0" prefWidth="79.0" text="Export" />
+      <VBox layoutX="240.0" layoutY="14.0" prefHeight="144.0" prefWidth="274.0">
+         <children>
+            <HBox prefHeight="35.0" prefWidth="274.0">
+               <children>
+                  <Label text="Header: Color:" />
+                  <Pane prefHeight="35.0" prefWidth="57.0" />
+                  <ColorPicker fx:id="titleColorPicker" onAction="#changeHeaderColor" prefHeight="26.0" prefWidth="121.0" />
+               </children>
+            </HBox>
+            <HBox prefHeight="35.0" prefWidth="274.0">
+               <children>
+                  <Label text="Legend Color:" />
+                  <Pane prefHeight="35.0" prefWidth="59.0" />
+                  <ColorPicker fx:id="legendColorPicker" onAction="#changeLegendColor" prefHeight="26.0" prefWidth="121.0" />
+               </children>
+            </HBox>
+            <HBox prefHeight="39.0" prefWidth="274.0">
+               <children>
+                  <Label prefHeight="18.0" prefWidth="111.0" text="Terms Background:" />
+                  <Pane prefHeight="35.0" prefWidth="22.0" />
+                  <ColorPicker fx:id="termsColorPicker" onAction="#changeTermsColor" prefHeight="26.0" prefWidth="121.0" />
+               </children>
+            </HBox>
+            <HBox prefHeight="36.0" prefWidth="274.0">
+               <children>
+                  <Label prefHeight="18.0" prefWidth="111.0" text="Footer Color:" />
+                  <Pane prefHeight="35.0" prefWidth="22.0" />
+                  <ColorPicker fx:id="termsColorPicker1" onAction="#changeFooterColor" prefHeight="26.0" prefWidth="121.0" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <VBox layoutX="327.0" layoutY="162.0" prefHeight="216.0" prefWidth="163.0">
+         <children>
+            <Rectangle fx:id="header" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="26.0" stroke="BLACK" strokeType="INSIDE" width="164.0" />
+            <HBox fx:id="legendColor">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="26.0" stroke="BLACK" strokeType="INSIDE" width="81.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="26.0" stroke="BLACK" strokeType="INSIDE" width="81.0" />
+               </children>
+            </HBox>
+            <VBox fx:id="termsBox">
+               <children>
+                  <HBox>
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="26.0" stroke="BLACK" strokeType="INSIDE" width="81.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="26.0" stroke="BLACK" strokeType="INSIDE" width="81.0" />
+                     </children>
+                  </HBox>
+                  <HBox>
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="26.0" stroke="BLACK" strokeType="INSIDE" width="81.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="26.0" stroke="BLACK" strokeType="INSIDE" width="81.0" />
+                     </children>
+                  </HBox>
+                  <HBox>
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="26.0" stroke="BLACK" strokeType="INSIDE" width="81.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="26.0" stroke="BLACK" strokeType="INSIDE" width="81.0" />
+                     </children>
+                  </HBox>
+                  <HBox>
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="26.0" stroke="BLACK" strokeType="INSIDE" width="81.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="26.0" stroke="BLACK" strokeType="INSIDE" width="81.0" />
+                     </children>
+                  </HBox>
+                  <HBox>
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="26.0" stroke="BLACK" strokeType="INSIDE" width="81.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="26.0" stroke="BLACK" strokeType="INSIDE" width="81.0" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <Rectangle fx:id="footer" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="26.0" stroke="BLACK" strokeType="INSIDE" width="162.0" />
+         </children>
+      </VBox>
+      <Button layoutX="108.0" layoutY="343.0" mnemonicParsing="false" onAction="#cancel" prefHeight="26.0" prefWidth="79.0" text="Cancel" />
+      <TextField fx:id="filenameField" layoutX="87.0" layoutY="216.0" prefHeight="26.0" prefWidth="219.0" />
+      <Label layoutX="9.0" layoutY="220.0" text="Filename:" />
+      <Label layoutX="9.0" layoutY="14.0" prefHeight="80.0" prefWidth="198.0" text="Export PDF">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="textCheckBox" layoutX="20.0" layoutY="167.0" mnemonicParsing="false" text="White text" />
+      <Slider fx:id="fontSizeSlider" blockIncrement="1.0" layoutX="137.0" layoutY="176.0" majorTickUnit="1.0" max="20.0" min="8.0" minorTickCount="1" showTickLabels="true" value="14.0" />
+      <Label fx:id="fontLabel" layoutX="137.0" layoutY="153.0" prefHeight="18.0" prefWidth="140.0" text="Font size: 14" />
+   </children>
+</AnchorPane>
