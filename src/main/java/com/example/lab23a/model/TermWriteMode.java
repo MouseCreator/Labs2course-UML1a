@@ -1,10 +1,10 @@
 package com.example.lab23a.model;
 
 public class TermWriteMode {
-	private TermList studyResult;
-	private TermList origin;
+	private final TermList studyResult;
+	private final TermList origin;
 	private StudyTermList studyList;
-	private StudyTermList toNextPeriod;
+	private final StudyTermList toNextPeriod;
 	
 	private int[] attempts;
 	

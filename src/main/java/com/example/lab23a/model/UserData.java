@@ -10,6 +10,12 @@ public class UserData {
 	private int lastUsedIndex;
 	private int lastFolderIndex;
 	private Thread saveIndexThread;
+
+	public UserData() {
+		this.folderList = new FolderList();
+		this.indexList = new SetIndexList();
+		this.lastUsedIndex = 0;
+	}
 	
 	public void load() {
 		indexList = FileBuilder.readIndexFile();

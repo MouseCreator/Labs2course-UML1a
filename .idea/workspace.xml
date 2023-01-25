@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e5cf57ee-045d-45a8-8c9b-3b141fc334b5" name="Changes" comment="Searching test for SetIndex">
+    <list default="true" id="e5cf57ee-045d-45a8-8c9b-3b141fc334b5" name="Changes" comment="Cleaned up comparison code">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/lab23a/model/UserDataTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/Folder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/Folder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/TermWriteMode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/TermWriteMode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/UserData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/UserData.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,20 +39,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "create.test.in.the.same.root": "true",
-    "last_opened_file_path": "C:/Users/mysha/IdeaProjects/Labs2course-UML1a",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;create.test.in.the.same.root&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/mysha/IdeaProjects/Labs2course-UML1a&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\mysha\IdeaProjects\Lab23a\src\main\resources" />
@@ -76,42 +78,10 @@
       <recent name="com.example.lab23a.PDF" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SetIndexListTest.testSearchSubstring">
+  <component name="RunManager" selected="JUnit.UserDataTest">
     <configuration name="RunApplication" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="com.example.lab23a.Main" />
       <module name="Labs2course-UML1a" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FolderListTest.testAddAndRemoveFolder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Labs2course-UML1a" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.lab23a.model.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.lab23a.model" />
-      <option name="MAIN_CLASS_NAME" value="com.example.lab23a.model.FolderListTest" />
-      <option name="METHOD_NAME" value="testAddAndRemoveFolder" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FolderListTest.testRemoveFolder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Labs2course-UML1a" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.lab23a.model.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.lab23a.model" />
-      <option name="MAIN_CLASS_NAME" value="com.example.lab23a.model.FolderListTest" />
-      <option name="METHOD_NAME" value="testRemoveFolder" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -127,22 +97,6 @@
       <option name="PACKAGE_NAME" value="com.example.lab23a.model" />
       <option name="MAIN_CLASS_NAME" value="com.example.lab23a.model.FolderListTest" />
       <option name="METHOD_NAME" value="testToArray" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PDFCellTest.showSplitter" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Lab23a" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.lab23a.PDF.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.lab23a.PDF" />
-      <option name="MAIN_CLASS_NAME" value="com.example.lab23a.PDF.PDFCellTest" />
-      <option name="METHOD_NAME" value="showSplitter" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -164,13 +118,60 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="UserDataTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Labs2course-UML1a" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.lab23a.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.lab23a.model" />
+      <option name="MAIN_CLASS_NAME" value="com.example.lab23a.model.UserDataTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserDataTest.appendNewFolder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Labs2course-UML1a" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.lab23a.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.lab23a.model" />
+      <option name="MAIN_CLASS_NAME" value="com.example.lab23a.model.UserDataTest" />
+      <option name="METHOD_NAME" value="appendNewFolder" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserDataTest.insertNewSet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Labs2course-UML1a" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.lab23a.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.lab23a.model" />
+      <option name="MAIN_CLASS_NAME" value="com.example.lab23a.model.UserDataTest" />
+      <option name="METHOD_NAME" value="insertNewSet" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserDataTest" />
+        <item itemvalue="JUnit.UserDataTest.appendNewFolder" />
+        <item itemvalue="JUnit.UserDataTest.insertNewSet" />
         <item itemvalue="JUnit.SetIndexListTest.testSearchSubstring" />
         <item itemvalue="JUnit.FolderListTest.testToArray" />
-        <item itemvalue="JUnit.FolderListTest.testRemoveFolder" />
-        <item itemvalue="JUnit.FolderListTest.testAddAndRemoveFolder" />
-        <item itemvalue="JUnit.PDFCellTest.showSplitter" />
       </list>
     </recent_temporary>
   </component>
@@ -281,7 +282,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674610140249</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Cleaned up comparison code">
+      <created>1674610319630</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1674610319630</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -314,7 +322,8 @@
     <MESSAGE value="Created a few tests for Folder List: removing, converting" />
     <MESSAGE value="Minor refactoring: renamed variables and methods" />
     <MESSAGE value="Searching test for SetIndex" />
-    <option name="LAST_COMMIT_MESSAGE" value="Searching test for SetIndex" />
+    <MESSAGE value="Cleaned up comparison code" />
+    <option name="LAST_COMMIT_MESSAGE" value="Cleaned up comparison code" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
