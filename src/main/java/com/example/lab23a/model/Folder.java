@@ -32,11 +32,10 @@ public class Folder {
 	public boolean equals(Object other) {
 		if (this == other)
 			return true;
-		if (!(other instanceof Folder))
+		if (!(other instanceof Folder folderOther))
 			return false;
-		Folder f = (Folder) other;
-		
-		return f.index == this.index && f.name.equals(this.name);
+
+		return folderOther.index == this.index && folderOther.name.equals(this.name);
 	}
 	
 }

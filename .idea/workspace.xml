@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e5cf57ee-045d-45a8-8c9b-3b141fc334b5" name="Changes" comment="Minor refactoring: renamed variables and methods">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/lab23a/model/SetIndexListTest.java" afterDir="false" />
+    <list default="true" id="e5cf57ee-045d-45a8-8c9b-3b141fc334b5" name="Changes" comment="Searching test for SetIndex">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/Folder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/Folder.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -274,7 +274,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674609602945</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Searching test for SetIndex">
+      <created>1674610140249</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1674610140249</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -306,7 +313,8 @@
     <MESSAGE value="Minor changes, fixed comparator" />
     <MESSAGE value="Created a few tests for Folder List: removing, converting" />
     <MESSAGE value="Minor refactoring: renamed variables and methods" />
-    <option name="LAST_COMMIT_MESSAGE" value="Minor refactoring: renamed variables and methods" />
+    <MESSAGE value="Searching test for SetIndex" />
+    <option name="LAST_COMMIT_MESSAGE" value="Searching test for SetIndex" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
