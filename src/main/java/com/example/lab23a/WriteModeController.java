@@ -52,9 +52,9 @@ public class WriteModeController extends AttachedToStudySetIndexController imple
     
     private String userAnswer;
     
-    private StudyProgress.WriteResultsController subcontroller;
+    private WriteResultsController subcontroller;
     private Stage substage;
-    private boolean isEntered = false;
+    private boolean isEnteredAnswer = false;
     @FXML
     public void onEnter(){
        confirmAnswer();
@@ -66,16 +66,16 @@ public class WriteModeController extends AttachedToStudySetIndexController imple
 		learnMode = new TermWriteMode(FileBuilder.readTerms(index.getID()), 
 				getParent().getUserData().getStyle());
 		refreshInterface();
-		loadNext();
+		loadNextTerm();
 	}
 	
 	private void refreshInterface() {
 		updateProgressBars();
 	}
 	
-	private void loadNext() {
+	private void loadNextTerm() {
 		hideExtra();
-		isEntered = false;
+		isEnteredAnswer = false;
 		termField.clear();
 		if (learnMode.isPeriodEnd()) {
 			toTempResults();
@@ -94,7 +94,7 @@ public class WriteModeController extends AttachedToStudySetIndexController imple
 			updateTermsFile();
 		}
 		writeResults();
-		resultsPopWindow();
+		showResultsPopWindow();
 	}
 	
 	private void updateTermsFile() {
@@ -113,7 +113,7 @@ public class WriteModeController extends AttachedToStudySetIndexController imple
 	}
 	
 	public void confirmAnswer() {
-		if (isEntered)
+		if (isEnteredAnswer)
 			return;
 		userAnswer = termField.getText();
 		if (checker.checkAnswer(termField.getText())) {
@@ -143,8 +143,8 @@ public class WriteModeController extends AttachedToStudySetIndexController imple
 		setLabelToCorrectAnswer();
 		learnMode.onCorrectEntered(checker, currentTerm);
 		updateProgressBars();
-		isEntered = true;
-		delay(this::loadNext);
+		isEnteredAnswer = true;
+		delay(this::loadNextTerm);
 	}
 	
 	private void gotWrong() {
@@ -176,7 +176,7 @@ public class WriteModeController extends AttachedToStudySetIndexController imple
 	public void continueLearning() {
 		learnMode.reinit();
 		refreshInterface();
-		this.loadNext();
+		this.loadNextTerm();
 	}
 	
 	public void restart() {
@@ -187,7 +187,7 @@ public class WriteModeController extends AttachedToStudySetIndexController imple
 		this.getParent().loadAttachedToIndex(Pages.SET_INFO, index);
 	}
 	
-	private void resultsPopWindow() {
+	private void showResultsPopWindow() {
 			subcontroller.loadData(this, learnMode);
 			substage.show();
 	}
@@ -219,7 +219,7 @@ public class WriteModeController extends AttachedToStudySetIndexController imple
 		getParent().getUserData().getIndexList().insert(index);
 		FileBuilder.writeTerms(index.getID(), list);
 	}
-	
+
 	public void onChangeToRightAnswer() {
 		this.checker.changeToRightAnswer();
 		this.gotCorrect();
@@ -234,8 +234,10 @@ public class WriteModeController extends AttachedToStudySetIndexController imple
 	}
 	@Override
 	public boolean onCloseRequest() {
-		this.getParent().displayExitPopUp(()->getParent().proceedClosingOperation());
-		return this.learnMode.isPeriodEnd();
+		boolean canLeaveWithNoDataLoss = this.learnMode.isPeriodEnd();
+		if (!canLeaveWithNoDataLoss)
+			this.getParent().displayExitPopUp(()->getParent().proceedClosingOperation());
+		return canLeaveWithNoDataLoss;
 	}
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {

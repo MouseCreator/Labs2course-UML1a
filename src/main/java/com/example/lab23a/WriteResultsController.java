@@ -35,14 +35,11 @@ public class WriteResultsController {
 		this.progressLabel.setText("Total progress: " + learnMode.getTotalProgressString());
 		
 		stage = (Stage) progressLabel.getScene().getWindow();
-		stage.setOnCloseRequest(new EventHandler<WindowEvent>() {
-		    @Override
-		    public void handle(WindowEvent e) {
-		    	if(!isProperExit) {
-		    		onContinue();
-		    	}
-		    }
-		  });
+		stage.setOnCloseRequest(e -> {
+			if(!isProperExit) {
+				onContinue();
+			}
+		});
 	}
 	
 	public void onContinue() {

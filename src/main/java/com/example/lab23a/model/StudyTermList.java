@@ -24,6 +24,7 @@ public class StudyTermList extends TermList{
 
     public StudyTermList(StudyTermList other) {
 		this.terms = new ArrayList<>(other.terms);
+        this.style = other.style;
 	}
 	public UserLearnStyle getStyle() {
         return style;
