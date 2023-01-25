@@ -4,16 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e5cf57ee-045d-45a8-8c9b-3b141fc334b5" name="Changes" comment="Fixed typos, removed unused import statements.">
+    <list default="true" id="e5cf57ee-045d-45a8-8c9b-3b141fc334b5" name="Changes" comment="Fixed changing access bug">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/WriteModeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/WriteModeController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/WriteResultsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/WriteResultsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/StudyTermList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/StudyTermList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/folders.index" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/folders.index" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/info.index" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/info.index" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/sets.index" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/sets.index" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/sets/14.set" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/sets/14.set" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/sets/16.set" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/sets/16.set" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -329,7 +322,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674671491947</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Fixed changing access bug">
+      <created>1674680435615</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1674680435615</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -368,7 +368,8 @@
     <MESSAGE value="Minor changes: removed unused methods" />
     <MESSAGE value="Removed unused imports" />
     <MESSAGE value="Fixed typos, removed unused import statements." />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed typos, removed unused import statements." />
+    <MESSAGE value="Fixed changing access bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed changing access bug" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

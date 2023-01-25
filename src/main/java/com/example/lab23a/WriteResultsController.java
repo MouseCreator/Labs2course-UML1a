@@ -26,7 +26,12 @@ public class WriteResultsController {
 	private TermWriteMode learnMode;
 	private Stage stage;
 	private boolean isProperExit = false;
-	
+
+	/**
+	 *
+	 * @param from - caller of the pop-up
+	 * @param mode - user's progress
+	 */
 	public void loadData(WriteModeController from, TermWriteMode mode) {
 		this.parent = from;
 		this.learnMode = mode;
@@ -41,7 +46,10 @@ public class WriteResultsController {
 			}
 		});
 	}
-	
+
+	/**
+	 * Restarts study progress if got 100%, loads unlearned terms otherwise
+	 */
 	public void onContinue() {
 		isProperExit = true;
 		if (learnMode.isFullStudied())
@@ -50,8 +58,10 @@ public class WriteResultsController {
 			parent.continueLearning();
 		close();
 	}
-	
 
+	/**
+	 * closes Pop-Up window and returns user to Set info
+	 */
 	public void onBack() {
 		isProperExit = true;
 		parent.goBack();
