@@ -20,27 +20,25 @@ public class StudyTerm {
     public String getProgressString() {
     	return progressString;
     }
-    
-    
-    
+
     public StudyTerm(int index) {
     	this.index = index;
         this.term = "";
         this.definition = "";
         this.progress = StudyProgress.NOT_LEARNED;
-        initProgressString();
+        updateProgressString();
     }
     public StudyTerm(int index, String term, String definition) {
     	this.index = index;
         this.term = term;
         this.definition = definition;
         this.progress = StudyProgress.NOT_LEARNED;
-        initProgressString();
+        updateProgressString();
     }
     public StudyTerm(int index, String term, String definition, StudyProgress progress) {
         this(index, term, definition);
         this.progress = progress;
-        initProgressString();
+        updateProgressString();
     }
 
     public String getTerm() {
@@ -64,15 +62,14 @@ public class StudyTerm {
     }
     public void setProgress(StudyProgress progress) {
         this.progress = progress;
-        initProgressString();
+        updateProgressString();
     }
 
     @Override
     public String toString() {
-        String builder = "[" + term + " " +
+        return "[" + term + " " +
                 definition + " " +
                 progress + "]";
-        return builder;
     }
 
     @Override
@@ -80,31 +77,28 @@ public class StudyTerm {
         if (other == this)
             return true;
 
-        if (!(other instanceof StudyTerm))
+        if (!(other instanceof StudyTerm otherTerm))
             return false;
 
-        StudyTerm term = (StudyTerm) other;
-
-        return term.definition.equals(this.definition) && term.term.equals(this.term) && this.progress == term.progress;
+        return otherTerm.definition.equals(this.definition) && otherTerm.term.equals(this.term) && this.progress == otherTerm.progress;
     }
     
     public boolean isFullStudied() {
     	return this.progress == StudyProgress.MASTERED;
     }
     
-    private void initProgressString() {
-    	switch(progress) {
-    	case NOT_LEARNED: this.progressString = "Not learned"; break;
-    	case FAMILIAR: this.progressString = "Familiar"; break;
-    	case LEARNED: this.progressString = "Learned"; break;
-    	case MASTERED: this.progressString = "Mastered"; break;
-		default:
-			System.err.println("Error casting study progress to string");
-    	}
+    private void updateProgressString() {
+        switch (progress) {
+            case NOT_LEARNED -> this.progressString = "Not learned";
+            case FAMILIAR -> this.progressString = "Familiar";
+            case LEARNED -> this.progressString = "Learned";
+            case MASTERED -> this.progressString = "Mastered";
+            default -> System.err.println("Error casting study progress to string");
+        }
     }
 	public void removeProgress() {
 		setProgress(StudyProgress.NOT_LEARNED);
-		initProgressString();
+		updateProgressString();
 	}
 }
 

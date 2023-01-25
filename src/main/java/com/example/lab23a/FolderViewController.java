@@ -73,7 +73,7 @@ public class FolderViewController implements Initializable  {
 	
 	private void addSetToFolder(SetIndex index, Folder folder) {
 		isToAddIndex = false;
-		parent.getUserData().addSettoFolder(index, folder);
+		parent.getUserData().addSetToFolder(index, folder);
 		close();
 	}
 	

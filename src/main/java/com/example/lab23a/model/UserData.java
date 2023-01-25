@@ -87,7 +87,7 @@ public class UserData {
 		this.folderList.add(toAdd);
 		return toAdd;
 	}
-	public void addSettoFolder(SetIndex index, Folder folder) {
+	public void addSetToFolder(SetIndex index, Folder folder) {
 		SetIndexList sets = FileBuilder.readFolder(indexList, folder.getIndex());
 		if (!sets.contains(index)) {
 			sets.add(index);
