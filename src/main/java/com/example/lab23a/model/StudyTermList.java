@@ -28,12 +28,6 @@ public class StudyTermList extends TermList{
 	public UserLearnStyle getStyle() {
         return style;
     }
-
-    public void setStyle(UserLearnStyle style) {
-        this.style = style;
-    }
-    
-
     public void shuffle() {
         Collections.shuffle(this.terms);
     }
