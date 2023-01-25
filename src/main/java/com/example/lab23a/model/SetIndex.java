@@ -109,10 +109,9 @@ public class SetIndex {
 		if (this == other) {
 			return true;
 		}
-		if (!(other instanceof SetIndex))
+		if (!(other instanceof SetIndex newIndex))
 			return false;
-		SetIndex a = (SetIndex) other;
-		return a.index == this.index && a.name.equals(this.name) && a.elementsCount == this.elementsCount;
+        return newIndex.index == this.index && newIndex.name.equals(this.name) && newIndex.elementsCount == this.elementsCount;
 	}
 	
 }

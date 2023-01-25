@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e5cf57ee-045d-45a8-8c9b-3b141fc334b5" name="Changes" comment="Cleaned up comparison code">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/lab23a/model/UserDataTest.java" afterDir="false" />
+    <list default="true" id="e5cf57ee-045d-45a8-8c9b-3b141fc334b5" name="Changes" comment="Added test for user data.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/TermWriteMode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/TermWriteMode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/UserData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/UserData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/GarbageList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/SetIndex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/SetIndex.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +77,7 @@
       <recent name="com.example.lab23a.PDF" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.UserDataTest">
+  <component name="RunManager" selected="Application.RunApplication">
     <configuration name="RunApplication" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="com.example.lab23a.Main" />
       <module name="Labs2course-UML1a" />
@@ -289,7 +288,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674610319630</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Added test for user data.">
+      <created>1674663703500</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1674663703500</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -323,7 +329,8 @@
     <MESSAGE value="Minor refactoring: renamed variables and methods" />
     <MESSAGE value="Searching test for SetIndex" />
     <MESSAGE value="Cleaned up comparison code" />
-    <option name="LAST_COMMIT_MESSAGE" value="Cleaned up comparison code" />
+    <MESSAGE value="Added test for user data." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added test for user data." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
