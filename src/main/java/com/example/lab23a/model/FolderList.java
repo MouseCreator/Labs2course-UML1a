@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.Comparator;
 
 public class FolderList {
-	private ArrayList<Folder> folders;
-	private Comparator<Folder> comparatorByName = (o1, o2) -> o1.getName().compareTo(o2.getName());
+	private final ArrayList<Folder> folders;
+	private final Comparator<Folder> comparatorByName = Comparator.comparing(Folder::getName);
 	public FolderList() {
 		folders = new ArrayList<>();
 	}
