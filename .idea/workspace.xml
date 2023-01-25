@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e5cf57ee-045d-45a8-8c9b-3b141fc334b5" name="Changes" comment="Created a few tests for Folder List: removing, converting">
+    <list default="true" id="e5cf57ee-045d-45a8-8c9b-3b141fc334b5" name="Changes" comment="Minor refactoring: renamed variables and methods">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/lab23a/model/SetIndexListTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/FolderViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/FolderViewController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/StudyTerm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/StudyTerm.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +76,7 @@
       <recent name="com.example.lab23a.PDF" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.FolderListTest.testToArray">
+  <component name="RunManager" selected="JUnit.SetIndexListTest.testSearchSubstring">
     <configuration name="RunApplication" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="com.example.lab23a.Main" />
       <module name="Labs2course-UML1a" />
@@ -149,17 +148,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PDFCellTest.testSplitter" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Lab23a" />
+    <configuration name="SetIndexListTest.testSearchSubstring" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Labs2course-UML1a" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.lab23a.PDF.*" />
+          <option name="PATTERN" value="com.example.lab23a.model.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.example.lab23a.PDF" />
-      <option name="MAIN_CLASS_NAME" value="com.example.lab23a.PDF.PDFCellTest" />
-      <option name="METHOD_NAME" value="testSplitter" />
+      <option name="PACKAGE_NAME" value="com.example.lab23a.model" />
+      <option name="MAIN_CLASS_NAME" value="com.example.lab23a.model.SetIndexListTest" />
+      <option name="METHOD_NAME" value="testSearchSubstring" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -167,11 +166,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SetIndexListTest.testSearchSubstring" />
         <item itemvalue="JUnit.FolderListTest.testToArray" />
         <item itemvalue="JUnit.FolderListTest.testRemoveFolder" />
         <item itemvalue="JUnit.FolderListTest.testAddAndRemoveFolder" />
         <item itemvalue="JUnit.PDFCellTest.showSplitter" />
-        <item itemvalue="JUnit.PDFCellTest.testSplitter" />
       </list>
     </recent_temporary>
   </component>
@@ -268,7 +267,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674609353290</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Minor refactoring: renamed variables and methods">
+      <created>1674609602945</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1674609602945</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -299,7 +305,8 @@
     <MESSAGE value="Added footer" />
     <MESSAGE value="Minor changes, fixed comparator" />
     <MESSAGE value="Created a few tests for Folder List: removing, converting" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created a few tests for Folder List: removing, converting" />
+    <MESSAGE value="Minor refactoring: renamed variables and methods" />
+    <option name="LAST_COMMIT_MESSAGE" value="Minor refactoring: renamed variables and methods" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
