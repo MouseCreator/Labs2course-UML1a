@@ -39,13 +39,13 @@ public class WriteResultsController {
 		    @Override
 		    public void handle(WindowEvent e) {
 		    	if(!isProperExit) {
-		    		onContrinue();
+		    		onContinue();
 		    	}
 		    }
 		  });
 	}
 	
-	public void onContrinue() {
+	public void onContinue() {
 		isProperExit = true;
 		if (learnMode.isFullStudied())
 			parent.restart();

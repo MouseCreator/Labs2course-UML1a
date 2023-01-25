@@ -22,7 +22,7 @@
             <Font size="24.0" />
          </font>
       </Label>
-      <Button fx:id="continueBtn" layoutX="313.0" layoutY="261.0" mnemonicParsing="false" onAction="#onContrinue" prefHeight="26.0" prefWidth="94.0" text="Continue" />
+      <Button fx:id="continueBtn" layoutX="313.0" layoutY="261.0" mnemonicParsing="false" onAction="#onContinue" prefHeight="26.0" prefWidth="94.0" text="Continue" />
       <Button fx:id="backBtn" layoutX="313.0" layoutY="303.0" mnemonicParsing="false" onAction="#onBack" prefHeight="26.0" prefWidth="94.0" text="Back" />
    </children>
 </AnchorPane>

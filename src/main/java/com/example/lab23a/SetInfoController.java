@@ -120,7 +120,6 @@ public class SetInfoController extends AttachedToStudySetIndexController impleme
 	}
 	@FXML
 	public void convertToPDF() {
-		//savePDF();
 		openSavePDFDialog();
 	}
 

@@ -228,7 +228,7 @@ public class WorkspaceController implements Initializable {
 	
 	public void displayFoldersWindow() {
 		folderViewController.loadData(this, this.getUserData().getFolderList());
-		folderViewController.reinit();
+		folderViewController.reinitialize();
 		folderStage.show();
 	}
 	
