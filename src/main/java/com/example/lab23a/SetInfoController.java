@@ -1,13 +1,10 @@
 package com.example.lab23a;
 
-import java.io.File;
 import java.io.IOException;
 import java.net.URL;
 import java.util.Objects;
 import java.util.ResourceBundle;
 
-import com.example.lab23a.PDF.PDFConvertor;
-import com.example.lab23a.PDF.PDFParams;
 import com.example.lab23a.model.*;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -22,11 +19,8 @@ import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.image.Image;
 import javafx.scene.layout.Pane;
-import javafx.stage.FileChooser;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
-import javafx.stage.Window;
-import org.apache.pdfbox.pdmodel.PDDocument;
 
 public class SetInfoController extends AttachedToStudySetIndexController implements Initializable{
 
@@ -129,7 +123,7 @@ public class SetInfoController extends AttachedToStudySetIndexController impleme
 		//savePDF();
 		openSavePDFDialog();
 	}
-	private ExportController dialogController;
+
 	private void openSavePDFDialog() {
 		try {
 			Parent root;
@@ -143,7 +137,7 @@ public class SetInfoController extends AttachedToStudySetIndexController impleme
 			dialogStage.initModality(Modality.APPLICATION_MODAL);
 			dialogStage.setTitle("Export PDF");
 			dialogStage.setResizable(false);
-			dialogController = fxmlLoader.getController();
+			ExportController dialogController = fxmlLoader.getController();
 			dialogController.setParent(this);
 			dialogController.init(index, studyTerms);
 			Image icon = new Image(FileBuilder.getIconDestination());
