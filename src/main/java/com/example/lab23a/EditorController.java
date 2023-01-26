@@ -76,7 +76,7 @@ public class EditorController extends AttachedToStudySetIndexController implemen
 	public EditorController() {
 		super();
 	}
-	public void initIndexAndTerms() {
+	private void initIndexAndTerms() {
 		this.setNameField.setText(index.getName());
 		this.initTerms();
 	}
@@ -124,7 +124,7 @@ public class EditorController extends AttachedToStudySetIndexController implemen
 		return editItem;
 		
 	}
-	public void addTerm(StudyTerm term) {
+	private void addTerm(StudyTerm term) {
 		EditItemController editItem = initEmptyTerm();
 		editItem.fromTerm(term);
 		controllerList.add(editItem);

@@ -67,12 +67,12 @@ public class SetInfoController extends AttachedToStudySetIndexController impleme
 		ItemController itemController = fxmlLoader.getController();
 		itemController.setData(from);
 	}	
-	public void loadTerms() throws IOException {
+	private void loadTerms() throws IOException {
 		studyTerms = FileBuilder.readTerms(index.getID());
 		displayTerms();
 	}
 	
-	public void displayTerms() {
+	private void displayTerms() {
 		observableList.clear();
 		observableList.addAll(studyTerms.asArrayList());
 		termTable.setItems(observableList);
@@ -88,7 +88,7 @@ public class SetInfoController extends AttachedToStudySetIndexController impleme
 			e.printStackTrace();
 		}
 	}
-	public void initFolderButton() {
+	private void initFolderButton() {
 		this.removeFromThisFolderBtn.setVisible(getParent().getLastActive().getIndex() != Folder.ALL_SETS);
 	}
 	public void startLearning() {

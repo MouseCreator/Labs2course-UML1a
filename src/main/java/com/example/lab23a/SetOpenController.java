@@ -1,12 +1,9 @@
 package com.example.lab23a;
 
-import java.io.File;
 import java.io.IOException;
 import java.net.URL;
 import java.time.LocalDate;
 import java.util.ResourceBundle;
-import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
@@ -17,7 +14,6 @@ import javafx.scene.control.Label;
 import javafx.scene.control.ScrollPane;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseButton;
-import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.Region;
@@ -26,7 +22,6 @@ import com.example.lab23a.model.Dates;
 import com.example.lab23a.model.FileBuilder;
 import com.example.lab23a.model.Folder;
 import com.example.lab23a.model.SetIndexList;
-import org.apache.pdfbox.pdmodel.PDDocument;
 
 
 public class SetOpenController extends AttachedToFolderController implements Initializable {
@@ -56,13 +51,11 @@ public class SetOpenController extends AttachedToFolderController implements Ini
     @FXML
     private Button testBtn;
     @FXML
-    public void onEnter(ActionEvent ae){
+    public void onEnter(){
        searchData();
     }
-    
-    private final int setsPerRow = 3;
-    
-    private SetIndexList activeStudySets = new SetIndexList();
+
+	private SetIndexList activeStudySets = new SetIndexList();
     
     private SetIndexList folderStudySets = new SetIndexList();
     
@@ -73,26 +66,26 @@ public class SetOpenController extends AttachedToFolderController implements Ini
     
     private void initDatePicker(DatePicker datePicker) {
 
-    	datePicker.setConverter(new StringConverter<LocalDate>() {
+    	datePicker.setConverter(new StringConverter<>() {
 
-    	     @Override 
-    	     public String toString(LocalDate date) {
-    	         if (date != null) {
-    	             return Dates.toDateFormat(date);
-    	         } else {
-    	             return "";
-    	         }
-    	     }
+			@Override
+			public String toString(LocalDate date) {
+				if (date != null) {
+					return Dates.toDateFormat(date);
+				} else {
+					return "";
+				}
+			}
 
-    	     @Override 
-    	     public LocalDate fromString(String string) {
-    	         if (string != null && !string.isEmpty()) {
-    	             return Dates.fromString(string);
-    	         } else {
-    	             return null;
-    	         }
-    	     }
-    	 });
+			@Override
+			public LocalDate fromString(String string) {
+				if (string != null && !string.isEmpty()) {
+					return Dates.fromString(string);
+				} else {
+					return null;
+				}
+			}
+		});
     }
     
     private void getData() {
@@ -104,9 +97,6 @@ public class SetOpenController extends AttachedToFolderController implements Ini
     	}
     	activeStudySets = folderStudySets;
     	activeStudySets.reverse();
-    }
-    public SetOpenController(WorkspaceController parent) {
-    	super(parent);
     }
     public SetOpenController() {
     	super();
@@ -132,7 +122,8 @@ public class SetOpenController extends AttachedToFolderController implements Ini
 				
 				ItemController itemController = fxmlLoader.getController();
 				itemController.setData(activeStudySets.get(i));
-				
+
+				int setsPerRow = 3;
 				if (column == setsPerRow) {
 					column = 0;
 					row++;
@@ -159,15 +150,12 @@ public class SetOpenController extends AttachedToFolderController implements Ini
 		
 		fxmlLoader.setLocation(getClass().getResource(FileBuilder.FXMLdestination("Item")));
 		AnchorPane anchorPane = fxmlLoader.load();
-		anchorPane.setOnMouseClicked(new EventHandler<MouseEvent>() {
-		    @Override
-		    public void handle(MouseEvent mouseEvent) {
-		        if(mouseEvent.getButton().equals(MouseButton.PRIMARY)){
-		            if(mouseEvent.getClickCount() == 2){
-		                parentController.loadAttachedToIndex(Pages.SET_INFO,((ItemController)fxmlLoader.getController()).getIndex());;
-		            }
-		        }
-		    }
+		anchorPane.setOnMouseClicked(mouseEvent -> {
+			if(mouseEvent.getButton().equals(MouseButton.PRIMARY)){
+				if(mouseEvent.getClickCount() == 2){
+					parentController.loadAttachedToIndex(Pages.SET_INFO,((ItemController)fxmlLoader.getController()).getIndex());
+				}
+			}
 		});
 		return anchorPane;
 	}
@@ -220,7 +208,7 @@ public class SetOpenController extends AttachedToFolderController implements Ini
 		return "Folder: " + folder.getName();
 	}
 	public void deleteFolder() {
-		this.getParent().displayFolderDeletionPopUp(()->onDeletionConfirm());
+		this.getParent().displayFolderDeletionPopUp(this::onDeletionConfirm);
 		
 	}
 	private void onDeletionConfirm() {

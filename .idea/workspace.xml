@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e5cf57ee-045d-45a8-8c9b-3b141fc334b5" name="Changes" comment="Fixed typos">
+    <list default="true" id="e5cf57ee-045d-45a8-8c9b-3b141fc334b5" name="Changes" comment="Renamed key combinations for their purpose">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/EditorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/EditorController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/SetInfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/SetInfoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/SetOpenController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/SetOpenController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -343,7 +345,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674762278060</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Renamed key combinations for their purpose">
+      <created>1674764147741</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1674764147741</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -385,7 +394,8 @@
     <MESSAGE value="Fixed changing access bug" />
     <MESSAGE value="Extended documentation" />
     <MESSAGE value="Fixed typos" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed typos" />
+    <MESSAGE value="Renamed key combinations for their purpose" />
+    <option name="LAST_COMMIT_MESSAGE" value="Renamed key combinations for their purpose" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
