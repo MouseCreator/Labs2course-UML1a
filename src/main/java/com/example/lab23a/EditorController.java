@@ -40,11 +40,11 @@ public class EditorController extends AttachedToStudySetIndexController implemen
     
     private boolean hasUnsavedChanges = false;
     
-    final KeyCombination keyCombinationCtrlS= new KeyCodeCombination(
+    final private KeyCombination keyCombinationFastSave = new KeyCodeCombination(
     		KeyCode.S, KeyCombination.CONTROL_DOWN);
-    final KeyCombination keyCombinationCtrlN= new KeyCodeCombination(
+    final private KeyCombination keyCombinationNewTerm = new KeyCodeCombination(
     		KeyCode.N, KeyCombination.CONTROL_DOWN);
-    final KeyCombination keyCombinationCtrlL= new KeyCodeCombination(
+    final private KeyCombination keyCombinationLearn = new KeyCodeCombination(
     		KeyCode.L, KeyCombination.CONTROL_DOWN);
     
     
@@ -54,13 +54,13 @@ public class EditorController extends AttachedToStudySetIndexController implemen
     public void setKeyEvent() {
     	rightScrollPane.setOnKeyPressed(event -> {
 			try {
-				if (keyCombinationCtrlS.match(event)) {
+				if (keyCombinationFastSave.match(event)) {
 					onSave();
 				}
-				else if (keyCombinationCtrlN.match(event)) {
+				else if (keyCombinationNewTerm.match(event)) {
 					addEmptyTerm();
 				}
-				else if (keyCombinationCtrlL.match(event)) {
+				else if (keyCombinationLearn.match(event)) {
 					onSaveAndLearn();
 				}
 				else if (event.getCode().equals(KeyCode.DELETE)) {
