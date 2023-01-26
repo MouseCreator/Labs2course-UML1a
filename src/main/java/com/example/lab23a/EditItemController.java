@@ -24,7 +24,7 @@ public class EditItemController implements Initializable{
     
     private EditorController editor;
     
-    StudyProgress progress = StudyProgress.NOT_LEARNED;
+    private StudyProgress progress = StudyProgress.NOT_LEARNED;
     private int number;
     
     

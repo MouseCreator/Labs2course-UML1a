@@ -27,10 +27,7 @@ public class ItemController {
     private Label termCountLabel;
     
     private SetIndex index;
-    
-    
-    
-    
+
     public void setData(SetIndex from) {
     	this.index = from;
     	itemNameLabel.setText(from.getName());

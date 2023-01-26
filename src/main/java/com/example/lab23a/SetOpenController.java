@@ -50,15 +50,14 @@ public class SetOpenController extends AttachedToFolderController implements Ini
     private DatePicker datePickerTo;
     @FXML
     private Button testBtn;
+
+	private SetIndexList activeStudySets = new SetIndexList();
+
+	private SetIndexList folderStudySets = new SetIndexList();
     @FXML
     public void onEnter(){
        searchData();
     }
-
-	private SetIndexList activeStudySets = new SetIndexList();
-    
-    private SetIndexList folderStudySets = new SetIndexList();
-    
     private void initDatePickers() {
     	initDatePicker(datePickerFrom);
     	initDatePicker(datePickerTo);
@@ -109,7 +108,7 @@ public class SetOpenController extends AttachedToFolderController implements Ini
 	/**
 	 * Adds items to the grid in the order they are in the active study sets
 	 */
-	public void setGrid() {
+	private void setGrid() {
 		int column = 0;
 		int row = 1;
 		
