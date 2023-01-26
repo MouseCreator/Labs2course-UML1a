@@ -21,7 +21,7 @@ import java.io.IOException;
 public class ExportController {
     @FXML
     private Slider fontSizeSlider;
-    PDFParams params = new PDFParams();
+    private final PDFParams parameters = new PDFParams();
     @FXML
     private TextField filenameField;
 
@@ -44,7 +44,7 @@ public class ExportController {
     private ColorPicker termsColorPicker;
 
     @FXML
-    private ColorPicker termsColorPicker1;
+    private ColorPicker footerColorPicker;
 
     @FXML
     private CheckBox textCheckBox;
@@ -58,8 +58,8 @@ public class ExportController {
     private Stage stage;
     @FXML
     void changeFooterColor() {
-       footer.setFill(termsColorPicker1.getValue());
-       params.getPalette().setFooter(fxToAwtColor(termsColorPicker1.getValue()));
+       footer.setFill(footerColorPicker.getValue());
+       parameters.getPalette().setFooter(fxToAwtColor(footerColorPicker.getValue()));
     }
     private java.awt.Color fxToAwtColor(Color color) {
         float red = (float) color.getRed();
@@ -71,7 +71,7 @@ public class ExportController {
     @FXML
     void changeHeaderColor() {
         header.setFill(titleColorPicker.getValue());
-        params.getPalette().setHeader(fxToAwtColor(titleColorPicker.getValue()));
+        parameters.getPalette().setHeader(fxToAwtColor(titleColorPicker.getValue()));
     }
 
     @FXML
@@ -80,7 +80,7 @@ public class ExportController {
             Rectangle rect = (Rectangle) obj;
             rect.setFill(legendColorPicker.getValue());
         }
-        params.getPalette().setLegend(fxToAwtColor(legendColorPicker.getValue()));
+        parameters.getPalette().setLegend(fxToAwtColor(legendColorPicker.getValue()));
     }
 
     @FXML
@@ -92,10 +92,10 @@ public class ExportController {
                 rect.setFill(termsColorPicker.getValue());
             }
         }
-        params.getPalette().setBackground(fxToAwtColor(termsColorPicker.getValue()));
+        parameters.getPalette().setBackground(fxToAwtColor(termsColorPicker.getValue()));
     }
     private void beforeExport() {
-        params.getPalette().setTextColor(textCheckBox.isSelected() ? java.awt.Color.white : java.awt.Color.black);
+        parameters.getPalette().setTextColor(textCheckBox.isSelected() ? java.awt.Color.white : java.awt.Color.black);
     }
     @FXML
     void export() {
@@ -122,7 +122,7 @@ public class ExportController {
                 int size = newVal.intValue();
                 fontSizeSlider.setValue(size);
                 displaySlider();
-                params.setFontSize(size);
+                parameters.setFontSize(size);
         });
     }
     private void displaySlider() {
@@ -164,7 +164,7 @@ public class ExportController {
     }
     private void getPDF(File file) throws IOException {
         PDFConvertor convertor = new PDFConvertor();
-        PDDocument document = convertor.convert(params, index, terms);
+        PDDocument document = convertor.convert(parameters, index, terms);
         document.save(file);
         document.close();
     }

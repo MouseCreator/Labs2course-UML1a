@@ -43,7 +43,7 @@
                <children>
                   <Label prefHeight="18.0" prefWidth="111.0" text="Footer Color:" />
                   <Pane prefHeight="35.0" prefWidth="22.0" />
-                  <ColorPicker fx:id="termsColorPicker1" onAction="#changeFooterColor" prefHeight="26.0" prefWidth="121.0" />
+                  <ColorPicker fx:id="footerColorPicker" onAction="#changeFooterColor" prefHeight="26.0" prefWidth="121.0" />
                </children>
             </HBox>
          </children>

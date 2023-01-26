@@ -35,7 +35,7 @@ public class PDFContent implements Closeable {
         return page;
     }
 
-    public void setStroke(int font) throws IOException{
+    public void setRegularStroke(int font) throws IOException{
         pageStream.setStrokingColor(Color.BLACK);
         pageStream.setLineWidth(1);
         pageStream.setFont(PDType1Font.TIMES_ROMAN, font);

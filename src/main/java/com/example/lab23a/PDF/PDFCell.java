@@ -22,10 +22,10 @@ public class PDFCell {
     public String[] getLines(){
         return this.strings.toArray(new String[0]);
     }
-    protected int getCharsPerLine(int fontSize) {
+    private int getCharsPerLine(int fontSize) {
         return (int) (width * monospaceConstant / fontSize); //25
     }
-    protected int splitWord(int fontSize) {
+    private int splitWord(int fontSize) {
         int charsInLine = getCharsPerLine(fontSize);
         String[] splitBySpaces = word.split(" ");
         int i = 0;

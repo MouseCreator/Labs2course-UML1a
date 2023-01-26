@@ -27,7 +27,7 @@ public class PDFConvertor {
     }
 
 
-    public void write() throws IOException {
+    private void write() throws IOException {
         this.document = new PDDocument();
         try {
             content = new PDFContent(document, bounds);
@@ -111,7 +111,7 @@ public class PDFConvertor {
     private void drawTable() throws IOException {
 
         float position = addTableTitle(bounds.getPalette().getLegend());
-        content.setStroke(bounds.getFontSize());
+        content.setRegularStroke(bounds.getFontSize());
         for (PDFDoubleCell doubleCell : bounds.getDoubleCells()) {
             addRow(doubleCell, position, bounds.getPalette().getBackground());
             position -= doubleCell.getHeight();
