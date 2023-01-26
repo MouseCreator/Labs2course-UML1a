@@ -56,8 +56,11 @@ public class ExportController {
     private TermList terms;
 
     private Stage stage;
+    private SetInfoController parent;
     @FXML
-    void changeFooterColor() {
+    private Label fontLabel;
+    @FXML
+    public void changeFooterColor() {
        footer.setFill(footerColorPicker.getValue());
        parameters.getPalette().setFooter(fxToAwtColor(footerColorPicker.getValue()));
     }
@@ -94,12 +97,12 @@ public class ExportController {
         }
         parameters.getPalette().setBackground(fxToAwtColor(termsColorPicker.getValue()));
     }
-    private void beforeExport() {
+    private void setTextColor() {
         parameters.getPalette().setTextColor(textCheckBox.isSelected() ? java.awt.Color.white : java.awt.Color.black);
     }
     @FXML
     void export() {
-        beforeExport();
+        setTextColor();
         savePDF();
         stage.close();
     }
@@ -107,10 +110,8 @@ public class ExportController {
     void cancel() {
         stage.close();
     }
-    @FXML
-    private Label fontLabel;
 
-    public void init(SetIndex index, TermList list) {
+    public void setExportData(SetIndex index, TermList list) {
         this.index = index;
         this.terms = list;
         filenameField.setText(index.getNotEmptyName());
@@ -131,7 +132,7 @@ public class ExportController {
     public SetInfoController getParent() {
         return parent;
     }
-    private SetInfoController parent;
+
     public void setParent(SetInfoController setInfoController) {
        this.parent = setInfoController;
     }

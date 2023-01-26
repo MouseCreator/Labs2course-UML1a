@@ -4,13 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e5cf57ee-045d-45a8-8c9b-3b141fc334b5" name="Changes" comment="Added missing access modifier.">
+    <list default="true" id="e5cf57ee-045d-45a8-8c9b-3b141fc334b5" name="Changes" comment="Changes protected to private since Cell doesn't have subclasses">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/ExportController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/ExportController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/PDF/PDFCell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/PDF/PDFCell.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/PDF/PDFContent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/PDF/PDFContent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/PDF/PDFConvertor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/PDF/PDFConvertor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/lab23a/PDFPopUp.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/lab23a/PDFPopUp.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/PDF/PDFBounds.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/PDF/PDFBounds.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/PDF/PDFParams.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/PDF/PDFParams.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/SetInfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/SetInfoController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -368,7 +367,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674769023792</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Changes protected to private since Cell doesn't have subclasses">
+      <created>1674772499785</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1674772499785</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -386,7 +392,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="Refactoring in FileBuilder class" />
     <MESSAGE value="Added logo to document" />
     <MESSAGE value="Added bounds calculation" />
     <MESSAGE value="Added table cells" />
@@ -411,7 +416,8 @@
     <MESSAGE value="Renamed key combinations for their purpose" />
     <MESSAGE value="Refactoring: renamed methods, removed unnecessary imports." />
     <MESSAGE value="Added missing access modifier." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added missing access modifier." />
+    <MESSAGE value="Changes protected to private since Cell doesn't have subclasses" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changes protected to private since Cell doesn't have subclasses" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -138,7 +138,7 @@ public class SetInfoController extends AttachedToStudySetIndexController impleme
 			dialogStage.setResizable(false);
 			ExportController dialogController = fxmlLoader.getController();
 			dialogController.setParent(this);
-			dialogController.init(index, studyTerms);
+			dialogController.setExportData(index, studyTerms);
 			Image icon = new Image(FileBuilder.getIconDestination());
 			dialogStage.getIcons().add(icon);
 			dialogStage.show();

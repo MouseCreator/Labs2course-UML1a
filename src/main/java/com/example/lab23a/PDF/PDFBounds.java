@@ -11,22 +11,22 @@ public class PDFBounds {
 
     private final PDFDoubleCell[] doubleCells;
 
+    private final int fontSize;
+    private final int lineHeight;
+    private final int cellWidth;
+
+    private final PDFPalette palette;
+
+    private final int tabulationWidth = 20;
     public int getFontSize() {
         return fontSize;
     }
     public float getHeightBetweenLines() {
         return lineHeight;
     }
-    private final int fontSize;
-    private final int lineHeight;
-    private final int cellWidth;
-
-
     public int getCellWidth() {
         return cellWidth;
     }
-    private final int tabulationWidth = 20;
-
     public PDFDoubleCell[] getDoubleCells() {
         return this.doubleCells;
     }
@@ -38,7 +38,7 @@ public class PDFBounds {
         this.lineHeight = fontSize + emptyCellSpace;
 
         this.doubleCells = createDoubleCells(list);
-        setHeight();
+        initHeight();
         this.palette = params.getPalette();
 
     }
@@ -48,7 +48,7 @@ public class PDFBounds {
     public final int getTabulationForDefinition() {
         return tabulationWidth + cellWidth + 4;
     }
-    private int tableHeight(PDFDoubleCell[] doubleCells) {
+    private int tableHeight() {
         int height = 0;
         for (PDFDoubleCell cell : doubleCells) {
             height += Math.max(cell.getDefinition().getHeight(), cell.getTerm().getHeight());
@@ -57,7 +57,7 @@ public class PDFBounds {
     }
     private int calculatedPageHeight() {
 
-        return headerHeight + tableHeight(doubleCells) + footerHeight;
+        return headerHeight + tableHeight() + footerHeight;
     }
     public int expectedHeight() {
         return Math.max(calculatedPageHeight(), defaultHeight);
@@ -66,7 +66,7 @@ public class PDFBounds {
     public float getWidth() {
         return (float) this.defaultWidth;
     }
-    private void setHeight() {
+    private void initHeight() {
         int expected = this.expectedHeight();
         this.height = Math.max(expected, defaultHeight);
     }
@@ -89,7 +89,6 @@ public class PDFBounds {
     }
 
 
-    private final PDFPalette palette;
     public PDFPalette getPalette() {
         return palette;
     }
