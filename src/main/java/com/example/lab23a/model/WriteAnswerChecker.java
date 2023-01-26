@@ -13,6 +13,10 @@ public class WriteAnswerChecker {
 		firstTry = true;
 		random = new Random();
 	}
+	/**
+	 *
+	 * @param term is the right answer (term that is to be learned)
+	 */
 	public void setTerm(String term) {
 		this.term = term;
 		firstTry = true;
@@ -24,8 +28,7 @@ public class WriteAnswerChecker {
 	 */
 	public boolean checkAnswer(final String userAnswer) {
 		String expected = term;
-		String actual = userAnswer;
-		boolean isCorrect = compare(expected, actual);
+		boolean isCorrect = compare(expected, userAnswer);
 		if (isCorrect) {
 			return true;
 		}
@@ -61,7 +64,7 @@ public class WriteAnswerChecker {
 	 * 
 	 * @return motivation message for user such as "Correct!", "Good job!", etc.
 	 */
-	public String getRandomCorrentAnswerString() {
+	public String getRandomCorrectAnswerString() {
 		final String[] options = {"Good job!", "Correct!", "Onward!"};
 		return options[random.nextInt(options.length)];
 		

@@ -7,7 +7,11 @@ public class TermWriteMode {
 	private final StudyTermList toNextPeriod;
 	
 	private int[] attempts;
-	
+	private int currentRest;
+	private int currentAnswered;
+	private int rightAnswered;
+	private int currentCorrect;
+
 	public TermWriteMode(TermList origin, UserLearnStyle style) {
 		this.origin = origin;
 		currentRest = origin.size();
@@ -17,15 +21,10 @@ public class TermWriteMode {
 		studyResult.refresh();
 		this.studyList = new StudyTermList(origin, style);
 		toNextPeriod = new StudyTermList(style);
-		initAttemps();
+		initAttempts();
 	}
-	
-	private int currentRest;
-	private int currentAnswered;
-	private int rightAnswered;
-	private int currentCorrect;
 	/**
-	 * Has to be called between 2 study sessions (periods) of one study set.
+	 * Has to be called between two study sessions (periods) of one study set.
 	 * This method refreshes list of terms that has to be studied next time.
 	 */
 	public void reinit() {
@@ -39,7 +38,7 @@ public class TermWriteMode {
 			studyList.shuffle();
 	}
 	
-	private void initAttemps() {
+	private void initAttempts() {
 		attempts = new int[origin.size()];
 	}
 	/**
@@ -83,21 +82,13 @@ public class TermWriteMode {
 		toNextPeriod.add(current);
 		currentAnswered++;
 	}
-	/**
-	 * 
-	 * @param term that will be changed: its term field will be assigned to <changed>
-	 */
-	public void onChangedAnswer(StudyTerm term, String changed) {
-		term.setTerm(changed);
-		onCorrectAnswer(term);
-	}
-	
+
 	private StudyProgress convertIntToStudyProgress(int value) {
-		switch(value) {
-		case 0: return StudyProgress.MASTERED;
-		case 1: return StudyProgress.LEARNED;
-		default: return StudyProgress.FAMILIAR;
-		}
+		return switch (value) {
+			case 0 -> StudyProgress.MASTERED;
+			case 1 -> StudyProgress.LEARNED;
+			default -> StudyProgress.FAMILIAR;
+		};
 	}
 	/**
 	 * 
@@ -120,7 +111,7 @@ public class TermWriteMode {
 	public double getCurrentProgress() {
 		return ((double) currentAnswered) / currentRest;
 	}
-	/*
+	/**
 	 * @return progress in percent for current period, including only terms that was right answered
 	 */
 	public double getCurrentCorrect() {
@@ -135,14 +126,14 @@ public class TermWriteMode {
 	}
 	/**
 	 * 
-	 * @return current progress with "%" symbol
+	 * @return current progress value in percent, rounded
 	 */
 	public String getCurrentCorrectString() {
 		return Math.round(100 * getCurrentCorrect()) + "%";
 	}
 	/**
 	 * 
-	 * @return total progress with "%" symbol
+	 * @return total progress as value in percent, rounded
 	 */
 	public String getTotalProgressString() {
 		return Math.round(100 * getTotalProgress()) + "%";

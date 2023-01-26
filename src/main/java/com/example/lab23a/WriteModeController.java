@@ -125,7 +125,7 @@ public class WriteModeController extends AttachedToStudySetIndexController imple
 	}
 	
 	private void setLabelToCorrectAnswer() {
-		this.commentLabel.setText(checker.getRandomCorrentAnswerString());
+		this.commentLabel.setText(checker.getRandomCorrectAnswerString());
 		this.commentLabel.setTextFill(rightAnswerColor);
 		this.commentLabel.setVisible(true);
 	}
