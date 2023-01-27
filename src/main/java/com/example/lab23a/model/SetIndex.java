@@ -65,17 +65,36 @@ public class SetIndex {
         this.lastStudied = Dates.currentDate();
     }
 
+    /**
+     *
+     * @return set's name
+     */
     public String getName() {
         return name;
     }
+
+    /**
+     *
+     * @param count is max allowed length of name
+     * @return set's name if its length is less than {@param count}, and short version of name otherwise
+     */
     public String getNameShort(int count) {
         String toReturn = getNotEmptyName();
         return toReturn.length() > count ? toReturn.substring(0, count) + "..." : toReturn;
     }
+
+    /**
+     *
+     * @return name if the set has a name or "StudySet" if it doesn't
+     */
     public String getNotEmptyName() {
         return name.isEmpty() ? "StudySet" : name;
     }
 
+    /**
+     *
+     * @param name is a new name of the Study set
+     */
     public void setName(String name) {
         this.name = name;
     }
@@ -87,10 +106,18 @@ public class SetIndex {
         this.index = id;
     }
 
+    /**
+     *
+     * @return number of terms in the set
+     */
     public int getElementsCount() {
         return elementsCount;
     }
 
+    /**
+     *
+     * @param elementsCount is number of elements in the set
+     */
     public void setElementsCount(int elementsCount) {
         this.elementsCount = elementsCount;
     }
@@ -103,6 +130,10 @@ public class SetIndex {
         return elementsMastered;
     }
 
+    /**
+     *
+     * @param elements is how many terms are mastered (completely learnt) by the user
+     */
     public void setElementsMastered(int elements) {
         this.elementsMastered = elements;
     }
@@ -111,8 +142,13 @@ public class SetIndex {
     public String toString() {
         return "[" + index + ' ' + name + ' ' + elementsCount + ' ' + created + ' ' + lastStudied + "]";
     }
-	public void setCreatedDate(LocalDateTime time) {
-		this.created = time;
+
+    /**
+     *
+     * @param date is the date, when set was created
+     */
+	public void setCreatedDate(LocalDateTime date) {
+		this.created = date;
 	}
 	@Override
 	public boolean equals(Object other) {
