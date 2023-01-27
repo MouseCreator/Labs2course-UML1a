@@ -27,9 +27,19 @@ public class SetIndex {
         this.created = Dates.currentDate();
         this.lastStudied = created;
     }
+
+    /**
+     *
+     * @return date and time, when the set was created
+     */
     public LocalDateTime getCreatedDate() {
         return created;
     }
+
+    /**
+     *
+     * @return date and time, when the set was opened in write mode
+     */
     public LocalDateTime getLastStudied() {
         return lastStudied;
     }

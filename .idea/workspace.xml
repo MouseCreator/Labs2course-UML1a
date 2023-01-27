@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e5cf57ee-045d-45a8-8c9b-3b141fc334b5" name="Changes" comment="Changes protected to private since Cell doesn't have subclasses">
+    <list default="true" id="e5cf57ee-045d-45a8-8c9b-3b141fc334b5" name="Changes" comment="Minor refactoring changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/ExportController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/ExportController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/PDF/PDFBounds.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/PDF/PDFBounds.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/PDF/PDFParams.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/PDF/PDFParams.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/SetInfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/SetInfoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/SetIndex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/SetIndex.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/StudyTerm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/StudyTerm.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -374,7 +372,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674772499785</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Minor refactoring changes">
+      <created>1674775445164</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1674775445164</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -392,7 +397,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="Added logo to document" />
     <MESSAGE value="Added bounds calculation" />
     <MESSAGE value="Added table cells" />
     <MESSAGE value="Added title for table" />
@@ -417,7 +421,8 @@
     <MESSAGE value="Refactoring: renamed methods, removed unnecessary imports." />
     <MESSAGE value="Added missing access modifier." />
     <MESSAGE value="Changes protected to private since Cell doesn't have subclasses" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changes protected to private since Cell doesn't have subclasses" />
+    <MESSAGE value="Minor refactoring changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Minor refactoring changes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
