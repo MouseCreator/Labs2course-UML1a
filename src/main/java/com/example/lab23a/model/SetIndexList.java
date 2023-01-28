@@ -2,10 +2,8 @@ package com.example.lab23a.model;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
 import java.util.NoSuchElementException;
-import java.util.stream.IntStream;
 
 public class SetIndexList {
 
@@ -20,9 +18,6 @@ public class SetIndexList {
         indexList = new ArrayList<>(list.indexList);
     }
 
-    public void clear() {
-        indexList.clear();
-    }
     public int size() {
         return indexList.size();
     }
@@ -39,10 +34,6 @@ public class SetIndexList {
     	}
         indexList.add(index);
     }
-    public boolean hasLast(SetIndex index) {
-    	return indexList.get(indexList.size()-1).equals(index);
-    }
-    
     public void remove(SetIndex index) {
         indexList.remove(index);
     }
@@ -50,9 +41,6 @@ public class SetIndexList {
         return indexList.get(index);
     }
 
-    public void save() {
-        FileBuilder.writeIndexFile(this);
-    }
 
     public void load() {
         SetIndexList temp = FileBuilder.readIndexFile();
@@ -79,17 +67,6 @@ public class SetIndexList {
     }
     public void reverse() {
     	Collections.reverse(indexList);
-    }
-    
-    public SetIndexList fromFolder(int[] ids) {
-    	Arrays.sort(ids);
-    	SetIndexList result = new SetIndexList();
-    	for (SetIndex i : indexList) {
-    		if (IntStream.of(ids).anyMatch(x -> x == i.getID())) {
-    			result.add(i);
-    		}
-    	}
-    	return result;
     }
     
     public SetIndexList searchAfter(LocalDate date) {
