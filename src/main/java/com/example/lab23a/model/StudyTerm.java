@@ -40,8 +40,8 @@ public class StudyTerm {
     /**
      *
      * @param index is the order of the pair in study set
-     * @param term
-     * @param definition
+     * @param term is a term to study
+     * @param definition is the definition of the term
      */
     public StudyTerm(int index, String term, String definition) {
     	this.index = index;
@@ -53,8 +53,8 @@ public class StudyTerm {
     /**
      *
      * @param index - the order of the pair in Study Set
-     * @param term -
-     * @param definition -
+     * @param term - is a term to study
+     * @param definition - is the definition of the term
      * @param progress - study progress, made by user
      */
     public StudyTerm(int index, String term, String definition, StudyProgress progress) {
