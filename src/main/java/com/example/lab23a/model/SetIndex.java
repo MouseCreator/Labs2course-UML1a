@@ -2,15 +2,24 @@ package com.example.lab23a.model;
 
 import java.time.LocalDateTime;
 
+/**
+ * Class that contains general information about study set without loading its term list
+ */
 public class SetIndex {
-	String name;
+	private String name;
 	int elementsCount;
 	int elementsMastered;
 	
 	private int index;
     private LocalDateTime lastStudied;
     private LocalDateTime created;
-    
+
+    /**
+     *
+     * @param index - unique number of the set index
+     * @param name - set's name (will be displayed in UI)
+     * @param elementsCount - elements in the corresponding term list. Mastered terms will be considered as 0
+     */
     public SetIndex(int index, String name, int elementsCount) {
         this.index = index;
         this.name = name;
@@ -18,14 +27,42 @@ public class SetIndex {
         this.created = Dates.currentDate();
         this.lastStudied = created;
     }
+    /**
+     *
+     * @param index - unique number of the set index
+     * @param name - set's name (will be displayed in UI)
+     * @param elementsCount - elements in the corresponding term list.
+     * @param elementsStudied - elements that has 'Mastered' level
+     */
     public SetIndex(int index, String name, int elementsCount, int elementsStudied) {
         this(index, name, elementsCount);
         this.elementsMastered = elementsStudied;
     }
+
+    /**
+     *
+     * @param index is unique number of the study set
+     */
     public SetIndex(int index) {
         this.index = index;
         this.created = Dates.currentDate();
         this.lastStudied = created;
+    }
+
+    /**
+     *
+     * @param index - unique number of study set
+     * @param name - name of the study set
+     * @param size - number of terms in the corresponding term list
+     * @param created - date of creation of the set
+     * @param lastStudied - date, when the set was opened in study mode
+     */
+    public SetIndex(int index, String name, int size, LocalDateTime created, LocalDateTime lastStudied) {
+        this.index = index;
+        this.name = name;
+        this.elementsCount = size;
+        this.created = created;
+        this.lastStudied = lastStudied;
     }
 
     /**
@@ -50,14 +87,6 @@ public class SetIndex {
     public void setLastStudied(LocalDateTime lastStudied) {
         this.lastStudied = lastStudied;
     }
-
-    public SetIndex(int index, String name, int size, LocalDateTime created, LocalDateTime lastStudied) {
-        this.index = index;
-        this.name = name;
-        this.elementsCount = size;
-        this.created = created;
-        this.lastStudied = lastStudied;
-    }
     /**
      * sets last studied date to current date
      */
@@ -67,7 +96,7 @@ public class SetIndex {
 
     /**
      *
-     * @return set's name
+     * @return the name of the study set, that will be displayed in GUI
      */
     public String getName() {
         return name;

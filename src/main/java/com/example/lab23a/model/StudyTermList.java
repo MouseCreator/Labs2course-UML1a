@@ -5,7 +5,7 @@ import java.util.Collections;
 
 public class StudyTermList extends TermList{
 
-    private UserLearnStyle style;
+    private final UserLearnStyle style;
 
     public StudyTermList(TermList origin, UserLearnStyle style) {
         super(origin);
