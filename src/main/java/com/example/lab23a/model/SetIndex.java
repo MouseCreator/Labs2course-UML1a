@@ -104,12 +104,12 @@ public class SetIndex {
 
     /**
      *
-     * @param count is max allowed length of name
-     * @return set's name if its length is less than {@param count}, and short version of name otherwise
+     * @param maxChars is max allowed length of name
+     * @return set's name if its length is less than {@param maxChars}, and short version of name otherwise
      */
-    public String getNameShort(int count) {
+    public String getNameShort(int maxChars) {
         String toReturn = getNotEmptyName();
-        return toReturn.length() > count ? toReturn.substring(0, count) + "..." : toReturn;
+        return toReturn.length() > maxChars ? toReturn.substring(0, maxChars) + "..." : toReturn;
     }
 
     /**
