@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e5cf57ee-045d-45a8-8c9b-3b141fc334b5" name="Changes" comment="Added missing documentation">
+    <list default="true" id="e5cf57ee-045d-45a8-8c9b-3b141fc334b5" name="Changes" comment="Fixed repeated code">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/SetIndex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/SetIndex.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/ActivePaneController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/ActivePaneController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/AttachedToFolderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/AttachedToFolderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/AttachedToStudySetIndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/AttachedToStudySetIndexController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -385,7 +387,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674858483592</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="More documentation">
+      <created>1674858839642</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1674858839642</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -403,8 +412,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="Added table cells" />
-    <MESSAGE value="Added title for table" />
     <MESSAGE value="Cleaned up code" />
     <MESSAGE value="Cleaned Editor Controller" />
     <MESSAGE value="Added save dialog" />
@@ -428,7 +435,9 @@
     <MESSAGE value="Changes protected to private since Cell doesn't have subclasses" />
     <MESSAGE value="Minor refactoring changes" />
     <MESSAGE value="Added missing documentation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added missing documentation" />
+    <MESSAGE value="More documentation" />
+    <MESSAGE value="Fixed repeated code" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed repeated code" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

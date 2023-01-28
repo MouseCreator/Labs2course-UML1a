@@ -11,14 +11,11 @@ public abstract class AttachedToStudySetIndexController extends ActivePaneContro
 	public void setIndex(SetIndex index) {
 		this.index = index;
 	}
-	public AttachedToStudySetIndexController(WorkspaceController parent) {
-		super(parent);
-	}
 	public AttachedToStudySetIndexController() {
 		super();
 	}
 	@Override
 	public void onClose() {
-		getParent().getUserData().autoSave();
+		super.onClose();
 	}
 }

@@ -11,14 +11,11 @@ public abstract class AttachedToFolderController extends ActivePaneController {
 	public void setFolder(Folder folder) {
 		this.folder = folder;
 	}
-	public AttachedToFolderController(WorkspaceController parent) {
-		super(parent);
-	}
 	public AttachedToFolderController() {
 		super();
 	}
 	@Override
 	public void onClose() {
-		getParent().getUserData().autoSave();
+		super.onClose();
 	}
 }

@@ -10,16 +10,13 @@ public abstract class ActivePaneController {
 	public WorkspaceController getParent() {
 		return parentController;
 	}
-    public ActivePaneController(WorkspaceController parent) {
-    	setParent(parent);
-    }
     public ActivePaneController() {
     }
     
     public abstract void initContent();
     
     public void onClose() {
-    	
+    	saveUserData();
     }
     /**
      * 
@@ -27,5 +24,8 @@ public abstract class ActivePaneController {
      */
     public boolean onCloseRequest() {
     	return true;
+    }
+    public void saveUserData() {
+        parentController.getUserData().autoSave();
     }
 }
