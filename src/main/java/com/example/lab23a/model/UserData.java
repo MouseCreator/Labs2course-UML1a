@@ -41,7 +41,7 @@ public class UserData {
 	}
 	public void toStyle() {
 		style.setLastUsedIndex(lastUsedIndex);
-		style.setLastUsedIndexFodler(lastUsedIndexFolder);
+		style.setLastUsedIndexFolder(lastUsedIndexFolder);
 	}
 	
 	

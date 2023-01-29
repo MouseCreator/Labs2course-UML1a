@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e5cf57ee-045d-45a8-8c9b-3b141fc334b5" name="Changes" comment="Added file builder documentation">
+    <list default="true" id="e5cf57ee-045d-45a8-8c9b-3b141fc334b5" name="Changes" comment="Added folders documentation">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/FolderList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/FolderList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/FileBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/FileBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/UserData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/UserData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/UserLearnStyle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/UserLearnStyle.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -448,7 +450,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675012361992</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="Added folders documentation">
+      <created>1675013657771</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1675013657771</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -466,7 +475,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="Searching test for SetIndex" />
     <MESSAGE value="Cleaned up comparison code" />
     <MESSAGE value="Added test for user data." />
     <MESSAGE value="Removed garbage list as deprecated class" />
@@ -491,7 +499,8 @@
     <MESSAGE value="Removed index from Convertor, because it wasn't useful." />
     <MESSAGE value="Added dates documentation" />
     <MESSAGE value="Added file builder documentation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added file builder documentation" />
+    <MESSAGE value="Added folders documentation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added folders documentation" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

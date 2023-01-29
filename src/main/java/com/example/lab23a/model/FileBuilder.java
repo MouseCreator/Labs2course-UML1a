@@ -273,7 +273,7 @@ public class FileBuilder {
             String fieldValue = initializerAndValue[1];
             switch (initializer) {
                 case INFO_LAST_USED -> result.setLastUsedIndex(Integer.parseInt(fieldValue));
-                case INFO_LAST_FOLDER -> result.setLastUsedIndexFodler (Integer.parseInt(fieldValue));
+                case INFO_LAST_FOLDER -> result.setLastUsedIndexFolder(Integer.parseInt(fieldValue));
                 case INFO_SHUFFLE_OF -> result.setShuffleOn( Boolean.parseBoolean(fieldValue));
                 case INFO_AUTOSAVE -> result.setAutoSaveOn(Boolean.parseBoolean(fieldValue));
                 case INFO_LAST_STUDIED -> result.setLastStudied(Dates.fromString(fieldValue));
