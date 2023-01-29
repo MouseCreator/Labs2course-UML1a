@@ -26,7 +26,6 @@ public class FileBuilder {
     private static final String INFO_FILENAME = "info";
     private static final String FOLDERS_FILENAME = "folders";
     private static final String INDEX_EXTENSION = ".index";
-    private static final String IMAGE_EXTENSION = ".jpg";
 
 
     public static String getStudySetFileName(int index) {
@@ -58,11 +57,11 @@ public class FileBuilder {
     }
 
 	
-    protected static final String delimiter = "= ";
-    protected static String doubleDelimiter() {
+    private static final String delimiter = "= ";
+    private static String doubleDelimiter() {
         return ":" + delimiter;
     }
-    protected static String commandDelimiter() {
+    private static String commandDelimiter() {
         return " " + delimiter;
     }
 
@@ -279,7 +278,7 @@ public class FileBuilder {
                 formatField(INFO_SAVED_PATH, style.getLastSavedFileAbsolutePath());
     }
     
-    public static String FXMLdestination(String filename) {
+    public static String FXMLDestination(String filename) {
        // return "/" + APPLICATION_FOLDER + filename + ".fxml";
         return filename + ".fxml";
 	}
@@ -363,9 +362,6 @@ public class FileBuilder {
 	}
     public static String getImagePNG(String filename) {
         return DATA_FOLDER + GRAPHICS_FOLDER + filename + ICON_EXTENSION ;
-    }
-    public static String getImageJPG(String filename) {
-        return DATA_FOLDER + GRAPHICS_FOLDER + filename + IMAGE_EXTENSION ;
     }
 }
 

@@ -94,7 +94,7 @@ public class WorkspaceController implements Initializable {
 	public void loadMenu() {
 		try {
 			FXMLLoader fxmlLoader = new FXMLLoader();
-			fxmlLoader.setLocation(getClass().getResource(FileBuilder.FXMLdestination("MenuBar")));
+			fxmlLoader.setLocation(getClass().getResource(FileBuilder.FXMLDestination("MenuBar")));
 			menuBarPane.getChildren().add(fxmlLoader.load());
 			MenuBarController c = fxmlLoader.getController();
 			c.setParent(this);
@@ -188,11 +188,11 @@ public class WorkspaceController implements Initializable {
 	}
 	
 	private void initDestination() throws IOException {
-		destination.put(Pages.SET_OPEN, FileBuilder.FXMLdestination("SetOpen"));
-		destination.put(Pages.SET_EDITOR, FileBuilder.FXMLdestination("SetEditor"));
-		destination.put(Pages.SET_INFO, FileBuilder.FXMLdestination("SetInfo"));
-		destination.put(Pages.SET_WRITE, FileBuilder.FXMLdestination("Write"));
-		destination.put(Pages.PROFILE, FileBuilder.FXMLdestination("Profile"));
+		destination.put(Pages.SET_OPEN, FileBuilder.FXMLDestination("SetOpen"));
+		destination.put(Pages.SET_EDITOR, FileBuilder.FXMLDestination("SetEditor"));
+		destination.put(Pages.SET_INFO, FileBuilder.FXMLDestination("SetInfo"));
+		destination.put(Pages.SET_WRITE, FileBuilder.FXMLDestination("Write"));
+		destination.put(Pages.PROFILE, FileBuilder.FXMLDestination("Profile"));
 	}
 	
 	private ActivePaneController addController(FXMLLoader fxmlLoader) {
@@ -209,7 +209,7 @@ public class WorkspaceController implements Initializable {
 		try {
 			Parent root;
 			FXMLLoader fxmlLoader = new FXMLLoader();
-			fxmlLoader.setLocation(getClass().getResource(FileBuilder.FXMLdestination("FolderList")));
+			fxmlLoader.setLocation(getClass().getResource(FileBuilder.FXMLDestination("FolderList")));
 			root = fxmlLoader.load();
 			Scene scene = new Scene(root, 256, 512);
 			scene.getStylesheets().add(Objects.requireNonNull(getClass().getResource("application.css")).toExternalForm());

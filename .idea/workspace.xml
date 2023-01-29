@@ -4,12 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e5cf57ee-045d-45a8-8c9b-3b141fc334b5" name="Changes" comment="Removed unnecessary methods">
+    <list default="true" id="e5cf57ee-045d-45a8-8c9b-3b141fc334b5" name="Changes" comment="Removed index from Convertor, because it wasn't useful.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/PDF/PDFConvertor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/PDF/PDFConvertor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/EditorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/EditorController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/PopUpWindows.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/PopUpWindows.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/SetInfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/SetInfoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/SetOpenController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/SetOpenController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/WorkspaceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/WorkspaceController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/WriteModeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/WriteModeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/Dates.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/Dates.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/FileBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/FileBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/SetIndexList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/SetIndexList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/StudyTermList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/StudyTermList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/DatesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/DatesTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -430,7 +436,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674946797308</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="Removed index from Convertor, because it wasn't useful.">
+      <created>1674951092856</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1674951092856</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -448,7 +461,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="Minor changes, fixed comparator" />
     <MESSAGE value="Created a few tests for Folder List: removing, converting" />
     <MESSAGE value="Minor refactoring: renamed variables and methods" />
     <MESSAGE value="Searching test for SetIndex" />
@@ -473,7 +485,8 @@
     <MESSAGE value="Added documentation" />
     <MESSAGE value="Bug-fix: Removed public class, copy of Write Progress, in the enum." />
     <MESSAGE value="Removed unnecessary methods" />
-    <option name="LAST_COMMIT_MESSAGE" value="Removed unnecessary methods" />
+    <MESSAGE value="Removed index from Convertor, because it wasn't useful." />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed index from Convertor, because it wasn't useful." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

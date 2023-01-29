@@ -103,7 +103,7 @@ public class EditorController extends AttachedToStudySetIndexController implemen
 	}
 	public FXMLLoader loadItem()throws IOException  {
 		itemLoader = new FXMLLoader();
-		itemLoader.setLocation(getClass().getResource(FileBuilder.FXMLdestination("SetEditItem")));
+		itemLoader.setLocation(getClass().getResource(FileBuilder.FXMLDestination("SetEditItem")));
 		termCreatorList.getItems().add(itemLoader.load());
 		return itemLoader;
 	}

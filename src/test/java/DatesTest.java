@@ -15,6 +15,6 @@ class DatesTest {
         LocalDateTime fromString = Dates.fromDateFormat(dateString);
 
         assertTrue(Dates.equals(currentDate, fromString));
-        assertTrue(Dates.compare(oldDate, currentDate) > 0);
+        assertTrue(Dates.compareSeconds(oldDate, currentDate) > 0);
     }
 }

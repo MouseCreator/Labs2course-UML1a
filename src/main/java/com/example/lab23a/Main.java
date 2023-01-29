@@ -21,7 +21,7 @@ public class Main extends Application {
 	public void start(Stage stage) {
 
 		try {
-			FXMLLoader loader = new FXMLLoader(Main.class.getResource(FileBuilder.FXMLdestination("Workspace")));
+			FXMLLoader loader = new FXMLLoader(Main.class.getResource(FileBuilder.FXMLDestination("Workspace")));
 			Parent root = loader.load();
 			Scene scene = new Scene(root,1280,680);
 

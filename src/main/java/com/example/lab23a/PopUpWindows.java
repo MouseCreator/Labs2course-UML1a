@@ -55,7 +55,7 @@ public class PopUpWindows {
 	}
 	private PopupController initScene(Stage dialog) {
 		FXMLLoader fxmlLoader = new FXMLLoader();
-		fxmlLoader.setLocation(getClass().getResource(FileBuilder.FXMLdestination("WarningDialog")));
+		fxmlLoader.setLocation(getClass().getResource(FileBuilder.FXMLDestination("WarningDialog")));
         try {
         	Parent root = fxmlLoader.load();
       		Scene dialogScene = new Scene(root, 256, 128);

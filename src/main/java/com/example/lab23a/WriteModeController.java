@@ -195,7 +195,7 @@ public class WriteModeController extends AttachedToStudySetIndexController imple
 		try {
 			Parent root;
 			FXMLLoader fxmlLoader = new FXMLLoader();
-			fxmlLoader.setLocation(getClass().getResource(FileBuilder.FXMLdestination("WritePartResults")));
+			fxmlLoader.setLocation(getClass().getResource(FileBuilder.FXMLDestination("WritePartResults")));
 			root = fxmlLoader.load();
 			Scene scene = new Scene(root, 720, 480);
 			scene.getStylesheets().add(Objects.requireNonNull(getClass().getResource("application.css")).toExternalForm());

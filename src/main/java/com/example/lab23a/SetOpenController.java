@@ -116,7 +116,7 @@ public class SetOpenController extends AttachedToFolderController implements Ini
 			grid.getChildren().clear();
 			for (int i = 0; i < activeStudySets.size(); i++) {
 				FXMLLoader fxmlLoader = new FXMLLoader();
-				fxmlLoader.setLocation(getClass().getResource(FileBuilder.FXMLdestination("Item")));
+				fxmlLoader.setLocation(getClass().getResource(FileBuilder.FXMLDestination("Item")));
 				AnchorPane anchorPane = initItem(fxmlLoader);
 				
 				ItemController itemController = fxmlLoader.getController();
@@ -147,7 +147,7 @@ public class SetOpenController extends AttachedToFolderController implements Ini
 	}
 	private AnchorPane initItem(FXMLLoader fxmlLoader) throws IOException {
 		
-		fxmlLoader.setLocation(getClass().getResource(FileBuilder.FXMLdestination("Item")));
+		fxmlLoader.setLocation(getClass().getResource(FileBuilder.FXMLDestination("Item")));
 		AnchorPane anchorPane = fxmlLoader.load();
 		anchorPane.setOnMouseClicked(mouseEvent -> {
 			if(mouseEvent.getButton().equals(MouseButton.PRIMARY)){
