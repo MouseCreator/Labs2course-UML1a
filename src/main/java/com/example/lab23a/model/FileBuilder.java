@@ -58,12 +58,6 @@ public class FileBuilder {
 
 	
     private static final String delimiter = "= ";
-    private static String doubleDelimiter() {
-        return ":" + delimiter;
-    }
-    private static String commandDelimiter() {
-        return " " + delimiter;
-    }
 
     private static final String STUDY_SET_INITIALISATION = "StudySet";
     private static final String STUDY_SET_INDEX = "Index";
@@ -74,6 +68,27 @@ public class FileBuilder {
     private static final String STUDY_SET_CREATION_DATE = "CreatedDate";
     private static final String STUDY_SET_STUDIED_DATE = "StudiedDate";
     private static final String STUDY_SET_CLOSE = "end";
+
+    private static final String INFO_LAST_USED = "LastIndex";
+    private static final String INFO_LAST_FOLDER = "LastFolder";
+    private static final String INFO_SHUFFLE_OF = "ShuffleOn";
+    private static final String INFO_AUTOSAVE = "Autosave";
+    private static final String INFO_LAST_STUDIED = "LastStudied";
+    private static final String INFO_CURRENT_STREAK = "Streak";
+    private static final String INFO_SAVED_PATH = "Path";
+    private static String doubleDelimiter() {
+        return ":" + delimiter;
+    }
+    private static String commandDelimiter() {
+        return " " + delimiter;
+    }
+
+    /**
+     *
+     * @param index - study set's unique id
+     * @param terms - all terms of the study set
+     * Saves all terms in the set index's file in data/sets
+     */
     public static void writeTerms(int index, TermList terms) {
         BufferedWriter writer = null;
         try {
@@ -110,6 +125,12 @@ public class FileBuilder {
         StudyProgress progress = StudyProgress.valueOf(strings[2]);
         return new StudyTerm(iterator, term, definition, progress);
     }
+
+    /**
+     *
+     * @param id - index of the study set
+     * @return list of all study terms in the set (that was previously saved in the file)
+     */
     public static TermList readTerms(int id) {
         TermList list = new TermList();
         try {
@@ -128,6 +149,11 @@ public class FileBuilder {
 
     }
 
+    /**
+     *
+     * @param list - list of all user's sets
+     * Saves the list locally
+     */
     public static void writeIndexFile(SetIndexList list) {
         BufferedWriter writer;
         try {
@@ -193,6 +219,10 @@ public class FileBuilder {
         return result;
     }
 
+    /**
+     *
+     * @return list of all user's sets, saved locally
+     */
     public static SetIndexList readIndexFile() {
         SetIndexList list = new SetIndexList();
         try {
@@ -215,7 +245,11 @@ public class FileBuilder {
         }
         return list;
     }
-    
+
+    /**
+     *
+     * @return user's information, saved locally. Includes 'last indexes', streak info and properties
+     */
     public static UserLearnStyle readInfo() {
     	LinkedList<String>list = new LinkedList<>();
     	try {
@@ -249,26 +283,24 @@ public class FileBuilder {
         }
         return result;
     }
+
+    /**
+     *
+     * @param style - information, stored in user's data
+     * Saves this information locally in data/info
+     */
     public static void writeInfo(UserLearnStyle style) {
     	BufferedWriter writer;
         try {
             writer = new BufferedWriter(new FileWriter(getInfoFileDestination()));
-            writer.write(infoToStructute(style));
+            writer.write(infoToStructure(style));
             writer.close();
         } catch (IOException e) {
             System.err.println("Can't open info file to write");
         }
     }
-    
-    private static final String INFO_LAST_USED = "LastIndex";
-    private static final String INFO_LAST_FOLDER = "LastFolder";
-    private static final String INFO_SHUFFLE_OF = "ShuffleOn";
-    private static final String INFO_AUTOSAVE = "Autosave";
-    private static final String INFO_LAST_STUDIED = "LastStudied";
-    private static final String INFO_CURRENT_STREAK = "Streak";
-    private static final String INFO_SAVED_PATH = "Path";
-    
-    private static String infoToStructute(UserLearnStyle style) {
+
+    private static String infoToStructure(UserLearnStyle style) {
     	return formatField(INFO_LAST_USED, style.getLastUsedIndex()) +
     			formatField(INFO_LAST_FOLDER, style.getLastUsedIndexFolder())+
     			formatField(INFO_SHUFFLE_OF, style.getIsShuffleOn())+
@@ -277,12 +309,23 @@ public class FileBuilder {
     			formatField(INFO_CURRENT_STREAK, style.getStreak()) +
                 formatField(INFO_SAVED_PATH, style.getLastSavedFileAbsolutePath());
     }
-    
+
+    /**
+     *
+     * @param filename - name of FXML file (without destination)
+     * @return path to the file
+     */
     public static String FXMLDestination(String filename) {
-       // return "/" + APPLICATION_FOLDER + filename + ".fxml";
         return filename + ".fxml";
 	}
 
+    /**
+     *
+     * @param allSets - all user's study sets
+     * @param index - folder's id
+     * @return sublist of all sets list, containing only those, that belong to specified folder;
+     * Returns empty list, if the folder does not exist
+     */
     public static SetIndexList readFolder(SetIndexList allSets, int index) {
     	SetIndexList result = new SetIndexList();
     	try {
@@ -299,6 +342,13 @@ public class FileBuilder {
         }
     	return result;
     }
+
+    /**
+     *
+     * @param index - folder's id
+     * @param list - all study sets in the specified folder
+     * Saves the ids of sets in the folder's file
+     */
     public static void writeFolder(int index, SetIndexList list) {
     	BufferedWriter writer;
         try {
@@ -311,7 +361,11 @@ public class FileBuilder {
             System.err.println("Can't open folder file.");
         }
     }
-    
+
+    /**
+     *
+     * @return list of all user's folders, saved locally
+     */
     public static FolderList readFolderIndexList() {
     	FolderList result = new FolderList();
     	try {
@@ -335,6 +389,12 @@ public class FileBuilder {
         }
     	return result;
     }
+
+    /**
+     *
+     * @param list - all user's folders.
+     * Will create / write a file, containing the list of folder's indexes
+     */
     public static void writeFolderIndexList(FolderList list) {
     	BufferedWriter writer;
         try {
@@ -347,6 +407,12 @@ public class FileBuilder {
             System.err.println("Can't open folder index.");
         }
     }
+
+    /**
+     *
+     * @param id - study set's index (number)
+     * Deletes file, containing all terms of the specified index
+     */
 	public static void deleteTerms(int id) {
 		File file = new File(FileBuilder.getStudySetFileName(id));
 		if(!file.delete()) {
@@ -354,12 +420,25 @@ public class FileBuilder {
         }
 		
 	}
+
+    /**
+     *
+     * @param index - folder's id that user wants to delete
+     *
+     * Deletes file of the folder with specified index
+     */
 	public static void deleteFolder(int index) {
 		File file = new File(FileBuilder.getFolderFileName(index));
         if(!file.delete()) {
             System.err.println("Unable to delete terms.");
         }
 	}
+
+    /**
+     *
+     * @param filename - name of a file in gfx folder
+     * @return path to the image
+     */
     public static String getImagePNG(String filename) {
         return DATA_FOLDER + GRAPHICS_FOLDER + filename + ICON_EXTENSION ;
     }
