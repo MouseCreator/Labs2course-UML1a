@@ -16,12 +16,11 @@ public class PDFConvertor {
 
     private PDFContent content;
     private PDDocument document;
-    private SetIndex index;
-
+    private String exportedIndexName;
     private PDFBounds bounds;
     public PDDocument convert(PDFParams params,SetIndex index, TermList terms) throws IOException {
         bounds = new PDFBounds(terms, params);
-        this.index = index;
+        this.exportedIndexName = index.getNameShort(30);
         this.write();
         return document;
     }
@@ -91,7 +90,7 @@ public class PDFConvertor {
         content.stream().beginText();
         content.stream().setFont(PDType1Font.TIMES_BOLD, 20);
         content.stream().newLineAtOffset(30, bounds.getHeaderHeight());
-        content.stream().showText(index.getNameShort(30));
+        content.stream().showText(exportedIndexName);
         content.stream().endText();
         resetColor();
     }

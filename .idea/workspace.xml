@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e5cf57ee-045d-45a8-8c9b-3b141fc334b5" name="Changes" comment="Bug-fix: Removed public class, copy of Write Progress, in the enum.">
+    <list default="true" id="e5cf57ee-045d-45a8-8c9b-3b141fc334b5" name="Changes" comment="Removed unnecessary methods">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/PDF/PDFConvertor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/PDF/PDFConvertor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/FileBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/FileBuilder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/SetIndexList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/SetIndexList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/StudyTermList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/StudyTermList.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -420,7 +423,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674946493295</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="Removed unnecessary methods">
+      <created>1674946797308</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1674946797308</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -438,7 +448,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="Added footer" />
     <MESSAGE value="Minor changes, fixed comparator" />
     <MESSAGE value="Created a few tests for Folder List: removing, converting" />
     <MESSAGE value="Minor refactoring: renamed variables and methods" />
@@ -463,7 +472,8 @@
     <MESSAGE value="Fixed documentation: missing params" />
     <MESSAGE value="Added documentation" />
     <MESSAGE value="Bug-fix: Removed public class, copy of Write Progress, in the enum." />
-    <option name="LAST_COMMIT_MESSAGE" value="Bug-fix: Removed public class, copy of Write Progress, in the enum." />
+    <MESSAGE value="Removed unnecessary methods" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed unnecessary methods" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

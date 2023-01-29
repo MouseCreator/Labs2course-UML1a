@@ -11,11 +11,12 @@ public class SetIndexList {
     public SetIndexList() {
         indexList = new ArrayList<>();
     }
-    public boolean contains(SetIndex index) {
-    	return indexList.contains(index);
+    public SetIndexList(SetIndexList other) {
+        indexList = new ArrayList<>(other.indexList);
     }
-    public SetIndexList(SetIndexList list) {
-        indexList = new ArrayList<>(list.indexList);
+
+    public boolean contains(SetIndex index) {
+        return indexList.contains(index);
     }
 
     public int size() {

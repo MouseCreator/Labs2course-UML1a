@@ -35,9 +35,6 @@ public class StudyTermList extends TermList{
     public StudyTerm pop() throws IndexOutOfBoundsException{
     	return terms.remove(0);
     }
-    public boolean isEmpty() {
-    	return terms.isEmpty();
-    }
     public void clear() {
     	 terms.clear();
     }
