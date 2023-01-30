@@ -143,8 +143,8 @@ public class UserLearnStyle {
 	public int getStreak() {
 		return userStreakInDays;
 	}
-	public void setStreak(int v) {
-		this.userStreakInDays = v;
+	public void setStreak(int days) {
+		this.userStreakInDays = days;
 	}
 	/**
 	 * 

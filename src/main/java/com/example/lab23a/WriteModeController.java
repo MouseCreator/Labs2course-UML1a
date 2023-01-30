@@ -111,7 +111,10 @@ public class WriteModeController extends AttachedToStudySetIndexController imple
 		changeAnswerPane.setVisible(false);
 		commentLabel.setVisible(false);
 	}
-	
+
+	/**
+	 * Checks if the entered answer is correct and displays corresponding massage to user
+	 */
 	public void confirmAnswer() {
 		if (isEnteredAnswer)
 			return;
@@ -152,7 +155,10 @@ public class WriteModeController extends AttachedToStudySetIndexController imple
 		termField.clear();
 		showExtra();
 	}
-	
+
+	/**
+	 * Sets progress bars to user's actual progress
+	 */
 	public void updateProgressBars() {
 		this.currentPartBar.setProgress(learnMode.getCurrentProgress());
 		this.totalBar.setProgress(learnMode.getTotalProgress());
@@ -172,21 +178,30 @@ public class WriteModeController extends AttachedToStudySetIndexController imple
 	      sleeper.setOnSucceeded(event -> continuation.run());
 	      new Thread(sleeper).start();
 	}
-	
+
+	/**
+	 * Loads terms that are not learned yet
+	 */
 	public void continueLearning() {
 		learnMode.reinit();
 		refreshInterface();
 		this.loadNextTerm();
 	}
-	
+
+	/**
+	 * Sets all terms to Not Learned and restarts the scene
+	 */
 	public void restart() {
 		initContent();
 	}
-	
+
+	/**
+	 * Returns user to Set Info page
+	 */
 	public void goBack() {
 		this.getParent().loadAttachedToIndex(Pages.SET_INFO, index);
 	}
-	
+
 	private void showResultsPopWindow() {
 			subcontroller.loadData(this, learnMode);
 			substage.show();
@@ -220,10 +235,17 @@ public class WriteModeController extends AttachedToStudySetIndexController imple
 		FileBuilder.writeTerms(index.getID(), list);
 	}
 
+	/**
+	 * Program's response to 'It was right answer' button
+	 */
 	public void onChangeToRightAnswer() {
 		this.checker.changeToRightAnswer();
 		this.gotCorrect();
 	}
+
+	/**
+	 * Program's response to 'Set this as right answer' button
+	 */
 	public void onChangeToRightAnswerAndSet() {
 		currentTerm.setTerm(userAnswer);
 		onChangeToRightAnswer();
