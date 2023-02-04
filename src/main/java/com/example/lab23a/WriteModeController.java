@@ -113,7 +113,7 @@ public class WriteModeController extends AttachedToStudySetIndexController imple
 	}
 
 	/**
-	 * Checks if the entered answer is correct and displays corresponding massage to user
+	 * Checks if the entered answer is correct, displays corresponding massage to user
 	 */
 	public void confirmAnswer() {
 		if (isEnteredAnswer)

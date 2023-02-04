@@ -83,8 +83,8 @@ public class TermWriteMode {
 		currentAnswered++;
 	}
 
-	private StudyProgress convertIntToStudyProgress(int value) {
-		return switch (value) {
+	private StudyProgress convertIntToStudyProgress(int attempt) {
+		return switch (attempt) {
 			case 0 -> StudyProgress.MASTERED;
 			case 1 -> StudyProgress.LEARNED;
 			default -> StudyProgress.FAMILIAR;
