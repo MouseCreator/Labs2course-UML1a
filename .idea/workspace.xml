@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e5cf57ee-045d-45a8-8c9b-3b141fc334b5" name="Changes" comment="Added write mode documentation" />
+    <list default="true" id="e5cf57ee-045d-45a8-8c9b-3b141fc334b5" name="Changes" comment="Refactoring in search method">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/SetOpenController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/SetOpenController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/lab23a/SetOpen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/lab23a/SetOpen.fxml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -484,7 +488,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="Removed garbage list as deprecated class" />
     <MESSAGE value="Minor changes: removed unused methods" />
     <MESSAGE value="Removed unused imports" />
     <MESSAGE value="Fixed typos, removed unused import statements." />
@@ -509,7 +512,8 @@
     <MESSAGE value="Added folders documentation" />
     <MESSAGE value="Added learn style (user info) documentation" />
     <MESSAGE value="Added write mode documentation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added write mode documentation" />
+    <MESSAGE value="Refactoring in search method" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactoring in search method" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
