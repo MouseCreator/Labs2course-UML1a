@@ -8,11 +8,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.geometry.Insets;
-import javafx.scene.control.Button;
-import javafx.scene.control.DatePicker;
-import javafx.scene.control.Label;
-import javafx.scene.control.ScrollPane;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.scene.input.MouseButton;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.GridPane;
@@ -25,17 +21,16 @@ import com.example.lab23a.model.SetIndexList;
 
 
 public class SetOpenController extends AttachedToFolderController implements Initializable {
-
-    @FXML
+	@FXML
+	public ScrollPane scroll;
+	@FXML
+	private Button testBtn;
+	@FXML
+	private Button searchBtn;
+	@FXML
     private GridPane grid;
 
-    @FXML
-    private ScrollPane scroll;
-    
-    @FXML
-    private Button searchBtn;
-
-    @FXML
+	@FXML
     private TextField searchTextField;
     
     @FXML
@@ -48,15 +43,11 @@ public class SetOpenController extends AttachedToFolderController implements Ini
 
     @FXML
     private DatePicker datePickerTo;
-    @FXML
-    private Button testBtn;
-
-	private SetIndexList activeStudySets = new SetIndexList();
 
 	private SetIndexList folderStudySets = new SetIndexList();
     @FXML
     public void onEnter(){
-       searchData();
+       searchStudySets();
     }
     private void initDatePickers() {
     	initDatePicker(datePickerFrom);
@@ -94,8 +85,7 @@ public class SetOpenController extends AttachedToFolderController implements Ini
     	else {
     		folderStudySets = FileBuilder.readFolder(parentController.getUserData().getIndexList(), folder.getIndex());
     	}
-    	activeStudySets = folderStudySets;
-    	activeStudySets.reverse();
+		folderStudySets.reverse();
     }
     public SetOpenController() {
     	super();
@@ -103,12 +93,12 @@ public class SetOpenController extends AttachedToFolderController implements Ini
     
     private void loadGrid() {
 		getData();
-		setGrid();
+		updateGrid(folderStudySets);
     }
 	/**
 	 * Adds items to the grid in the order they are in the active study sets
 	 */
-	private void setGrid() {
+	private void updateGrid(SetIndexList activeStudySets) {
 		int column = 0;
 		int row = 1;
 		
@@ -163,22 +153,21 @@ public class SetOpenController extends AttachedToFolderController implements Ini
 		initDatePickers();
 	}
 	/**
-	 * Shows only sets that fits the criteria in the list
+	 * Shows only the sets that fits the criteria in the list
 	 */
-	public void searchData() {
+	public void searchStudySets() {
 		String searchBy = searchTextField.getText();
-		this.activeStudySets = folderStudySets.searchByName(searchBy);
-		
-		LocalDate from = datePickerFrom.getValue();
-		if (from != null) {
-			activeStudySets = activeStudySets.searchAfter(from);
+		SetIndexList activeStudySets = folderStudySets.searchByName(searchBy);
+
+		LocalDate fromDate = datePickerFrom.getValue();
+		if (fromDate != null) {
+			activeStudySets = activeStudySets.searchAfter(fromDate);
 		}
-		LocalDate to = datePickerTo.getValue();
-		if (to != null) {
-			activeStudySets = activeStudySets.searchBefore(to);
+		LocalDate toDate = datePickerTo.getValue();
+		if (toDate != null) {
+			activeStudySets = activeStudySets.searchBefore(toDate);
 		}
-		
-		setGrid();
+		updateGrid(activeStudySets);
 	}
 	
 	private void reload() {

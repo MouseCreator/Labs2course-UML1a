@@ -1,13 +1,14 @@
 package com.example.lab23a.model;
 
 import java.util.Random;
+import java.util.random.RandomGenerator;
 
 public class WriteAnswerChecker {
 	
 	private boolean firstTry;
 	private String term;
 	
-	private Random random;
+	private final Random random;
 	
 	public WriteAnswerChecker() {
 		firstTry = true;
