@@ -153,8 +153,10 @@ public class SetOpenController extends AttachedToFolderController implements Ini
 		initDatePickers();
 	}
 	/**
-	 * Shows only the sets that fits the criteria in the list
+	 * Activates, when 'Search' button is pressed or date pickers changed
+	 * Shows only the sets that fits the searching criteria; Sorted by index (creation date) in reversed order.
 	 */
+	@FXML
 	public void searchStudySets() {
 		String searchBy = searchTextField.getText();
 		SetIndexList activeStudySets = folderStudySets.searchByName(searchBy);
