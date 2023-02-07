@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e5cf57ee-045d-45a8-8c9b-3b141fc334b5" name="Changes" comment="Cleaned code: removed active sets field">
+    <list default="true" id="e5cf57ee-045d-45a8-8c9b-3b141fc334b5" name="Changes" comment="Added set open search documentation">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/SetOpenController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/SetOpenController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -491,7 +490,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675617201525</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="Added set open search documentation">
+      <created>1675678840240</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1675678840240</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -509,7 +515,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="Removed unused imports" />
     <MESSAGE value="Fixed typos, removed unused import statements." />
     <MESSAGE value="Fixed changing access bug" />
     <MESSAGE value="Extended documentation" />
@@ -534,7 +539,8 @@
     <MESSAGE value="Added write mode documentation" />
     <MESSAGE value="Refactoring in search method" />
     <MESSAGE value="Cleaned code: removed active sets field" />
-    <option name="LAST_COMMIT_MESSAGE" value="Cleaned code: removed active sets field" />
+    <MESSAGE value="Added set open search documentation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added set open search documentation" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
