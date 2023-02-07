@@ -1,12 +1,10 @@
 package com.example.lab23a;
 
-import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.stage.Stage;
-import javafx.stage.WindowEvent;
-import com.example.lab23a.model.TermWriteMode;
+import com.example.lab23a.model.WriteModeTermsContainer;
 
 public class WriteResultsController {
 	
@@ -23,7 +21,7 @@ public class WriteResultsController {
     private Button continueBtn;
 	
 	private WriteModeController parent;
-	private TermWriteMode learnMode;
+	private WriteModeTermsContainer learnMode;
 	private Stage stage;
 	private boolean isProperExit = false;
 
@@ -32,7 +30,7 @@ public class WriteResultsController {
 	 * @param from - caller of the pop-up
 	 * @param mode - user's progress
 	 */
-	public void loadData(WriteModeController from, TermWriteMode mode) {
+	public void loadData(WriteModeController from, WriteModeTermsContainer mode) {
 		this.parent = from;
 		this.learnMode = mode;
 		

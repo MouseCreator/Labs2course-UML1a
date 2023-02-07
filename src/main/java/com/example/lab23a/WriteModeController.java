@@ -42,7 +42,7 @@ public class WriteModeController extends AttachedToStudySetIndexController imple
     private ProgressBar totalBar;
     
     
-    private TermWriteMode learnMode;
+    private WriteModeTermsContainer learnMode;
     private WriteAnswerChecker checker;
     
     private StudyTerm currentTerm;
@@ -63,7 +63,7 @@ public class WriteModeController extends AttachedToStudySetIndexController imple
 	@Override
 	public void initContent() {
 		checker = new WriteAnswerChecker();
-		learnMode = new TermWriteMode(FileBuilder.readTerms(index.getID()), 
+		learnMode = new WriteModeTermsContainer(FileBuilder.readTerms(index.getID()),
 				getParent().getUserData().getStyle());
 		refreshInterface();
 		loadNextTerm();

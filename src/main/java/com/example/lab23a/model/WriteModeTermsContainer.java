@@ -1,6 +1,9 @@
 package com.example.lab23a.model;
 
-public class TermWriteMode {
+/**
+ * Class that contains study terms that user learns during a period and additional data, including attempts and progress.
+ */
+public class WriteModeTermsContainer {
 	private final TermList studyResult;
 	private final TermList origin;
 	private StudyTermList studyList;
@@ -12,7 +15,7 @@ public class TermWriteMode {
 	private int rightAnswered;
 	private int currentCorrect;
 
-	public TermWriteMode(TermList origin, UserLearnStyle style) {
+	public WriteModeTermsContainer(TermList origin, UserLearnStyle style) {
 		this.origin = origin;
 		currentRest = origin.size();
 		currentAnswered = 0;
