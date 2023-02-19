@@ -5,6 +5,7 @@ import java.net.URL;
 import java.util.LinkedList;
 import java.util.ResourceBundle;
 
+import com.example.lab23a.model.SetIndex;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
@@ -75,6 +76,9 @@ public class EditorController extends AttachedToStudySetIndexController implemen
 
 	public EditorController() {
 		super();
+	}
+	public EditorController(SetIndex index) {
+		super(index);
 	}
 	private void initIndexAndTerms() {
 		this.setNameField.setText(index.getName());
@@ -203,7 +207,7 @@ public class EditorController extends AttachedToStudySetIndexController implemen
 	
 	public void onSaveAndLearn() {
 		onSave();
-		getParent().loadAttachedToIndex(Pages.SET_WRITE, index);
+		getParent().loadPage(new WriteModeController(index));
 	}
 	
 	private TermList genTermList() {
@@ -216,7 +220,7 @@ public class EditorController extends AttachedToStudySetIndexController implemen
 
 	private void deleteSet() {
 		this.getParent().getUserData().removeStudySet(index);
-		this.getParent().loadWithAllFolders(Pages.SET_OPEN);
+		this.getParent().loadPage(new SetOpenController());
 	}
 	
 	public void deleteSetAndConfirm() {
@@ -255,6 +259,11 @@ public class EditorController extends AttachedToStudySetIndexController implemen
 
 	public void addUnsavedChanges() {
 		this.hasUnsavedChanges = true;
+	}
+
+	@Override
+	public String getDestination() {
+		return FileBuilder.FXMLDestination("SetEditor");
 	}
 	
 	

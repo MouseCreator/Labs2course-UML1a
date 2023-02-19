@@ -24,10 +24,6 @@ public class SetOpenController extends AttachedToFolderController implements Ini
 	@FXML
 	public ScrollPane scroll;
 	@FXML
-	private Button testBtn;
-	@FXML
-	private Button searchBtn;
-	@FXML
     private GridPane grid;
 
 	@FXML
@@ -45,7 +41,8 @@ public class SetOpenController extends AttachedToFolderController implements Ini
     private DatePicker datePickerTo;
 
 	private SetIndexList folderStudySets = new SetIndexList();
-    @FXML
+
+	@FXML
     public void onEnter(){
        searchStudySets();
     }
@@ -88,8 +85,11 @@ public class SetOpenController extends AttachedToFolderController implements Ini
 		folderStudySets.reverse();
     }
     public SetOpenController() {
-    	super();
+		super();
     }
+	public SetOpenController(Folder folder) {
+		super(folder);
+	}
     
     private void loadGrid() {
 		getData();
@@ -142,7 +142,7 @@ public class SetOpenController extends AttachedToFolderController implements Ini
 		anchorPane.setOnMouseClicked(mouseEvent -> {
 			if(mouseEvent.getButton().equals(MouseButton.PRIMARY)){
 				if(mouseEvent.getClickCount() == 2){
-					parentController.loadAttachedToIndex(Pages.SET_INFO,((ItemController)fxmlLoader.getController()).getIndex());
+					parentController.loadPage(new SetInfoController(((ItemController)fxmlLoader.getController()).getIndex()));
 				}
 			}
 		});
@@ -203,11 +203,20 @@ public class SetOpenController extends AttachedToFolderController implements Ini
 	}
 	private void onDeletionConfirm() {
 		this.getParent().getUserData().removeFolder(this.folder);
-		this.getParent().loadWithAllFolders(Pages.SET_OPEN);
+		this.getParent().loadPage(new SetOpenController());
 	}
 	
 	public void test() {
 		System.out.println("Hello");
+	}
+
+	@Override
+	public String getDestination() {
+		return FileBuilder.FXMLDestination("SetOpen");
+	}
+	@Override
+	public SetOpenController load(WorkspaceController parent, Folder folder) {
+		return (SetOpenController) super.load(parent, folder);
 	}
 	
 

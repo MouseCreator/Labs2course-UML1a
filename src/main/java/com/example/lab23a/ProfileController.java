@@ -1,11 +1,12 @@
 package com.example.lab23a;
 
+import com.example.lab23a.model.FileBuilder;
 import javafx.fxml.FXML;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.Label;
 
 public class ProfileController extends ActivePaneController {
-	
+
 	@FXML
 	private CheckBox autosaveCheckBox;
 
@@ -24,6 +25,10 @@ public class ProfileController extends ActivePaneController {
 		getParent().getUserData().getStyle().setAutoSaveOn(autosaveCheckBox.isSelected());
 		getParent().getUserData().getStyle().setShuffleOn(shuffleOnCheckBox.isSelected());
 		getParent().getUserData().autoSave();
+	}
+	@Override
+	public String getDestination() {
+		return FileBuilder.FXMLDestination("Profile");
 	}
 	
 

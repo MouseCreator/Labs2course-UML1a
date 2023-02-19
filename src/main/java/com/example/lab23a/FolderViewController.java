@@ -60,7 +60,7 @@ public class FolderViewController implements Initializable  {
 	}
 	
 	private void openFolderInWorkspace(Folder folder) {
-		parent.loadAttachedToFolder(Pages.SET_OPEN, folder);
+		parent.loadPage(new SetOpenController(folder));
 		close();
 	}
 	

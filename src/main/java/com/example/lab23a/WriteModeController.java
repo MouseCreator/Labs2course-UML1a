@@ -21,7 +21,7 @@ import javafx.stage.Stage;
 
 public class WriteModeController extends AttachedToStudySetIndexController implements Initializable {
 
-	
+
     @FXML
     private Pane changeAnswerPane;
 
@@ -55,7 +55,12 @@ public class WriteModeController extends AttachedToStudySetIndexController imple
     private WriteResultsController subcontroller;
     private Stage substage;
     private boolean isEnteredAnswer = false;
-    @FXML
+
+	public WriteModeController(SetIndex index) {
+		super(index);
+	}
+
+	@FXML
     public void onEnter(){
        confirmAnswer();
     }
@@ -199,7 +204,7 @@ public class WriteModeController extends AttachedToStudySetIndexController imple
 	 * Returns user to Set Info page
 	 */
 	public void goBack() {
-		this.getParent().loadAttachedToIndex(Pages.SET_INFO, index);
+		this.getParent().loadPage(new SetInfoController(index));
 	}
 
 	private void showResultsPopWindow() {
@@ -264,5 +269,9 @@ public class WriteModeController extends AttachedToStudySetIndexController imple
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
 		initPopUp();
+	}
+	@Override
+	public String getDestination() {
+		return FileBuilder.FXMLDestination("Write");
 	}
 }

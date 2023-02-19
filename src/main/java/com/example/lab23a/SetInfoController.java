@@ -29,7 +29,6 @@ public class SetInfoController extends AttachedToStudySetIndexController impleme
 	}
 
 	private TermList studyTerms;
-    
     private final ObservableList<StudyTerm> observableList = FXCollections.observableArrayList();
     @FXML
     private TableColumn<StudyTerm, Integer> idColumn;
@@ -49,6 +48,11 @@ public class SetInfoController extends AttachedToStudySetIndexController impleme
     private TableView<StudyTerm> termTable;
     @FXML
     private Button removeFromThisFolderBtn;
+
+	public SetInfoController(SetIndex index) {
+		super(index);
+	}
+
 
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
@@ -92,7 +96,7 @@ public class SetInfoController extends AttachedToStudySetIndexController impleme
 		this.removeFromThisFolderBtn.setVisible(getParent().getLastActive().getIndex() != Folder.ALL_SETS);
 	}
 	public void startLearning() {
-		getParent().loadAttachedToIndex(Pages.SET_WRITE, this.index);
+		getParent().loadPage(new WriteModeController(index));
 	}
 	
 	public void onRefresh() throws IOException {
@@ -102,7 +106,7 @@ public class SetInfoController extends AttachedToStudySetIndexController impleme
 		displayTerms();
 	}
 	public void onEdit() {
-		getParent().loadAttachedToIndex(Pages.SET_EDITOR, index);
+		getParent().loadPage(new EditorController(index));
 	}
 	public void onAddToFolder() {
 		getParent().displayFoldersWindow();
@@ -111,7 +115,7 @@ public class SetInfoController extends AttachedToStudySetIndexController impleme
 	public void onRemoveFromFolder() {
 		getParent().getUserData().removeSetFromFolder(index, getParent().getLastActive());
 		getParent().refreshLastActive();
-		getParent().loadAttachedToIndex(Pages.SET_INFO, index);
+		getParent().loadPage(new SetInfoController(index));
 	}
 	@Override
 	public void onClose() {
@@ -147,5 +151,8 @@ public class SetInfoController extends AttachedToStudySetIndexController impleme
 		}
 	}
 
-
+	@Override
+	public String getDestination() {
+		return FileBuilder.FXMLDestination("SetInfo");
+	}
 }
