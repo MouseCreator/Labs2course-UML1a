@@ -23,6 +23,11 @@ public abstract class AttachedToFolderController extends ActivePaneController {
 		a.setFolder(folder);
 		return a;
 	}
+	public AttachedToFolderController load(WorkspaceController parent) {
+		AttachedToFolderController a = ((AttachedToFolderController) super.load(parent));
+		a.setFolder(new Folder(Folder.ALL_SETS));
+		return a;
+	}
 	public AttachedToFolderController(Folder folder) {
 		super();
 		this.folder = folder;

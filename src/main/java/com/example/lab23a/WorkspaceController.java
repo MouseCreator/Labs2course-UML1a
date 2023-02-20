@@ -90,11 +90,9 @@ public class WorkspaceController implements Initializable {
 			e.printStackTrace();
 		}
     }
-	private ActivePaneController loadScene(ActivePaneController key) {
-		key.setParent(this);
+	private void loadScene() {
 		workspacePane.getChildren().clear();
-		workspacePane.getChildren().add(key.getContent());
-		return key;
+		workspacePane.getChildren().add(currentActive.getContent());
     }
 	
 	public void loadPage(ActivePaneController toLoad) {
@@ -108,7 +106,8 @@ public class WorkspaceController implements Initializable {
 	private void loadNext(ActivePaneController key) {
 		if (currentActive != null)
 			currentActive.onClose();
-		currentActive = loadScene(key);
+		currentActive = key;
+		loadScene();
 		currentActive.initContent();
 	}
 	

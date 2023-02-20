@@ -1,7 +1,6 @@
 package com.example.lab23a;
 
 import javafx.fxml.FXMLLoader;
-import javafx.scene.Node;
 import javafx.scene.layout.Pane;
 
 import java.io.IOException;
@@ -22,9 +21,10 @@ public abstract class ActivePaneController {
         FXMLLoader fxmlLoader = new FXMLLoader();
         fxmlLoader.setLocation(parentController.getClass().getResource(getDestination()));
         try {
-            Pane a = fxmlLoader.load();
+            Pane pane = fxmlLoader.load();
             ActivePaneController controller = fxmlLoader.getController();
-            controller.content = a;
+            controller.content = pane;
+            controller.parentController = parentController;
             return controller;
         } catch (IOException e) {
             throw new RuntimeException(e);

@@ -49,9 +49,6 @@ public class SetInfoController extends AttachedToStudySetIndexController impleme
     @FXML
     private Button removeFromThisFolderBtn;
 
-	public SetInfoController(SetIndex index) {
-		super(index);
-	}
 
 
 	@Override
@@ -96,7 +93,7 @@ public class SetInfoController extends AttachedToStudySetIndexController impleme
 		this.removeFromThisFolderBtn.setVisible(getParent().getLastActive().getIndex() != Folder.ALL_SETS);
 	}
 	public void startLearning() {
-		getParent().loadPage(new WriteModeController(index));
+		getParent().loadPage(new WriteModeController().load(parentController, index));
 	}
 	
 	public void onRefresh() throws IOException {
@@ -115,7 +112,7 @@ public class SetInfoController extends AttachedToStudySetIndexController impleme
 	public void onRemoveFromFolder() {
 		getParent().getUserData().removeSetFromFolder(index, getParent().getLastActive());
 		getParent().refreshLastActive();
-		getParent().loadPage(new SetInfoController(index));
+		getParent().loadPage(new SetInfoController().load(parentController, index));
 	}
 	@Override
 	public void onClose() {

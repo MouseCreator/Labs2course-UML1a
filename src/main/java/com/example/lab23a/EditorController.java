@@ -207,7 +207,7 @@ public class EditorController extends AttachedToStudySetIndexController implemen
 	
 	public void onSaveAndLearn() {
 		onSave();
-		getParent().loadPage(new WriteModeController(index));
+		getParent().loadPage(new WriteModeController().load(parentController, index));
 	}
 	
 	private TermList genTermList() {
@@ -220,7 +220,7 @@ public class EditorController extends AttachedToStudySetIndexController implemen
 
 	private void deleteSet() {
 		this.getParent().getUserData().removeStudySet(index);
-		this.getParent().loadPage(new SetOpenController());
+		this.getParent().loadPage(new SetOpenController().load(parentController));
 	}
 	
 	public void deleteSetAndConfirm() {

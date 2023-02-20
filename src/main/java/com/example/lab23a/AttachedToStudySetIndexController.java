@@ -14,6 +14,12 @@ public abstract class AttachedToStudySetIndexController extends ActivePaneContro
 	public AttachedToStudySetIndexController() {
 		super();
 	}
+
+	public AttachedToStudySetIndexController load(WorkspaceController parent, SetIndex index) {
+		AttachedToStudySetIndexController result = (AttachedToStudySetIndexController) super.load(parent);
+		result.index = index;
+		return result;
+	}
 	public AttachedToStudySetIndexController(SetIndex index) {
 		super();
 		this.index = index;

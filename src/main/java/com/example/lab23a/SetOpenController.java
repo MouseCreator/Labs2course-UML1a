@@ -142,7 +142,8 @@ public class SetOpenController extends AttachedToFolderController implements Ini
 		anchorPane.setOnMouseClicked(mouseEvent -> {
 			if(mouseEvent.getButton().equals(MouseButton.PRIMARY)){
 				if(mouseEvent.getClickCount() == 2){
-					parentController.loadPage(new SetInfoController(((ItemController)fxmlLoader.getController()).getIndex()));
+					parentController.loadPage(new SetInfoController().load(parentController,
+							((ItemController)fxmlLoader.getController()).getIndex()));
 				}
 			}
 		});
@@ -203,7 +204,7 @@ public class SetOpenController extends AttachedToFolderController implements Ini
 	}
 	private void onDeletionConfirm() {
 		this.getParent().getUserData().removeFolder(this.folder);
-		this.getParent().loadPage(new SetOpenController());
+		this.getParent().loadPage(new SetOpenController().load(parentController));
 	}
 	
 	public void test() {

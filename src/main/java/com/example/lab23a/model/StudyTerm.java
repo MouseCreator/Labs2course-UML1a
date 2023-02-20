@@ -7,6 +7,8 @@ public class StudyTerm {
     private String term;
     private String definition;
     private StudyProgress progress;
+
+    private String progressString;
     private int index;
 
     /**
@@ -34,7 +36,7 @@ public class StudyTerm {
     	this.index = index;
         this.term = "";
         this.definition = "";
-        this.progress = StudyProgress.NOT_LEARNED;
+        this.setProgress(StudyProgress.NOT_LEARNED);
     }
 
     /**
@@ -47,7 +49,7 @@ public class StudyTerm {
     	this.index = index;
         this.term = term;
         this.definition = definition;
-        this.progress = StudyProgress.NOT_LEARNED;
+        this.setProgress(StudyProgress.NOT_LEARNED);
     }
 
     /**
@@ -60,6 +62,7 @@ public class StudyTerm {
     public StudyTerm(int index, String term, String definition, StudyProgress progress) {
         this(index, term, definition);
         this.progress = progress;
+        updateProgressString();
     }
 
     public String getTerm() {
@@ -100,6 +103,7 @@ public class StudyTerm {
      */
     public void setProgress(StudyProgress progress) {
         this.progress = progress;
+        updateProgressString();
     }
 
     @Override
@@ -135,5 +139,19 @@ public class StudyTerm {
 	public void removeProgress() {
 		setProgress(StudyProgress.NOT_LEARNED);
 	}
+
+    public String getProgressString() {
+        return progressString;
+    }
+
+    public void updateProgressString() {
+        switch (this.progress) {
+            case NOT_LEARNED -> progressString = "Not learned";
+            case FAMILIAR -> progressString = "Familiar";
+            case LEARNED -> progressString = "Learned";
+            case MASTERED -> progressString = "Mastered";
+        }
+    }
+
 }
 

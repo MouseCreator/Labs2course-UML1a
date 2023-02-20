@@ -56,10 +56,6 @@ public class WriteModeController extends AttachedToStudySetIndexController imple
     private Stage substage;
     private boolean isEnteredAnswer = false;
 
-	public WriteModeController(SetIndex index) {
-		super(index);
-	}
-
 	@FXML
     public void onEnter(){
        confirmAnswer();
@@ -204,7 +200,7 @@ public class WriteModeController extends AttachedToStudySetIndexController imple
 	 * Returns user to Set Info page
 	 */
 	public void goBack() {
-		this.getParent().loadPage(new SetInfoController(index));
+		this.getParent().loadPage(new SetInfoController().load(parentController, index));
 	}
 
 	private void showResultsPopWindow() {
