@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e5cf57ee-045d-45a8-8c9b-3b141fc334b5" name="Changes" comment="Implemented close operation">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/AbstractTermList.java" afterDir="false" />
+    <list default="true" id="e5cf57ee-045d-45a8-8c9b-3b141fc334b5" name="Changes" comment="Separated TermList and StudyTermList because of different use cases.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/WriteModeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/WriteModeController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/StudyTermList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/StudyTermList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/TermList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/TermList.java" afterDir="false" />
     </list>
@@ -192,13 +192,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1669462838387</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Added convert to PDF button">
-      <created>1669478533940</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1669478533940</updated>
     </task>
     <task id="LOCAL-00003" summary="Refactoring in FileBuilder class">
       <created>1670000570769</created>
@@ -536,7 +529,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676856958532</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="Separated TermList and StudyTermList because of different use cases.">
+      <created>1676858455738</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1676858455738</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -554,7 +554,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="Added missing access modifier." />
     <MESSAGE value="Changes protected to private since Cell doesn't have subclasses" />
     <MESSAGE value="Minor refactoring changes" />
     <MESSAGE value="Added missing documentation" />
@@ -579,7 +578,8 @@
     <MESSAGE value="Added server class" />
     <MESSAGE value="Added client handler" />
     <MESSAGE value="Implemented close operation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented close operation" />
+    <MESSAGE value="Separated TermList and StudyTermList because of different use cases." />
+    <option name="LAST_COMMIT_MESSAGE" value="Separated TermList and StudyTermList because of different use cases." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -588,6 +588,16 @@
           <properties class="javax.imageio.IIOException" package="javax.imageio" />
           <option name="timeStamp" value="2" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/lab23a/model/WriteModeTermsContainer.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/lab23a/WriteModeController.java</url>
+          <line>66</line>
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

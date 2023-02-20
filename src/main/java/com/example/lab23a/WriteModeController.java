@@ -42,7 +42,7 @@ public class WriteModeController extends AttachedToStudySetIndexController imple
     private ProgressBar totalBar;
     
     
-    private WriteModeTermsContainer learnMode;
+    private WriteModeTermsContainer termsContainer;
     private WriteAnswerChecker checker;
     
     private StudyTerm currentTerm;
@@ -64,7 +64,7 @@ public class WriteModeController extends AttachedToStudySetIndexController imple
 	@Override
 	public void initContent() {
 		checker = new WriteAnswerChecker();
-		learnMode = new WriteModeTermsContainer(FileBuilder.readTerms(index.getID()),
+		termsContainer = new WriteModeTermsContainer(FileBuilder.readTerms(index.getID()),
 				getParent().getUserData().getStyle());
 		refreshInterface();
 		loadNextTerm();
@@ -78,7 +78,7 @@ public class WriteModeController extends AttachedToStudySetIndexController imple
 		hideExtra();
 		isEnteredAnswer = false;
 		termField.clear();
-		if (learnMode.isPeriodEnd()) {
+		if (termsContainer.isPeriodEnd()) {
 			toTempResults();
 		}
 		else {
@@ -90,7 +90,7 @@ public class WriteModeController extends AttachedToStudySetIndexController imple
 		getParent().getUserData().getStyle().updateStreak();
 	}
 	private void toTempResults() {
-		if (learnMode.isFullStudied()) {
+		if (termsContainer.isFullStudied()) {
 			updateLastStudied();
 			updateTermsFile();
 		}
@@ -99,11 +99,11 @@ public class WriteModeController extends AttachedToStudySetIndexController imple
 	}
 	
 	private void updateTermsFile() {
-		FileBuilder.writeTerms(this.index.getID(), this.learnMode.getStudyResult());
+		FileBuilder.writeTerms(this.index.getID(), this.termsContainer.getStudyResult());
 	}
 
 	private void loadTerm() {
-		currentTerm = learnMode.getNextTerm();
+		currentTerm = termsContainer.getNextTerm();
 		checker.setTerm(currentTerm.getTerm());
 		this.definitionLabel.setText(currentTerm.getDefinition());
 	}
@@ -145,7 +145,7 @@ public class WriteModeController extends AttachedToStudySetIndexController imple
 	
 	private void gotCorrect() {
 		setLabelToCorrectAnswer();
-		learnMode.onCorrectEntered(checker, currentTerm);
+		termsContainer.onCorrectEntered(checker, currentTerm);
 		updateProgressBars();
 		isEnteredAnswer = true;
 		delay(this::loadNextTerm);
@@ -161,8 +161,8 @@ public class WriteModeController extends AttachedToStudySetIndexController imple
 	 * Sets progress bars to user's actual progress
 	 */
 	public void updateProgressBars() {
-		this.currentPartBar.setProgress(learnMode.getCurrentProgress());
-		this.totalBar.setProgress(learnMode.getTotalProgress());
+		this.currentPartBar.setProgress(termsContainer.getCurrentProgress());
+		this.totalBar.setProgress(termsContainer.getTotalProgress());
 	}
 	
 	private void delay(Runnable continuation) {
@@ -184,7 +184,7 @@ public class WriteModeController extends AttachedToStudySetIndexController imple
 	 * Loads terms that are not learned yet
 	 */
 	public void continueLearning() {
-		learnMode.reinit();
+		termsContainer.reinit();
 		refreshInterface();
 		this.loadNextTerm();
 	}
@@ -204,7 +204,7 @@ public class WriteModeController extends AttachedToStudySetIndexController imple
 	}
 
 	private void showResultsPopWindow() {
-			subcontroller.loadData(this, learnMode);
+			subcontroller.loadData(this, termsContainer);
 			substage.show();
 	}
 	private void initPopUp() {
@@ -230,7 +230,7 @@ public class WriteModeController extends AttachedToStudySetIndexController imple
 		}
 	}
 	private void writeResults() {
-		TermList list = learnMode.getStudyResult();
+		TermList list = termsContainer.getStudyResult();
 		this.index.setElementsMastered(list.calculateMasteredCount());
 		getParent().getUserData().getIndexList().insert(index);
 		FileBuilder.writeTerms(index.getID(), list);
@@ -257,7 +257,7 @@ public class WriteModeController extends AttachedToStudySetIndexController imple
 	}
 	@Override
 	public boolean onCloseRequest() {
-		boolean canLeaveWithNoDataLoss = this.learnMode.isPeriodEnd();
+		boolean canLeaveWithNoDataLoss = this.termsContainer.isPeriodEnd();
 		if (!canLeaveWithNoDataLoss)
 			this.getParent().displayExitPopUp(()->getParent().proceedClosingOperation());
 		return canLeaveWithNoDataLoss;

@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class TermList extends AbstractTermList {
-    protected ArrayList<StudyTerm> terms;
 
     public TermList() {
         terms = new ArrayList<>();
