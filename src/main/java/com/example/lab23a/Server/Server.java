@@ -34,8 +34,13 @@ public class Server {
         }
     }
     public static void main(String[] args) {
-        ServerSocket socket = new ServerSocket(2233);
-        Server server = new Server(socket);
-        server.startServer();
+        ServerSocket socket = null;
+        try {
+            socket = new ServerSocket(2233);
+            Server server = new Server(socket);
+            server.startServer();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
     }
 }

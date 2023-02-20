@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e5cf57ee-045d-45a8-8c9b-3b141fc334b5" name="Changes" comment="Added study set list documentation">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/Server/JSParser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/Server/Server.java" afterDir="false" />
+    <list default="true" id="e5cf57ee-045d-45a8-8c9b-3b141fc334b5" name="Changes" comment="Added server class">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/Loader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/Server/ClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/Server/ClientHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/Server/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/Server/Server.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -523,7 +520,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676853499888</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="Added server class">
+      <created>1676855900992</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1676855900992</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -541,7 +545,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="Fixed typos" />
     <MESSAGE value="Renamed key combinations for their purpose" />
     <MESSAGE value="Refactoring: renamed methods, removed unnecessary imports." />
     <MESSAGE value="Added missing access modifier." />
@@ -566,7 +569,8 @@
     <MESSAGE value="Created loadable SetOpen Scene" />
     <MESSAGE value="Extended loaded scenes. Fixed progress string bug" />
     <MESSAGE value="Added study set list documentation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added study set list documentation" />
+    <MESSAGE value="Added server class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added server class" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
