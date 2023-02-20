@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 public class StudyTermList extends TermList{
-
     private final UserLearnStyle style;
 
     public StudyTermList(TermList origin, UserLearnStyle style) {
@@ -29,12 +28,26 @@ public class StudyTermList extends TermList{
 	public UserLearnStyle getStyle() {
         return style;
     }
+
+    /**
+     * Randomizes the order of elements in the list
+     */
     public void shuffle() {
         Collections.shuffle(this.terms);
     }
+
+    /**
+     *
+     * @return first element of the list
+     * @throws IndexOutOfBoundsException if list is empty
+     */
     public StudyTerm pop() throws IndexOutOfBoundsException{
     	return terms.remove(0);
     }
+
+    /**
+     * Removes all sets from the list
+     */
     public void clear() {
     	 terms.clear();
     }
