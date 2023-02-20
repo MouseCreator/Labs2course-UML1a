@@ -3,7 +3,7 @@ package com.example.lab23a.model;
 import java.util.ArrayList;
 import java.util.Collections;
 
-public class StudyTermList extends TermList{
+public class StudyTermList extends AbstractTermList{
     private final UserLearnStyle style;
 
     public StudyTermList(TermList origin, UserLearnStyle style) {
