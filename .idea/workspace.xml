@@ -6,9 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e5cf57ee-045d-45a8-8c9b-3b141fc334b5" name="Changes" comment="Separated TermList and StudyTermList because of different use cases.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/WriteModeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/WriteModeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/StudyTermList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/StudyTermList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/TermList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/TermList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/WriteModeTermsContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/WriteModeTermsContainer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -590,7 +588,7 @@
         </breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/example/lab23a/model/WriteModeTermsContainer.java</url>
-          <line>18</line>
+          <line>17</line>
           <option name="timeStamp" value="36" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">

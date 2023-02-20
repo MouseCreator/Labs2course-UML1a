@@ -8,7 +8,6 @@ public class WriteModeTermsContainer {
 	private final TermList origin;
 	private StudyTermList studyList;
 	private final StudyTermList toNextPeriod;
-	
 	private int[] attempts;
 	private int currentRest;
 	private int currentAnswered;
