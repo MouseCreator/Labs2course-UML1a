@@ -106,8 +106,7 @@ public class SetInfoController extends AttachedToStudySetIndexController impleme
 		getParent().loadPage(new EditorController(index));
 	}
 	public void onAddToFolder() {
-		getParent().displayFoldersWindow();
-		getParent().getFolderView().toAddIndex(index);
+		getParent().openAdditionalWindow(new FolderViewController().load(parentController, index));
 	}
 	public void onRemoveFromFolder() {
 		getParent().getUserData().removeSetFromFolder(index, getParent().getLastActive());

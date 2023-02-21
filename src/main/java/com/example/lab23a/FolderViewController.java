@@ -1,5 +1,6 @@
 package com.example.lab23a;
 
+import com.example.lab23a.model.FileBuilder;
 import com.example.lab23a.model.Folder;
 import com.example.lab23a.model.FolderList;
 import com.example.lab23a.model.SetIndex;
@@ -87,19 +88,32 @@ public class FolderViewController extends AdditionalWindowController implements 
 
 	@Override
 	public FolderViewController load(WorkspaceController parent) {
+		return defaultController(parent);
+	}
+	public FolderViewController load(WorkspaceController parent, SetIndex index) {
+		FolderViewController result = defaultController(parent);
+		result.toAddIndex(index);
+		return result;
+	}
+
+	private FolderViewController defaultController(WorkspaceController parent) {
 		FolderViewController result = (FolderViewController) super.load(parent);
 		result.loadData(parent.getUserData().getFolderList());
 		result.reinitialize();
+		result.setWidth(256);
+		result.setHeight(512);
 		return result;
 	}
 
 	@Override
 	public String getFilename() {
-		return "FolderList";
+		return FileBuilder.FXMLDestination("FolderList");
 	}
 
 	@Override
 	public String getTitle() {
 		return "Folders";
 	}
+
+
 }

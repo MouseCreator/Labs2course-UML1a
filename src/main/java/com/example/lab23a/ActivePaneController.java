@@ -51,9 +51,7 @@ public abstract class ActivePaneController {
         parentController.getUserData().autoSave();
     }
 
-    public String getFilename(){
-        return "NO_DEST";
-    }
+    public abstract String getFilename();
 
     public Pane getContent() {
         return content;

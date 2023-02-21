@@ -12,7 +12,7 @@ public class MenuBarController {
 		parentController.loadPage(new SetOpenController().load(parentController));
 	}
 	public void viewFolderList() {
-		parentController.displayFoldersWindow();
+		parentController.openAdditionalWindow(new FolderViewController().load(parentController));
 	}
 	public void switchToProfile()  {
 		parentController.loadPage(new ProfileController().load(parentController));

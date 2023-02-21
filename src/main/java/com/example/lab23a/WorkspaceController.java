@@ -28,12 +28,9 @@ public class WorkspaceController implements Initializable {
 
     
     private final UserData userData = new UserData();
-    
-    private Stage folderStage;
-    
+
     private PopUpWindows confirmWindow;
-    
-    private FolderViewController folderViewController;
+
     
     ActivePaneController currentActive;
     
@@ -46,13 +43,11 @@ public class WorkspaceController implements Initializable {
 		loadUserData();
 		loadGUIObjects();
 		loadPage(new SetOpenController().load(this, new Folder(Folder.ALL_SETS)));
-		initFolderWindow();
 		initDeletionPopup();
 		Platform.runLater(()->
 				workspacePane.getScene().getWindow().setOnCloseRequest(t -> {
 					userData.saveData();
 					currentActive.onClose();
-					folderViewController.close();
 				}));
 	}
 	
@@ -72,10 +67,6 @@ public class WorkspaceController implements Initializable {
 	}
 	public UserData getUserData() {
 		return userData;
-	}
-	
-	public FolderViewController getFolderView() {
-		return this.folderViewController;
 	}
 	
 	public void loadMenu() {
@@ -140,32 +131,7 @@ public class WorkspaceController implements Initializable {
 		newStage.getIcons().add(IconLoader.load());
 		newStage.show();
 	}
-	private void initFolderWindow() {
-		try {
-			Parent root;
-			FXMLLoader fxmlLoader = new FXMLLoader();
-			fxmlLoader.setLocation(getClass().getResource(FileBuilder.FXMLDestination("FolderList")));
-			root = fxmlLoader.load();
-			Scene scene = new Scene(root, 256, 512);
-			scene.getStylesheets().add(Objects.requireNonNull(getClass().getResource("application.css")).toExternalForm());
-			folderStage = new Stage();
-			folderStage.setScene(scene);
-			
-			folderStage.setTitle("Folders");
-			folderStage.setResizable(false);
-			
-			folderViewController = fxmlLoader.getController();
-			folderStage.getIcons().add(IconLoader.load());
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-	}
-	
-	public void displayFoldersWindow() {
-		folderViewController.loadData(this.getUserData().getFolderList());
-		folderViewController.reinitialize();
-		folderStage.show();
-	}
+
 	
 	public void displayDeletionPopUp(Runnable confirm) {
 		this.confirmWindow.showDeletionConfirm(getWindow(), confirm);

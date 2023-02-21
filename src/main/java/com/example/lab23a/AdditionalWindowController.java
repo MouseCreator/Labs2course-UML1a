@@ -49,4 +49,11 @@ public abstract class AdditionalWindowController {
     }
 
     public abstract String getTitle();
+
+    protected void setHeight(int height) {
+        this.height = height;
+    }
+    protected void setWidth(int width) {
+        this.width = width;
+    }
 }
