@@ -8,7 +8,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/AdditionalWindowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/AdditionalWindowController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/FolderViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/FolderViewController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/WorkspaceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/WorkspaceController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -198,13 +197,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1669462838387</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Added title for table">
-      <created>1670104167881</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1670104167881</updated>
     </task>
     <task id="LOCAL-00007" summary="Cleaned up code">
       <created>1670104323503</created>
@@ -542,7 +534,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676950206157</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="Made folder view loadable">
+      <created>1676951004507</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1676951004507</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

@@ -6,7 +6,7 @@ import javafx.scene.layout.Pane;
 import java.io.IOException;
 
 public abstract class AdditionalWindowController {
-    private WorkspaceController parent;
+    protected WorkspaceController parent;
 
     private Pane content;
 

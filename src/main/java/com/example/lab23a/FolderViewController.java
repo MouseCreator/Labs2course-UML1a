@@ -17,8 +17,6 @@ public class FolderViewController extends AdditionalWindowController implements 
 
 	private boolean isToAddIndex = false;
 	
-	private WorkspaceController parent;
-	
 	private SetIndex toAdd;
 	
 	@FXML
