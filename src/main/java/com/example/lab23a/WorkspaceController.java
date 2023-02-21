@@ -129,6 +129,7 @@ public class WorkspaceController implements Initializable {
 		newStage.setTitle(toOpen.getTitle());
 		newStage.setResizable(false);
 		newStage.getIcons().add(IconLoader.load());
+		toOpen.setStage(newStage);
 		newStage.show();
 	}
 

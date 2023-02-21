@@ -1,23 +1,16 @@
 package com.example.lab23a;
-import java.io.IOException;
 import java.net.URL;
-import java.util.Objects;
 import java.util.ResourceBundle;
 
 import com.example.lab23a.model.*;
 import javafx.concurrent.Task;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.control.ProgressBar;
 import javafx.scene.control.TextField;
-import javafx.scene.image.Image;
 import javafx.scene.layout.Pane;
 import javafx.scene.paint.Color;
-import javafx.stage.Stage;
 
 public class WriteModeController extends AttachedToStudySetIndexController implements Initializable {
 
@@ -51,9 +44,7 @@ public class WriteModeController extends AttachedToStudySetIndexController imple
     private final Color wrongAnswerColor = Color.RED;
     
     private String userAnswer;
-    
-    private WriteResultsController subcontroller;
-    private Stage substage;
+
     private boolean isEnteredAnswer = false;
 
 	@FXML
@@ -204,31 +195,9 @@ public class WriteModeController extends AttachedToStudySetIndexController imple
 	}
 
 	private void showResultsPopWindow() {
-			subcontroller.loadData(this, termsContainer);
-			substage.show();
+		parentController.openAdditionalWindow(new WriteResultsController().load(this, termsContainer));
 	}
-	private void initPopUp() {
-		try {
-			Parent root;
-			FXMLLoader fxmlLoader = new FXMLLoader();
-			fxmlLoader.setLocation(getClass().getResource(FileBuilder.FXMLDestination("WritePartResults")));
-			root = fxmlLoader.load();
-			Scene scene = new Scene(root, 720, 480);
-			scene.getStylesheets().add(Objects.requireNonNull(getClass().getResource("application.css")).toExternalForm());
-			substage = new Stage();
-			substage.setScene(scene);
-			
-			substage.setTitle("Your results");
-			substage.setResizable(false);
-			
-			subcontroller = fxmlLoader.getController();
-			
-			Image icon = new Image(FileBuilder.getIconDestination());
-			substage.getIcons().add(icon);
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-	}
+
 	private void writeResults() {
 		TermList list = termsContainer.getStudyResult();
 		this.index.setElementsMastered(list.calculateMasteredCount());
@@ -253,7 +222,7 @@ public class WriteModeController extends AttachedToStudySetIndexController imple
 	}
 	@Override
 	public void onClose() {
-		this.substage.close();
+
 	}
 	@Override
 	public boolean onCloseRequest() {
@@ -264,7 +233,7 @@ public class WriteModeController extends AttachedToStudySetIndexController imple
 	}
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
-		initPopUp();
+
 	}
 	@Override
 	public String getFilename() {

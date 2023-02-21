@@ -2,6 +2,7 @@ package com.example.lab23a;
 
 import javafx.fxml.FXMLLoader;
 import javafx.scene.layout.Pane;
+import javafx.stage.Stage;
 
 import java.io.IOException;
 
@@ -12,6 +13,11 @@ public abstract class AdditionalWindowController {
 
     private int width = 720;
     private int height = 480;
+
+    protected Stage stage;
+    public void setStage(Stage stage) {
+        this.stage = stage;
+    }
 
     public abstract String getFilename();
     public AdditionalWindowController() {

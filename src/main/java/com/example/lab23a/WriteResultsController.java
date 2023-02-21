@@ -1,12 +1,13 @@
 package com.example.lab23a;
 
+import com.example.lab23a.model.FileBuilder;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.stage.Stage;
 import com.example.lab23a.model.WriteModeTermsContainer;
 
-public class WriteResultsController {
+public class WriteResultsController extends AdditionalWindowController{
 	
 	@FXML
     private Label correctAnswerLabel;
@@ -19,30 +20,21 @@ public class WriteResultsController {
 
     @FXML
     private Button continueBtn;
-	
-	private WriteModeController parent;
 	private WriteModeTermsContainer learnMode;
-	private Stage stage;
+
+	private WriteModeController calledBy;
 	private boolean isProperExit = false;
 
 	/**
 	 *
-	 * @param from - caller of the pop-up
 	 * @param mode - user's progress
 	 */
-	public void loadData(WriteModeController from, WriteModeTermsContainer mode) {
-		this.parent = from;
+	public void loadData(WriteModeTermsContainer mode) {
 		this.learnMode = mode;
 		
 		this.correctAnswerLabel.setText("Correct answers: " + learnMode.getCurrentCorrectString());
 		this.progressLabel.setText("Total progress: " + learnMode.getTotalProgressString());
-		
-		stage = (Stage) progressLabel.getScene().getWindow();
-		stage.setOnCloseRequest(e -> {
-			if(!isProperExit) {
-				onContinue();
-			}
-		});
+
 	}
 
 	/**
@@ -51,24 +43,49 @@ public class WriteResultsController {
 	public void onContinue() {
 		isProperExit = true;
 		if (learnMode.isFullStudied())
-			parent.restart();
+			calledBy.restart();
 		else
-			parent.continueLearning();
+			calledBy.continueLearning();
 		close();
 	}
+
+
 
 	/**
 	 * closes Pop-Up window and returns user to Set info
 	 */
 	public void onBack() {
 		isProperExit = true;
-		parent.goBack();
+		calledBy.goBack();
 		close();
 	}
 	private void close() {
 		 stage.close();
 	}
-	
-	
-	
+
+	@Override
+	public void setStage(Stage stage) {
+		this.stage = stage;
+		this.stage.setOnCloseRequest(e -> {
+			if(!isProperExit) {
+				onContinue();
+			}
+		});
+	}
+	@Override
+	public String getFilename() {
+		return FileBuilder.FXMLDestination("WritePartResults");
+	}
+	public WriteResultsController load(WriteModeController calledBy, WriteModeTermsContainer data) {
+		WriteResultsController controller = (WriteResultsController) super.load(calledBy.getParent());
+		controller.calledBy = calledBy;
+		controller.setHeight(480);
+		controller.setHeight(720);
+		controller.loadData(data);
+		return controller;
+	}
+	@Override
+	public String getTitle() {
+		return "Your results";
+	}
 }
