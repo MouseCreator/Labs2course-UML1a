@@ -65,6 +65,15 @@ public class SetIndex {
         this.lastStudied = lastStudied;
     }
 
+    public SetIndex(int index, String name, int elementCount, int masteredCount, LocalDateTime created, LocalDateTime lastStudied) {
+        this.index = index;
+        this.name = name;
+        this.elementsCount = elementCount;
+        this.elementsMastered = masteredCount;
+        this.created = created;
+        this.lastStudied = lastStudied;
+    }
+
     /**
      *
      * @return date and time, when the set was created

@@ -5,8 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e5cf57ee-045d-45a8-8c9b-3b141fc334b5" name="Changes" comment="Separated TermList and StudyTermList because of different use cases.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/Server/SetIndexParsable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/lab23a/Server/JSParserTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/WriteModeTermsContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/WriteModeTermsContainer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/Server/JSParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/Server/JSParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/SetIndex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/SetIndex.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,11 +77,12 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.example.lab23a.Server" />
       <recent name="com.example.lab23a.model" />
       <recent name="com.example.lab23a.PDF" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.RunApplication">
+  <component name="RunManager" selected="JUnit.JSParserTest.testStudyIndex">
     <configuration name="RunApplication" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="com.example.lab23a.Main" />
       <module name="Labs2course-UML1a" />
@@ -85,17 +90,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FolderListTest.testToArray" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="JSParserTest.testStudyIndex" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Labs2course-UML1a" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.lab23a.model.*" />
+          <option name="PATTERN" value="com.example.lab23a.Server.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.example.lab23a.model" />
-      <option name="MAIN_CLASS_NAME" value="com.example.lab23a.model.FolderListTest" />
-      <option name="METHOD_NAME" value="testToArray" />
+      <option name="PACKAGE_NAME" value="com.example.lab23a.Server" />
+      <option name="MAIN_CLASS_NAME" value="com.example.lab23a.Server.JSParserTest" />
+      <option name="METHOD_NAME" value="testStudyIndex" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -166,7 +171,7 @@
     </configuration>
     <list>
       <item itemvalue="Application.RunApplication" />
-      <item itemvalue="JUnit.FolderListTest.testToArray" />
+      <item itemvalue="JUnit.JSParserTest.testStudyIndex" />
       <item itemvalue="JUnit.SetIndexListTest.testSearchSubstring" />
       <item itemvalue="JUnit.UserDataTest" />
       <item itemvalue="JUnit.UserDataTest.appendNewFolder" />
@@ -174,11 +179,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.JSParserTest.testStudyIndex" />
         <item itemvalue="JUnit.UserDataTest" />
         <item itemvalue="JUnit.UserDataTest.appendNewFolder" />
         <item itemvalue="JUnit.UserDataTest.insertNewSet" />
         <item itemvalue="JUnit.SetIndexListTest.testSearchSubstring" />
-        <item itemvalue="JUnit.FolderListTest.testToArray" />
       </list>
     </recent_temporary>
   </component>
@@ -595,6 +600,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/example/lab23a/WriteModeController.java</url>
           <line>66</line>
           <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/example/lab23a/Server/JSParserTest.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="40" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
