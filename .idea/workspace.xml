@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e5cf57ee-045d-45a8-8c9b-3b141fc334b5" name="Changes" comment="Made write results loadable">
+    <list default="true" id="e5cf57ee-045d-45a8-8c9b-3b141fc334b5" name="Changes" comment="Made Export Controller additional window. Changed default modality.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/ExportController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/ExportController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/SetInfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/SetInfoController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/WorkspaceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/WorkspaceController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -198,13 +196,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1669462838387</updated>
-    </task>
-    <task id="LOCAL-00011" summary="Minor changes, fixed comparator">
-      <created>1674608072268</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1674608072268</updated>
     </task>
     <task id="LOCAL-00012" summary="Created a few tests for Folder List: removing, converting">
       <created>1674609353290</created>
@@ -542,7 +533,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676952787398</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="Made Export Controller additional window. Changed default modality.">
+      <created>1676953431231</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1676953431231</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -560,7 +558,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="Removed unnecessary methods" />
     <MESSAGE value="Removed index from Convertor, because it wasn't useful." />
     <MESSAGE value="Added dates documentation" />
     <MESSAGE value="Added file builder documentation" />
@@ -585,7 +582,8 @@
     <MESSAGE value="Fixed adding set to folder mode" />
     <MESSAGE value="Fixed open in Workspace error: used deprecated constructor" />
     <MESSAGE value="Made write results loadable" />
-    <option name="LAST_COMMIT_MESSAGE" value="Made write results loadable" />
+    <MESSAGE value="Made Export Controller additional window. Changed default modality." />
+    <option name="LAST_COMMIT_MESSAGE" value="Made Export Controller additional window. Changed default modality." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

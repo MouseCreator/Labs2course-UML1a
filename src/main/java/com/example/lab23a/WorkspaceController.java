@@ -86,7 +86,11 @@ public class WorkspaceController implements Initializable {
 		workspacePane.getChildren().clear();
 		workspacePane.getChildren().add(currentActive.getContent());
     }
-	
+
+	/**
+	 * Changes workspace pane to new page
+	 * @param toLoad - page to open. Must be initialized.
+	 */
 	public void loadPage(ActivePaneController toLoad) {
 		if (closeActiveController())
 			loadNext(toLoad);
@@ -119,7 +123,10 @@ public class WorkspaceController implements Initializable {
 		this.confirmWindow = new PopUpWindows();
 	}
 
-
+	/**
+	 * Opens new window on top of the main.
+	 * @param toOpen controller of the window that has to be opened. Must be initialized.
+	 */
 	public void openAdditionalWindow(AdditionalWindowController toOpen) {
 		Parent root = toOpen.getContent();
 		Scene additionalScene = new Scene(root, toOpen.getWidth(), toOpen.getHeight());
