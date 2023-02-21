@@ -12,6 +12,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.layout.Pane;
+import javafx.stage.Modality;
 import javafx.stage.Stage;
 import javafx.stage.Window;
 import com.example.lab23a.model.FileBuilder;
@@ -127,6 +128,7 @@ public class WorkspaceController implements Initializable {
 		Stage newStage = new Stage();
 		newStage.setScene(additionalScene);
 		newStage.setTitle(toOpen.getTitle());
+		newStage.initModality(Modality.APPLICATION_MODAL);
 		newStage.setResizable(false);
 		newStage.getIcons().add(IconLoader.load());
 		toOpen.setStage(newStage);

@@ -2,7 +2,6 @@ package com.example.lab23a;
 
 import java.io.IOException;
 import java.net.URL;
-import java.util.Objects;
 import java.util.ResourceBundle;
 
 import com.example.lab23a.model.*;
@@ -11,16 +10,11 @@ import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
-import javafx.scene.image.Image;
 import javafx.scene.layout.Pane;
-import javafx.stage.Modality;
-import javafx.stage.Stage;
 
 public class SetInfoController extends AttachedToStudySetIndexController implements Initializable{
 
@@ -124,27 +118,7 @@ public class SetInfoController extends AttachedToStudySetIndexController impleme
 	}
 
 	private void openSavePDFDialog() {
-		try {
-			Parent root;
-			FXMLLoader fxmlLoader = new FXMLLoader();
-			fxmlLoader.setLocation(getClass().getResource(FileBuilder.FXMLDestination("PDFPopUp")));
-			root = fxmlLoader.load();
-			Scene scene = new Scene(root, 512, 384);
-			scene.getStylesheets().add(Objects.requireNonNull(getClass().getResource("application.css")).toExternalForm());
-			final Stage dialogStage = new Stage();
-			dialogStage.setScene(scene);
-			dialogStage.initModality(Modality.APPLICATION_MODAL);
-			dialogStage.setTitle("Export PDF");
-			dialogStage.setResizable(false);
-			ExportController dialogController = fxmlLoader.getController();
-			dialogController.setParent(this);
-			dialogController.setExportData(index, studyTerms);
-			Image icon = new Image(FileBuilder.getIconDestination());
-			dialogStage.getIcons().add(icon);
-			dialogStage.show();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
+		parentController.openAdditionalWindow(new ExportController().load(parentController, index, studyTerms));
 	}
 
 	@Override

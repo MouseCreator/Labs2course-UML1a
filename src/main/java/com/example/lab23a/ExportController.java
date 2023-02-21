@@ -2,6 +2,7 @@ package com.example.lab23a;
 
 import com.example.lab23a.PDF.PDFConvertor;
 import com.example.lab23a.PDF.PDFParams;
+import com.example.lab23a.model.FileBuilder;
 import com.example.lab23a.model.SetIndex;
 import com.example.lab23a.model.TermList;
 import javafx.fxml.FXML;
@@ -11,14 +12,13 @@ import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Rectangle;
 import javafx.stage.FileChooser;
-import javafx.stage.Stage;
 import javafx.stage.Window;
 import org.apache.pdfbox.pdmodel.PDDocument;
 
 import java.io.File;
 import java.io.IOException;
 
-public class ExportController {
+public class ExportController extends AdditionalWindowController{
     @FXML
     private Slider fontSizeSlider;
     private final PDFParams parameters = new PDFParams();
@@ -54,9 +54,6 @@ public class ExportController {
 
     private SetIndex index;
     private TermList terms;
-
-    private Stage stage;
-    private SetInfoController parent;
     @FXML
     private Label fontLabel;
     @FXML
@@ -115,7 +112,7 @@ public class ExportController {
         this.index = index;
         this.terms = list;
         filenameField.setText(index.getNotEmptyName());
-        stage = (Stage) filenameField.getScene().getWindow();
+
         initSlider();
     }
     private void initSlider() {
@@ -129,12 +126,15 @@ public class ExportController {
     private void displaySlider() {
         fontLabel.setText("Font size: " +  (int)fontSizeSlider.getValue());
     }
-    public SetInfoController getParent() {
-        return parent;
+
+    @Override
+    public String getFilename() {
+        return FileBuilder.FXMLDestination("PDFPopUp");
     }
 
-    public void setParent(SetInfoController setInfoController) {
-       this.parent = setInfoController;
+    @Override
+    public String getTitle() {
+        return "Export PDF";
     }
 
     private void savePDF() {
@@ -147,17 +147,17 @@ public class ExportController {
 
     private void savePDFFile() throws IOException {
         FileChooser fileChooser = initFileChooser();
-        Window stage = parent.getParent().getWindow();
+        Window stage = parent.getWindow();
         File file = fileChooser.showSaveDialog(stage);
         if (file != null) {
-            parent.getParent().getUserData().getStyle().updateLastSavedFileAbsolutePath(file.getParent());
-            parent.getParent().getUserData().saveData();
+            parent.getUserData().getStyle().updateLastSavedFileAbsolutePath(file.getParent());
+            parent.getUserData().saveData();
             getPDF(file);
         }
     }
     private FileChooser initFileChooser() {
         FileChooser fileChooser = new FileChooser();
-        fileChooser.setInitialDirectory(new File(this.getParent().getParent().getUserData().getStyle().getLastSavedFileAbsolutePath()));
+        fileChooser.setInitialDirectory(new File(this.getParent().getUserData().getStyle().getLastSavedFileAbsolutePath()));
         fileChooser.setTitle("Save PDF");
         fileChooser.setInitialFileName(filenameField.getText());
         fileChooser.getExtensionFilters().addAll(new FileChooser.ExtensionFilter("PDF document","*.pdf"));
@@ -168,5 +168,13 @@ public class ExportController {
         PDDocument document = convertor.convert(parameters, index, terms);
         document.save(file);
         document.close();
+    }
+
+    public ExportController load(WorkspaceController parentController, SetIndex index, TermList studyTerms) {
+        ExportController exportController = (ExportController) super.load(parentController);
+        exportController.setExportData(index, studyTerms);
+        exportController.setHeight(384);
+        exportController.setWidth(512);
+        return exportController;
     }
 }

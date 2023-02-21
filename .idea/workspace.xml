@@ -4,14 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e5cf57ee-045d-45a8-8c9b-3b141fc334b5" name="Changes" comment="Fixed open in Workspace error: used deprecated constructor">
+    <list default="true" id="e5cf57ee-045d-45a8-8c9b-3b141fc334b5" name="Changes" comment="Made write results loadable">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/AdditionalWindowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/AdditionalWindowController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/ExportController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/ExportController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/SetInfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/SetInfoController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/WorkspaceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/WorkspaceController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/WriteModeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/WriteModeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/WriteResultsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/WriteResultsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/info.index" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/info.index" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/sets.index" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/sets.index" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -201,13 +198,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1669462838387</updated>
-    </task>
-    <task id="LOCAL-00010" summary="Added footer">
-      <created>1670119306421</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1670119306421</updated>
     </task>
     <task id="LOCAL-00011" summary="Minor changes, fixed comparator">
       <created>1674608072268</created>
@@ -545,7 +535,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676951918287</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="Made write results loadable">
+      <created>1676952787398</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1676952787398</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -563,7 +560,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="Bug-fix: Removed public class, copy of Write Progress, in the enum." />
     <MESSAGE value="Removed unnecessary methods" />
     <MESSAGE value="Removed index from Convertor, because it wasn't useful." />
     <MESSAGE value="Added dates documentation" />
@@ -588,7 +584,8 @@
     <MESSAGE value="Fixed parent controller bug" />
     <MESSAGE value="Fixed adding set to folder mode" />
     <MESSAGE value="Fixed open in Workspace error: used deprecated constructor" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed open in Workspace error: used deprecated constructor" />
+    <MESSAGE value="Made write results loadable" />
+    <option name="LAST_COMMIT_MESSAGE" value="Made write results loadable" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
