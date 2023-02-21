@@ -55,7 +55,7 @@ public class FolderViewController extends AdditionalWindowController implements 
 	}
 	
 	private void openFolderInWorkspace(Folder folder) {
-		parent.loadPage(new SetOpenController(folder));
+		parent.loadPage(new SetOpenController().load(parent, folder));
 		close();
 	}
 	

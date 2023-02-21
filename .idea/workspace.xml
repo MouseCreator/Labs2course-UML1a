@@ -4,15 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e5cf57ee-045d-45a8-8c9b-3b141fc334b5" name="Changes" comment="Fixed parent controller bug">
+    <list default="true" id="e5cf57ee-045d-45a8-8c9b-3b141fc334b5" name="Changes" comment="Fixed adding set to folder mode">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/ActivePaneController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/ActivePaneController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/AdditionalWindowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/AdditionalWindowController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/FolderViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/FolderViewController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/MenuBarController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/MenuBarController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/SetInfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/SetInfoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/WorkspaceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/WorkspaceController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/lab23a/Server/JSParserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/lab23a/Server/JSParserTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -202,13 +196,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1669462838387</updated>
-    </task>
-    <task id="LOCAL-00008" summary="Cleaned Editor Controller">
-      <created>1670107670178</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1670107670178</updated>
     </task>
     <task id="LOCAL-00009" summary="Added save dialog">
       <created>1670110984345</created>
@@ -546,7 +533,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676951092390</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="Fixed adding set to folder mode">
+      <created>1676951815861</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1676951815861</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -564,7 +558,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="Fixed documentation: missing params" />
     <MESSAGE value="Added documentation" />
     <MESSAGE value="Bug-fix: Removed public class, copy of Write Progress, in the enum." />
     <MESSAGE value="Removed unnecessary methods" />
@@ -589,7 +582,8 @@
     <MESSAGE value="Renamed destination to filename" />
     <MESSAGE value="Made folder view loadable" />
     <MESSAGE value="Fixed parent controller bug" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed parent controller bug" />
+    <MESSAGE value="Fixed adding set to folder mode" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed adding set to folder mode" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
