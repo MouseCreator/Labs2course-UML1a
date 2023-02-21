@@ -4,9 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e5cf57ee-045d-45a8-8c9b-3b141fc334b5" name="Changes" comment="Added JParser">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/Server/AdditionalWindowController.java" afterDir="false" />
+    <list default="true" id="e5cf57ee-045d-45a8-8c9b-3b141fc334b5" name="Changes" comment="Added additional window class">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/ActivePaneController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/ActivePaneController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/EditorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/EditorController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/FolderViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/FolderViewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/ProfileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/ProfileController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/Server/AdditionalWindowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/AdditionalWindowController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/SetInfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/SetInfoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/SetOpenController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/SetOpenController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/WriteModeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/WriteModeController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,9 +74,9 @@
       <recent name="C:\Users\mysha\IdeaProjects\Lab23a\src\main\java\com\example\lab23a\application" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.example.lab23a" />
       <recent name="com.example.lab23a.model" />
       <recent name="com.example.lab23a.PDF" />
-      <recent name="com.example.lab23a" />
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
@@ -90,7 +97,7 @@
       <module name="Labs2course-UML1a" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.lab23a.Server.*" />
+          <option name="PATTERN" value="com.example.lab23a.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -191,13 +198,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1669462838387</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Added bounds calculation">
-      <created>1670084590539</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1670084590539</updated>
     </task>
     <task id="LOCAL-00005" summary="Added table cells">
       <created>1670101884578</created>
@@ -535,7 +535,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676949524320</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="Added additional window class">
+      <created>1676949706214</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1676949706214</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -553,7 +560,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="Minor refactoring changes" />
     <MESSAGE value="Added missing documentation" />
     <MESSAGE value="More documentation" />
     <MESSAGE value="Fixed repeated code" />
@@ -578,7 +584,8 @@
     <MESSAGE value="Implemented close operation" />
     <MESSAGE value="Separated TermList and StudyTermList because of different use cases." />
     <MESSAGE value="Added JParser" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added JParser" />
+    <MESSAGE value="Added additional window class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added additional window class" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

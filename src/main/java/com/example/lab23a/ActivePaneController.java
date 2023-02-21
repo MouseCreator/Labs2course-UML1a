@@ -19,7 +19,7 @@ public abstract class ActivePaneController {
 
     public ActivePaneController load(WorkspaceController parentController) {
         FXMLLoader fxmlLoader = new FXMLLoader();
-        fxmlLoader.setLocation(parentController.getClass().getResource(getDestination()));
+        fxmlLoader.setLocation(parentController.getClass().getResource(getFilename()));
         try {
             Pane pane = fxmlLoader.load();
             ActivePaneController controller = fxmlLoader.getController();
@@ -51,7 +51,7 @@ public abstract class ActivePaneController {
         parentController.getUserData().autoSave();
     }
 
-    public String getDestination(){
+    public String getFilename(){
         return "NO_DEST";
     }
 

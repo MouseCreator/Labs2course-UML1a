@@ -212,7 +212,7 @@ public class SetOpenController extends AttachedToFolderController implements Ini
 	}
 
 	@Override
-	public String getDestination() {
+	public String getFilename() {
 		return FileBuilder.FXMLDestination("SetOpen");
 	}
 	@Override

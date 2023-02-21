@@ -27,7 +27,7 @@ public class ProfileController extends ActivePaneController {
 		getParent().getUserData().autoSave();
 	}
 	@Override
-	public String getDestination() {
+	public String getFilename() {
 		return FileBuilder.FXMLDestination("Profile");
 	}
 	

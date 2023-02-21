@@ -149,7 +149,7 @@ public class SetInfoController extends AttachedToStudySetIndexController impleme
 	}
 
 	@Override
-	public String getDestination() {
+	public String getFilename() {
 		return FileBuilder.FXMLDestination("SetInfo");
 	}
 }

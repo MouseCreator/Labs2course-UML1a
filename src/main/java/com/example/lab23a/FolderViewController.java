@@ -12,7 +12,7 @@ import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
-public class FolderViewController implements Initializable  {
+public class FolderViewController extends AdditionalWindowController implements Initializable  {
 	private FolderList folders;
 
 	private boolean isToAddIndex = false;
@@ -55,8 +55,6 @@ public class FolderViewController implements Initializable  {
 				}
 			}
 		});
-		
-		
 	}
 	
 	private void openFolderInWorkspace(Folder folder) {
@@ -89,5 +87,10 @@ public class FolderViewController implements Initializable  {
 		this.commentLabel.setText("");
 		this.newFolderNameField.clear();
 		
+	}
+
+	@Override
+	public String getFilename() {
+		return "FolderList";
 	}
 }

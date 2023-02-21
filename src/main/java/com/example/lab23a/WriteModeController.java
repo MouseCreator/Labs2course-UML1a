@@ -267,7 +267,7 @@ public class WriteModeController extends AttachedToStudySetIndexController imple
 		initPopUp();
 	}
 	@Override
-	public String getDestination() {
+	public String getFilename() {
 		return FileBuilder.FXMLDestination("Write");
 	}
 }

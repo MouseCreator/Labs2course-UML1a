@@ -262,7 +262,7 @@ public class EditorController extends AttachedToStudySetIndexController implemen
 	}
 
 	@Override
-	public String getDestination() {
+	public String getFilename() {
 		return FileBuilder.FXMLDestination("SetEditor");
 	}
 	
