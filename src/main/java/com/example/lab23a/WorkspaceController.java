@@ -128,7 +128,18 @@ public class WorkspaceController implements Initializable {
 	}
 
 
-	
+	public void openAdditionalWindow(AdditionalWindowController toOpen) {
+		Parent root = toOpen.getContent();
+		Scene additionalScene = new Scene(root, toOpen.getWidth(), toOpen.getHeight());
+		additionalScene.getStylesheets().
+				add(Objects.requireNonNull(getClass().getResource("application.css")).toExternalForm());
+		Stage newStage = new Stage();
+		newStage.setScene(additionalScene);
+		newStage.setTitle(toOpen.getTitle());
+		newStage.setResizable(false);
+		newStage.getIcons().add(IconLoader.load());
+		newStage.show();
+	}
 	private void initFolderWindow() {
 		try {
 			Parent root;
@@ -151,7 +162,7 @@ public class WorkspaceController implements Initializable {
 	}
 	
 	public void displayFoldersWindow() {
-		folderViewController.loadData(this, this.getUserData().getFolderList());
+		folderViewController.loadData(this.getUserData().getFolderList());
 		folderViewController.reinitialize();
 		folderStage.show();
 	}

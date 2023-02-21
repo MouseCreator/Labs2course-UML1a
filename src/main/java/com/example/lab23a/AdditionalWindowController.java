@@ -10,8 +10,8 @@ public abstract class AdditionalWindowController {
 
     private Pane content;
 
-    private int width;
-    private int height;
+    private int width = 720;
+    private int height = 480;
 
     public abstract String getFilename();
     public AdditionalWindowController() {
@@ -35,4 +35,18 @@ public abstract class AdditionalWindowController {
     public WorkspaceController getParent() {
         return parent;
     }
+
+    public Pane getContent() {
+        return content;
+    }
+
+    public int getHeight() {
+        return height;
+    }
+
+    public int getWidth() {
+        return width;
+    }
+
+    public abstract String getTitle();
 }

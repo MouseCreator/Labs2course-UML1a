@@ -28,9 +28,7 @@ public class FolderViewController extends AdditionalWindowController implements 
     private TextField newFolderNameField;
     @FXML
     private Label commentLabel;
-	public void loadData(WorkspaceController from, FolderList folders) {
-		this.parent = from;
-
+	public void loadData(FolderList folders) {
 		this.folders = folders.sortByName();
 		this.folderListView.getItems().clear();
 		this.folderListView.getItems().addAll(this.folders.asArrayList());
@@ -90,7 +88,20 @@ public class FolderViewController extends AdditionalWindowController implements 
 	}
 
 	@Override
+	public FolderViewController load(WorkspaceController parent) {
+		FolderViewController result = (FolderViewController) super.load(parent);
+		result.loadData(parent.getUserData().getFolderList());
+		result.reinitialize();
+		return result;
+	}
+
+	@Override
 	public String getFilename() {
 		return "FolderList";
+	}
+
+	@Override
+	public String getTitle() {
+		return "Folders";
 	}
 }
