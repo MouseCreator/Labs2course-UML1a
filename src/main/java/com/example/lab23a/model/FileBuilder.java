@@ -10,6 +10,8 @@ public class FileBuilder {
     private static final String DATA_FOLDER = "src" + separator + "main" + separator + "resources" +
             separator + "data" + separator;
     private static final String SETS_FOLDER = "sets" + separator;
+
+    private static final String TESTS_FOLDER = "tests" + separator;
     private static final String FOLDERS_FOLDER = "folders" + separator;
     private static final String SETS_EXTENSION = ".set";
     private static final String FOLDER_EXTENSION = ".fld";
@@ -31,6 +33,10 @@ public class FileBuilder {
     public static String getStudySetFileName(int index) {
         return DATA_FOLDER + SETS_FOLDER + index + SETS_EXTENSION;
     }
+
+    protected static String getStudySetTestFileName(int index) {
+        return DATA_FOLDER + TESTS_FOLDER + index + SETS_EXTENSION;
+    }
     public static String getFolderFileName(int index) {
         return DATA_FOLDER + FOLDERS_FOLDER + index + FOLDER_EXTENSION;
     }
@@ -48,6 +54,9 @@ public class FileBuilder {
     
     public static String getIndexFileDestination() {
         return DATA_FOLDER + INDEX_FILENAME + INDEX_EXTENSION;
+    }
+    private static String getIndexFileTestDestination() {
+        return DATA_FOLDER + TESTS_FOLDER + INDEX_FILENAME + INDEX_EXTENSION;
     }
     public static String getInfoFileDestination() {
         return DATA_FOLDER + INFO_FILENAME + INDEX_EXTENSION;
@@ -132,9 +141,17 @@ public class FileBuilder {
      * @return list of all study terms in the set (that was previously saved in the file)
      */
     public static TermList readTerms(int id) {
+        return readTermsFromFile(getStudySetFileName(id));
+    }
+
+    protected static TermList readTermsTest(int id) {
+        return readTermsFromFile(getStudySetTestFileName(id));
+    }
+
+    private static TermList readTermsFromFile(String filename) {
         TermList list = new TermList();
         try {
-            Scanner scanner = new Scanner(new File(getStudySetFileName(id)));
+            Scanner scanner = new Scanner(new File(filename));
             int i = 0;
             while (scanner.hasNextLine()) {
                 list.add(lineToTerm(i, scanner.nextLine()));
@@ -145,8 +162,6 @@ public class FileBuilder {
 
         }
         return list;
-
-
     }
 
     /**
@@ -224,9 +239,18 @@ public class FileBuilder {
      * @return list of all user's sets, saved locally
      */
     public static SetIndexList readIndexFile() {
+        return readIndexListFromFile(getIndexFileDestination());
+    }
+    protected static SetIndexList readIndexTest() {
+        return readIndexListFromFile(getIndexFileTestDestination());
+    }
+
+
+
+    private static SetIndexList readIndexListFromFile(String filename) {
         SetIndexList list = new SetIndexList();
         try {
-            Scanner scanner = new Scanner(new File(getIndexFileDestination()));
+            Scanner scanner = new Scanner(new File(filename));
             while (scanner.hasNext(STUDY_SET_INITIALISATION)) {
                 scanner.nextLine();
                 LinkedList<String> fields = new LinkedList<>();
