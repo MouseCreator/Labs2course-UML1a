@@ -5,13 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e5cf57ee-045d-45a8-8c9b-3b141fc334b5" name="Changes" comment="Returned abstract term list, because it can be used in learn mode">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/AbstractTermList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/StudyTermList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/TermList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/TermList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/WriteModeShuffleStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/WriteModeShuffleStrategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/WriteModeStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/WriteModeStrategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/WriteModeTermsContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/WriteModeTermsContainer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -205,14 +200,7 @@
       <option name="presentableId" value="Default" />
       <updated>1669462838387</updated>
       <workItem from="1677113641860" duration="5726000" />
-      <workItem from="1677480431304" duration="4794000" />
-    </task>
-    <task id="LOCAL-00019" summary="Removed unused imports">
-      <created>1674669883303</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1674669883303</updated>
+      <workItem from="1677480431304" duration="5162000" />
     </task>
     <task id="LOCAL-00020" summary="Fixed typos, removed unused import statements.">
       <created>1674671491947</created>
@@ -550,7 +538,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677485549932</updated>
     </task>
-    <option name="localTasksCounter" value="68" />
+    <task id="LOCAL-00068" summary="Returned abstract term list, because it can be used in learn mode">
+      <created>1677485996141</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1677485996141</updated>
+    </task>
+    <option name="localTasksCounter" value="69" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

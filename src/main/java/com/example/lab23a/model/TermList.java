@@ -17,7 +17,9 @@ public class TermList extends AbstractTermList {
         this.terms = new ArrayList<>(List.of(terms));
     }
 
-
+    /**
+     * Removes progress from all study terms in the list
+     */
     public void refresh() {
         for (StudyTerm term : terms) term.removeProgress();
     }
@@ -43,7 +45,11 @@ public class TermList extends AbstractTermList {
 
         return set.terms.equals(this.terms);
     }
-    
+
+    /**
+     *
+     * @return number of mastered study terms
+     */
     public int calculateMasteredCount() {
 		int result = 0;
 		for (StudyTerm t : terms) {
@@ -53,7 +59,10 @@ public class TermList extends AbstractTermList {
 		return result;
 	}
 
-
+    /**
+     * Adds study term, if it is not added yet
+     * @param toInsert - term to add
+     */
 	public void insert(StudyTerm toInsert) {
 		if (toInsert.getIndex() < 0 || toInsert.getIndex() >= this.size()) {
 			toInsert.setIndex(this.size());
@@ -63,7 +72,7 @@ public class TermList extends AbstractTermList {
 			this.terms.set(toInsert.getIndex(), toInsert);
 	}
 
-    
+
 
 
 
