@@ -63,6 +63,12 @@ public class TermList extends AbstractTermList {
 		else
 			this.terms.set(toInsert.getIndex(), toInsert);
 	}
+    /**
+     * Removes all sets from the list
+     */
+    public void clear() {
+        terms.clear();
+    }
 
 
 

@@ -4,28 +4,14 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 public class StudyTermList extends AbstractTermList{
-    private final UserLearnStyle style;
-    public StudyTermList(TermList origin, UserLearnStyle style) {
+    public StudyTermList(TermList origin) {
         super(origin);
-        this.style = style;
-        if (style.getIsShuffleOn()) {
-        	this.shuffle();
-        }
     }
-    public StudyTermList(UserLearnStyle style) {
+    public StudyTermList(StudyTermList origin) {
+        this.terms = new ArrayList<>(origin.terms);
+    }
+    public StudyTermList() {
         super();
-        this.style = style;
-        if (style.getIsShuffleOn()) {
-        	this.shuffle();
-        }
-    }
-
-    public StudyTermList(StudyTermList other) {
-		this.terms = new ArrayList<>(other.terms);
-        this.style = other.style;
-	}
-	public UserLearnStyle getStyle() {
-        return style;
     }
 
     /**
@@ -44,11 +30,6 @@ public class StudyTermList extends AbstractTermList{
     	return terms.remove(0);
     }
 
-    /**
-     * Removes all sets from the list
-     */
-    public void clear() {
-    	 terms.clear();
-    }
+
 	
 }

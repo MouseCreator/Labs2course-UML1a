@@ -4,11 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e5cf57ee-045d-45a8-8c9b-3b141fc334b5" name="Changes" comment="Added folder view documentation">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/WriteModeShuffleStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/WriteModeStrategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="e5cf57ee-045d-45a8-8c9b-3b141fc334b5" name="Changes" comment="Added Write Mode Strategies">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/StudyTerm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/StudyTerm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/StudyTermList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/StudyTermList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/TermList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/TermList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/WriteModeShuffleStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/WriteModeShuffleStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/WriteModeStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/WriteModeStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/WriteModeTermsContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/WriteModeTermsContainer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -202,14 +205,7 @@
       <option name="presentableId" value="Default" />
       <updated>1669462838387</updated>
       <workItem from="1677113641860" duration="5726000" />
-      <workItem from="1677480431304" duration="2552000" />
-    </task>
-    <task id="LOCAL-00015" summary="Cleaned up comparison code">
-      <created>1674610319630</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1674610319630</updated>
+      <workItem from="1677480431304" duration="3572000" />
     </task>
     <task id="LOCAL-00016" summary="Added test for user data.">
       <created>1674663703500</created>
@@ -547,7 +543,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677481824250</updated>
     </task>
-    <option name="localTasksCounter" value="64" />
+    <task id="LOCAL-00064" summary="Added Write Mode Strategies">
+      <created>1677483764916</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1677483764916</updated>
+    </task>
+    <option name="localTasksCounter" value="65" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -568,7 +571,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="Added folders documentation" />
     <MESSAGE value="Added learn style (user info) documentation" />
     <MESSAGE value="Added write mode documentation" />
     <MESSAGE value="Refactoring in search method" />
@@ -593,7 +595,8 @@
     <MESSAGE value="Added load methods documentation." />
     <MESSAGE value="Added FileBuilder test and benchmark" />
     <MESSAGE value="Added folder view documentation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added folder view documentation" />
+    <MESSAGE value="Added Write Mode Strategies" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Write Mode Strategies" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -602,11 +605,6 @@
           <properties class="javax.imageio.IIOException" package="javax.imageio" />
           <option name="timeStamp" value="2" />
         </breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/lab23a/model/WriteModeTermsContainer.java</url>
-          <line>17</line>
-          <option name="timeStamp" value="36" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/example/lab23a/WriteModeController.java</url>
           <line>57</line>

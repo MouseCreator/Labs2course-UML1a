@@ -7,7 +7,9 @@ public class WriteModeTermsContainer {
 	private final TermList studyResult;
 	private final TermList origin;
 	private StudyTermList studyList;
-	private final StudyTermList toNextPeriod;
+	private final TermList toNextPeriod;
+
+	private WriteModeStrategy termPickStrategy;
 	private int[] attempts;
 	private int currentRest;
 	private int currentAnswered;
@@ -21,23 +23,28 @@ public class WriteModeTermsContainer {
 		rightAnswered = 0;
 		this.studyResult = new TermList(origin);
 		studyResult.refresh();
-		this.studyList = new StudyTermList(origin, style);
-		toNextPeriod = new StudyTermList(style);
+		this.studyList = new StudyTermList(origin);
+		toNextPeriod = new TermList();
 		initAttempts();
+		initStrategy(origin, style);
+	}
+
+	private void initStrategy(TermList from, UserLearnStyle style) {
+		if (style.getIsShuffleOn())
+			this.termPickStrategy = new WriteModeShuffleStrategy(from);
+		else
+			this.termPickStrategy = new WriteModeStrategy(from);
 	}
 	/**
 	 * Has to be called between two study sessions (periods) of one study set.
 	 * This method refreshes list of terms that has to be studied next time.
 	 */
 	public void reinit() {
-		studyList = new StudyTermList(toNextPeriod);
+		termPickStrategy.update(toNextPeriod);
 		currentRest = studyList.size();
 		currentAnswered = 0;
 		currentCorrect = 0;
 		toNextPeriod.clear();
-		
-		if (studyList.getStyle().getIsShuffleOn())
-			studyList.shuffle();
 	}
 	
 	private void initAttempts() {
@@ -56,7 +63,7 @@ public class WriteModeTermsContainer {
 	 * @throws IndexOutOfBoundsException if there are no more terms left for this session
 	 */
 	public StudyTerm getNextTerm() throws IndexOutOfBoundsException {
-		return studyList.pop();
+		return termPickStrategy.getNextTerms();
 	}
 	
 	/**

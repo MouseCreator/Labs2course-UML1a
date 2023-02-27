@@ -1,12 +1,12 @@
 package com.example.lab23a.model;
 
 public class WriteModeShuffleStrategy extends WriteModeStrategy{
-    public WriteModeShuffleStrategy(StudyTermList list) {
+    public WriteModeShuffleStrategy(TermList list) {
         super(list);
     }
     @Override
-    public void update() {
-        this.remainingTerms = new StudyTermList(this.initialStudyTerms);
+    public void update(TermList list) {
+        super.update(list);
         remainingTerms.shuffle();
     }
 }
