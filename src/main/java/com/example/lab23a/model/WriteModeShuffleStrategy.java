@@ -4,13 +4,13 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 public class WriteModeShuffleStrategy extends WriteModeStrategy{
-    public WriteModeShuffleStrategy(TermList list) {
+    public WriteModeShuffleStrategy(StudyTermList list) {
         super(list);
     }
     @Override
-    public void update(TermList list) {
+    public void update(StudyTermList list) {
         ArrayList<StudyTerm> toShuffle = initialStudyTerms.asArrayList();
         Collections.shuffle(toShuffle);
-        this.remainingTerms = new TermList(toShuffle);
+        this.remainingTerms = new StudyTermList(toShuffle);
     }
 }

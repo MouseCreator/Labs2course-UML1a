@@ -6,7 +6,7 @@ package com.example.lab23a.model;
 public class WriteModeTermsContainer {
 	private final TermList studyResult;
 	private final TermList origin;
-	private final TermList toNextPeriod;
+	private final StudyTermList toNextPeriod;
 
 	private WriteModeStrategy termPickStrategy;
 	private int[] attempts;
@@ -22,12 +22,12 @@ public class WriteModeTermsContainer {
 		rightAnswered = 0;
 		this.studyResult = new TermList(origin);
 		studyResult.refresh();
-		toNextPeriod = new TermList();
+		toNextPeriod = new StudyTermList();
 		initAttempts();
-		initStrategy(origin, style);
+		initStrategy(new StudyTermList(origin), style);
 	}
 
-	private void initStrategy(TermList from, UserLearnStyle style) {
+	private void initStrategy(StudyTermList from, UserLearnStyle style) {
 		if (style.getIsShuffleOn())
 			this.termPickStrategy = new WriteModeShuffleStrategy(from);
 		else

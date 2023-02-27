@@ -1,43 +1,9 @@
 package com.example.lab23a.model;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 
-public class TermList implements Iterable<StudyTerm>{
-    protected ArrayList<StudyTerm> terms;
-
-    public Iterator<StudyTerm> iterator() {
-        return new Iterator<>() {
-            private int currentIndex = 0;
-
-            @Override
-            public boolean hasNext() {
-                return currentIndex < size();
-            }
-
-            @Override
-            public StudyTerm next() {
-                return terms.get(currentIndex++);
-            }
-
-            @Override
-            public void remove() {
-                throw new UnsupportedOperationException();
-            }
-        };
-    }
-    public int size() {
-        return terms.size();
-    }
-
-    public void add(StudyTerm term) {
-        terms.add(term);
-    }
-
-    public StudyTerm getByIndex(int index) {
-        return terms.get(index);
-    }
+public class TermList extends AbstractTermList {
 
     public TermList() {
         terms = new ArrayList<>();
@@ -51,17 +17,12 @@ public class TermList implements Iterable<StudyTerm>{
         this.terms = new ArrayList<>(List.of(terms));
     }
 
-    public TermList(ArrayList<StudyTerm> terms) {
-        this.terms = new ArrayList<>(terms);
-    }
 
     public void refresh() {
         for (StudyTerm term : terms) term.removeProgress();
     }
     
-    public ArrayList<StudyTerm> asArrayList() {
-    	return this.terms;
-    }
+
 
     @Override
     public String toString() {
@@ -101,21 +62,8 @@ public class TermList implements Iterable<StudyTerm>{
 		else
 			this.terms.set(toInsert.getIndex(), toInsert);
 	}
-    /**
-     * Removes all sets from the list
-     */
-    public void clear() {
-        terms.clear();
-    }
 
-    /**
-     *
-     * @return first element of the list
-     * @throws IndexOutOfBoundsException if list is empty
-     */
-    public StudyTerm pop() throws IndexOutOfBoundsException{
-        return terms.remove(0);
-    }
+    
 
 
 
