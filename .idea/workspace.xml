@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e5cf57ee-045d-45a8-8c9b-3b141fc334b5" name="Changes" comment="Added load methods documentation.">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/lab23a/model/FileBuilderTest.java" afterDir="false" />
+    <list default="true" id="e5cf57ee-045d-45a8-8c9b-3b141fc334b5" name="Changes" comment="Added FileBuilder test and benchmark">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/FileBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/FileBuilder.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,26 +36,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "create.test.in.the.same.root": "true",
-    "last_opened_file_path": "C:/Users/mysha/IdeaProjects/Labs2course-UML1a",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;create.test.in.the.same.root&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/mysha/IdeaProjects/Labs2course-UML1a&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\mysha\IdeaProjects\Lab23a\src\main\resources" />
@@ -91,7 +88,7 @@
       <command value="folderViewController" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.FileBuilderTest.testIndexRead">
+  <component name="RunManager" selected="Application.FileBuilderTest">
     <configuration name="FileBuilderTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.lab23a.model.FileBuilderTest" />
       <module name="Labs2course-UML1a" />
@@ -185,9 +182,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.FileBuilderTest" />
         <item itemvalue="JUnit.FileBuilderTest.testIndexRead" />
         <item itemvalue="JUnit.FileBuilderTest.testRead" />
-        <item itemvalue="Application.FileBuilderTest" />
         <item itemvalue="JUnit.JSParserTest.testStudyIndex" />
         <item itemvalue="JUnit.UserDataTest" />
       </list>
@@ -201,14 +198,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1669462838387</updated>
-      <workItem from="1677113641860" duration="2530000" />
-    </task>
-    <task id="LOCAL-00013" summary="Minor refactoring: renamed variables and methods">
-      <created>1674609602945</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1674609602945</updated>
+      <workItem from="1677113641860" duration="5726000" />
+      <workItem from="1677480431304" duration="808000" />
     </task>
     <task id="LOCAL-00014" summary="Searching test for SetIndex">
       <created>1674610140249</created>
@@ -546,7 +537,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676953602465</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="Added FileBuilder test and benchmark">
+      <created>1677116253524</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1677116253524</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -567,7 +565,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="Added dates documentation" />
     <MESSAGE value="Added file builder documentation" />
     <MESSAGE value="Added folders documentation" />
     <MESSAGE value="Added learn style (user info) documentation" />
@@ -592,7 +589,8 @@
     <MESSAGE value="Made write results loadable" />
     <MESSAGE value="Made Export Controller additional window. Changed default modality." />
     <MESSAGE value="Added load methods documentation." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added load methods documentation." />
+    <MESSAGE value="Added FileBuilder test and benchmark" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added FileBuilder test and benchmark" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

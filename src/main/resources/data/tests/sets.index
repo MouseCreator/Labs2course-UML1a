@@ -1,0 +1,288 @@
+StudySet
+	Index = 0
+	Name = AAAAAAA
+	NumTerms = 20
+	Mastered = 18
+	CreatedDate = 2022-11-05 24:46:34
+	StudiedDate = 2022-11-05 01:34:10
+end
+StudySet
+	Index = 1
+	Name = SEcond
+	NumTerms = 18
+	Mastered = 4
+	CreatedDate = 2022-11-05 03:14:32
+	StudiedDate = 2023-02-21 06:12:38
+end
+StudySet
+	Index = 2
+	Name = THIRD
+	NumTerms = 15
+	Mastered = 7
+	CreatedDate = 2022-11-20 19:54:28
+	StudiedDate = 2022-11-20 19:54:28
+end
+StudySet
+	Index = 3
+	Name = AAAAAAA
+	NumTerms = 20
+	Mastered = 18
+	CreatedDate = 2022-11-05 24:46:34
+	StudiedDate = 2022-11-05 01:34:10
+end
+StudySet
+	Index = 4
+	Name = SEcond
+	NumTerms = 18
+	Mastered = 4
+	CreatedDate = 2022-11-05 03:14:32
+	StudiedDate = 2023-02-21 06:12:38
+end
+StudySet
+	Index = 5
+	Name = THIRD
+	NumTerms = 15
+	Mastered = 7
+	CreatedDate = 2022-11-20 19:54:28
+	StudiedDate = 2022-11-20 19:54:28
+end
+StudySet
+	Index = 6
+	Name = AAAAAAA
+	NumTerms = 20
+	Mastered = 18
+	CreatedDate = 2022-11-05 24:46:34
+	StudiedDate = 2022-11-05 01:34:10
+end
+StudySet
+	Index = 7
+	Name = SEcond
+	NumTerms = 18
+	Mastered = 4
+	CreatedDate = 2022-11-05 03:14:32
+	StudiedDate = 2023-02-21 06:12:38
+end
+StudySet
+	Index = 8
+	Name = THIRD
+	NumTerms = 15
+	Mastered = 7
+	CreatedDate = 2022-11-20 19:54:28
+	StudiedDate = 2022-11-20 19:54:28
+end
+StudySet
+	Index = 9
+	Name = AAAAAAA
+	NumTerms = 20
+	Mastered = 18
+	CreatedDate = 2022-11-05 24:46:34
+	StudiedDate = 2022-11-05 01:34:10
+end
+StudySet
+	Index = 10
+	Name = SEcond
+	NumTerms = 18
+	Mastered = 4
+	CreatedDate = 2022-11-05 03:14:32
+	StudiedDate = 2023-02-21 06:12:38
+end
+StudySet
+	Index = 11
+	Name = THIRD
+	NumTerms = 15
+	Mastered = 7
+	CreatedDate = 2022-11-20 19:54:28
+	StudiedDate = 2022-11-20 19:54:28
+end
+StudySet
+	Index = 12
+	Name = AAAAAAA
+	NumTerms = 20
+	Mastered = 18
+	CreatedDate = 2022-11-05 24:46:34
+	StudiedDate = 2022-11-05 01:34:10
+end
+StudySet
+	Index = 13
+	Name = SEcond
+	NumTerms = 18
+	Mastered = 4
+	CreatedDate = 2022-11-05 03:14:32
+	StudiedDate = 2023-02-21 06:12:38
+end
+StudySet
+	Index = 14
+	Name = THIRD
+	NumTerms = 15
+	Mastered = 7
+	CreatedDate = 2022-11-20 19:54:28
+	StudiedDate = 2022-11-20 19:54:28
+end
+StudySet
+	Index = 15
+	Name = AAAAAAA
+	NumTerms = 20
+	Mastered = 18
+	CreatedDate = 2022-11-05 24:46:34
+	StudiedDate = 2022-11-05 01:34:10
+end
+StudySet
+	Index = 16
+	Name = SEcond
+	NumTerms = 18
+	Mastered = 4
+	CreatedDate = 2022-11-05 03:14:32
+	StudiedDate = 2023-02-21 06:12:38
+end
+StudySet
+	Index = 17
+	Name = THIRD
+	NumTerms = 15
+	Mastered = 7
+	CreatedDate = 2022-11-20 19:54:28
+	StudiedDate = 2022-11-20 19:54:28
+end
+StudySet
+	Index = 18
+	Name = AAAAAAA
+	NumTerms = 20
+	Mastered = 18
+	CreatedDate = 2022-11-05 24:46:34
+	StudiedDate = 2022-11-05 01:34:10
+end
+StudySet
+	Index = 19
+	Name = SEcond
+	NumTerms = 18
+	Mastered = 4
+	CreatedDate = 2022-11-05 03:14:32
+	StudiedDate = 2023-02-21 06:12:38
+end
+StudySet
+	Index = 20
+	Name = THIRD
+	NumTerms = 15
+	Mastered = 7
+	CreatedDate = 2022-11-20 19:54:28
+	StudiedDate = 2022-11-20 19:54:28
+end
+StudySet
+	Index = 21
+	Name = AAAAAAA
+	NumTerms = 20
+	Mastered = 18
+	CreatedDate = 2022-11-05 24:46:34
+	StudiedDate = 2022-11-05 01:34:10
+end
+StudySet
+	Index = 22
+	Name = SEcond
+	NumTerms = 18
+	Mastered = 4
+	CreatedDate = 2022-11-05 03:14:32
+	StudiedDate = 2023-02-21 06:12:38
+end
+StudySet
+	Index = 23
+	Name = THIRD
+	NumTerms = 15
+	Mastered = 7
+	CreatedDate = 2022-11-20 19:54:28
+	StudiedDate = 2022-11-20 19:54:28
+end
+StudySet
+	Index = 24
+	Name = AAAAAAA
+	NumTerms = 20
+	Mastered = 18
+	CreatedDate = 2022-11-05 24:46:34
+	StudiedDate = 2022-11-05 01:34:10
+end
+StudySet
+	Index = 25
+	Name = SEcond
+	NumTerms = 18
+	Mastered = 4
+	CreatedDate = 2022-11-05 03:14:32
+	StudiedDate = 2023-02-21 06:12:38
+end
+StudySet
+	Index = 26
+	Name = THIRD
+	NumTerms = 15
+	Mastered = 7
+	CreatedDate = 2022-11-20 19:54:28
+	StudiedDate = 2022-11-20 19:54:28
+end
+StudySet
+	Index = 27
+	Name = AAAAAAA
+	NumTerms = 20
+	Mastered = 18
+	CreatedDate = 2022-11-05 24:46:34
+	StudiedDate = 2022-11-05 01:34:10
+end
+StudySet
+	Index = 28
+	Name = SEcond
+	NumTerms = 18
+	Mastered = 4
+	CreatedDate = 2022-11-05 03:14:32
+	StudiedDate = 2023-02-21 06:12:38
+end
+StudySet
+	Index = 29
+	Name = THIRD
+	NumTerms = 15
+	Mastered = 7
+	CreatedDate = 2022-11-20 19:54:28
+	StudiedDate = 2022-11-20 19:54:28
+end
+StudySet
+	Index = 30
+	Name = AAAAAAA
+	NumTerms = 20
+	Mastered = 18
+	CreatedDate = 2022-11-05 24:46:34
+	StudiedDate = 2022-11-05 01:34:10
+end
+StudySet
+	Index = 31
+	Name = SEcond
+	NumTerms = 18
+	Mastered = 4
+	CreatedDate = 2022-11-05 03:14:32
+	StudiedDate = 2023-02-21 06:12:38
+end
+StudySet
+	Index = 32
+	Name = THIRD
+	NumTerms = 15
+	Mastered = 7
+	CreatedDate = 2022-11-20 19:54:28
+	StudiedDate = 2022-11-20 19:54:28
+end
+StudySet
+	Index = 33
+	Name = AAAAAAA
+	NumTerms = 20
+	Mastered = 18
+	CreatedDate = 2022-11-05 24:46:34
+	StudiedDate = 2022-11-05 01:34:10
+end
+StudySet
+	Index = 34
+	Name = SEcond
+	NumTerms = 18
+	Mastered = 4
+	CreatedDate = 2022-11-05 03:14:32
+	StudiedDate = 2023-02-21 06:12:38
+end
+StudySet
+	Index = 35
+	Name = THIRD
+	NumTerms = 15
+	Mastered = 7
+	CreatedDate = 2022-11-20 19:54:28
+	StudiedDate = 2022-11-20 19:54:28
+end
