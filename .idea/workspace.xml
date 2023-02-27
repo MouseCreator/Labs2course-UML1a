@@ -4,14 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e5cf57ee-045d-45a8-8c9b-3b141fc334b5" name="Changes" comment="Moved shuffle from TermList to strategy">
+    <list default="true" id="e5cf57ee-045d-45a8-8c9b-3b141fc334b5" name="Changes" comment="Removed study terms list.&#10;Shuffle was delegated to strategy">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/StudyTermList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/AbstractTermList.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/TermList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/TermList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/WriteModeShuffleStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/WriteModeShuffleStrategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/WriteModeStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/WriteModeStrategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/WriteModeTermsContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/WriteModeTermsContainer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/info.index" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/info.index" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -205,14 +201,7 @@
       <option name="presentableId" value="Default" />
       <updated>1669462838387</updated>
       <workItem from="1677113641860" duration="5726000" />
-      <workItem from="1677480431304" duration="4257000" />
-    </task>
-    <task id="LOCAL-00017" summary="Removed garbage list as deprecated class">
-      <created>1674663878687</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1674663878687</updated>
+      <workItem from="1677480431304" duration="4336000" />
     </task>
     <task id="LOCAL-00018" summary="Minor changes: removed unused methods">
       <created>1674665158850</created>
@@ -550,7 +539,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677484795664</updated>
     </task>
-    <option name="localTasksCounter" value="66" />
+    <task id="LOCAL-00066" summary="Removed study terms list.&#10;Shuffle was delegated to strategy">
+      <created>1677485459101</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1677485459101</updated>
+    </task>
+    <option name="localTasksCounter" value="67" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -571,7 +567,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="Added write mode documentation" />
     <MESSAGE value="Refactoring in search method" />
     <MESSAGE value="Cleaned code: removed active sets field" />
     <MESSAGE value="Added set open search documentation" />
@@ -596,7 +591,8 @@
     <MESSAGE value="Added folder view documentation" />
     <MESSAGE value="Added Write Mode Strategies" />
     <MESSAGE value="Moved shuffle from TermList to strategy" />
-    <option name="LAST_COMMIT_MESSAGE" value="Moved shuffle from TermList to strategy" />
+    <MESSAGE value="Removed study terms list.&#10;Shuffle was delegated to strategy" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed study terms list.&#10;Shuffle was delegated to strategy" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
