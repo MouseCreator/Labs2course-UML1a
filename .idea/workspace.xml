@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e5cf57ee-045d-45a8-8c9b-3b141fc334b5" name="Changes" comment="Added FileBuilder test and benchmark">
+    <list default="true" id="e5cf57ee-045d-45a8-8c9b-3b141fc334b5" name="Changes" comment="Added folder view documentation">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/WriteModeShuffleStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/WriteModeStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/FolderViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/FolderViewController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,8 +20,8 @@
       <list>
         <option value="Kotlin Class" />
         <option value="FxmlFile" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -200,14 +202,7 @@
       <option name="presentableId" value="Default" />
       <updated>1669462838387</updated>
       <workItem from="1677113641860" duration="5726000" />
-      <workItem from="1677480431304" duration="1372000" />
-    </task>
-    <task id="LOCAL-00014" summary="Searching test for SetIndex">
-      <created>1674610140249</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1674610140249</updated>
+      <workItem from="1677480431304" duration="2552000" />
     </task>
     <task id="LOCAL-00015" summary="Cleaned up comparison code">
       <created>1674610319630</created>
@@ -545,7 +540,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677116253524</updated>
     </task>
-    <option name="localTasksCounter" value="63" />
+    <task id="LOCAL-00063" summary="Added folder view documentation">
+      <created>1677481824250</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1677481824250</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -566,7 +568,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="Added file builder documentation" />
     <MESSAGE value="Added folders documentation" />
     <MESSAGE value="Added learn style (user info) documentation" />
     <MESSAGE value="Added write mode documentation" />
@@ -591,7 +592,8 @@
     <MESSAGE value="Made Export Controller additional window. Changed default modality." />
     <MESSAGE value="Added load methods documentation." />
     <MESSAGE value="Added FileBuilder test and benchmark" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added FileBuilder test and benchmark" />
+    <MESSAGE value="Added folder view documentation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added folder view documentation" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
