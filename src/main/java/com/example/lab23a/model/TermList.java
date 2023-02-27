@@ -16,6 +16,11 @@ public class TermList extends AbstractTermList {
     public TermList(StudyTerm[] terms) {
         this.terms = new ArrayList<>(List.of(terms));
     }
+
+    public TermList(ArrayList<StudyTerm> terms) {
+        this.terms = new ArrayList<>(terms);
+    }
+
     public void refresh() {
         for (StudyTerm term : terms) term.removeProgress();
     }
@@ -54,7 +59,6 @@ public class TermList extends AbstractTermList {
 	}
 
 
-
 	public void insert(StudyTerm toInsert) {
 		if (toInsert.getIndex() < 0 || toInsert.getIndex() >= this.size()) {
 			toInsert.setIndex(this.size());
@@ -68,6 +72,15 @@ public class TermList extends AbstractTermList {
      */
     public void clear() {
         terms.clear();
+    }
+
+    /**
+     *
+     * @return first element of the list
+     * @throws IndexOutOfBoundsException if list is empty
+     */
+    public StudyTerm pop() throws IndexOutOfBoundsException{
+        return terms.remove(0);
     }
 
 

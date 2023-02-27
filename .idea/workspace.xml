@@ -4,14 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e5cf57ee-045d-45a8-8c9b-3b141fc334b5" name="Changes" comment="Added Write Mode Strategies">
+    <list default="true" id="e5cf57ee-045d-45a8-8c9b-3b141fc334b5" name="Changes" comment="Moved shuffle from TermList to strategy">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/StudyTerm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/StudyTerm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/StudyTermList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/StudyTermList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/StudyTermList.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/TermList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/TermList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/WriteModeShuffleStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/WriteModeShuffleStrategy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/WriteModeStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/WriteModeStrategy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/WriteModeTermsContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/WriteModeTermsContainer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/info.index" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/info.index" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +94,7 @@
       <command value="folderViewController" />
     </option>
   </component>
-  <component name="RunManager" selected="Application.FileBuilderTest">
+  <component name="RunManager" selected="Application.RunApplication">
     <configuration name="FileBuilderTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.lab23a.model.FileBuilderTest" />
       <module name="Labs2course-UML1a" />
@@ -205,14 +205,7 @@
       <option name="presentableId" value="Default" />
       <updated>1669462838387</updated>
       <workItem from="1677113641860" duration="5726000" />
-      <workItem from="1677480431304" duration="3572000" />
-    </task>
-    <task id="LOCAL-00016" summary="Added test for user data.">
-      <created>1674663703500</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1674663703500</updated>
+      <workItem from="1677480431304" duration="4257000" />
     </task>
     <task id="LOCAL-00017" summary="Removed garbage list as deprecated class">
       <created>1674663878687</created>
@@ -550,7 +543,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677483764916</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="Moved shuffle from TermList to strategy">
+      <created>1677484795664</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1677484795664</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -571,7 +571,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="Added learn style (user info) documentation" />
     <MESSAGE value="Added write mode documentation" />
     <MESSAGE value="Refactoring in search method" />
     <MESSAGE value="Cleaned code: removed active sets field" />
@@ -596,7 +595,8 @@
     <MESSAGE value="Added FileBuilder test and benchmark" />
     <MESSAGE value="Added folder view documentation" />
     <MESSAGE value="Added Write Mode Strategies" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Write Mode Strategies" />
+    <MESSAGE value="Moved shuffle from TermList to strategy" />
+    <option name="LAST_COMMIT_MESSAGE" value="Moved shuffle from TermList to strategy" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

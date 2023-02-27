@@ -6,7 +6,6 @@ package com.example.lab23a.model;
 public class WriteModeTermsContainer {
 	private final TermList studyResult;
 	private final TermList origin;
-	private StudyTermList studyList;
 	private final TermList toNextPeriod;
 
 	private WriteModeStrategy termPickStrategy;
@@ -23,7 +22,6 @@ public class WriteModeTermsContainer {
 		rightAnswered = 0;
 		this.studyResult = new TermList(origin);
 		studyResult.refresh();
-		this.studyList = new StudyTermList(origin);
 		toNextPeriod = new TermList();
 		initAttempts();
 		initStrategy(origin, style);
@@ -41,7 +39,7 @@ public class WriteModeTermsContainer {
 	 */
 	public void reinit() {
 		termPickStrategy.update(toNextPeriod);
-		currentRest = studyList.size();
+		currentRest = toNextPeriod.size();
 		currentAnswered = 0;
 		currentCorrect = 0;
 		toNextPeriod.clear();
