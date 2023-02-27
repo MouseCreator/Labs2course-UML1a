@@ -14,6 +14,9 @@ import javafx.scene.control.ListView;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 public class FolderViewController extends AdditionalWindowController implements Initializable  {
+	/**
+	 * All folders that will be shown (loaded from UserData)
+	 */
 	private FolderList folders;
 
 	private boolean isToAddIndex = false;
@@ -27,12 +30,21 @@ public class FolderViewController extends AdditionalWindowController implements 
     private TextField newFolderNameField;
     @FXML
     private Label commentLabel;
+
+	/**
+	 * Loads and displays folder list
+	 * @param folders - all user's folders
+	 */
 	public void loadData(FolderList folders) {
 		this.folders = folders.sortByName();
 		this.folderListView.getItems().clear();
 		this.folderListView.getItems().addAll(this.folders.asArrayList());
 	}
-	
+
+	/**
+	 *
+	 * @param toAdd - set index, that has to be added to a folder
+	 */
 	public void toAddIndex(SetIndex toAdd) {
 		this.isToAddIndex = true;
 		this.toAdd = toAdd;
@@ -68,7 +80,11 @@ public class FolderViewController extends AdditionalWindowController implements 
 	public void close() {
 		((Stage)this.commentLabel.getScene().getWindow()).close();
 	}
-	
+
+	/**
+	 * Creates new empty folder in the folder list if text field has proper name
+	 * Otherwise displays error message
+	 */
 	public void onNewFolder() {
 		if (!newFolderNameField.getText().trim().equals("")) {
 			Folder toAdd = parent.getUserData().appendNewFolder(newFolderNameField.getText());
@@ -80,10 +96,12 @@ public class FolderViewController extends AdditionalWindowController implements 
 		}
 	}
 
+	/**
+	 * Resets interface of the folder view
+	 */
 	public void reinitialize() {
 		this.commentLabel.setText("");
 		this.newFolderNameField.clear();
-		
 	}
 
 	@Override
