@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e5cf57ee-045d-45a8-8c9b-3b141fc334b5" name="Changes" comment="Returned abstract term list, because it can be used in learn mode">
+    <list default="true" id="e5cf57ee-045d-45a8-8c9b-3b141fc334b5" name="Changes" comment="Added term list documentation">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/TermList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/TermList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/ActivePaneController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/ActivePaneController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/AttachedToFolderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/AttachedToFolderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/AttachedToStudySetIndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/AttachedToStudySetIndexController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -200,14 +202,8 @@
       <option name="presentableId" value="Default" />
       <updated>1669462838387</updated>
       <workItem from="1677113641860" duration="5726000" />
-      <workItem from="1677480431304" duration="5162000" />
-    </task>
-    <task id="LOCAL-00020" summary="Fixed typos, removed unused import statements.">
-      <created>1674671491947</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1674671491947</updated>
+      <workItem from="1677480431304" duration="8101000" />
+      <workItem from="1677539181797" duration="2957000" />
     </task>
     <task id="LOCAL-00021" summary="Fixed changing access bug">
       <created>1674680435615</created>
@@ -545,7 +541,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677485996141</updated>
     </task>
-    <option name="localTasksCounter" value="69" />
+    <task id="LOCAL-00069" summary="Added term list documentation">
+      <created>1677486375704</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1677486375704</updated>
+    </task>
+    <option name="localTasksCounter" value="70" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -566,7 +569,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="Added set open search documentation" />
     <MESSAGE value="Created loadable SetOpen Scene" />
     <MESSAGE value="Extended loaded scenes. Fixed progress string bug" />
     <MESSAGE value="Added study set list documentation" />
@@ -591,7 +593,8 @@
     <MESSAGE value="Removed study terms list.&#10;Shuffle was delegated to strategy" />
     <MESSAGE value="Removed abstract term list" />
     <MESSAGE value="Returned abstract term list, because it can be used in learn mode" />
-    <option name="LAST_COMMIT_MESSAGE" value="Returned abstract term list, because it can be used in learn mode" />
+    <MESSAGE value="Added term list documentation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added term list documentation" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -600,11 +603,6 @@
           <properties class="javax.imageio.IIOException" package="javax.imageio" />
           <option name="timeStamp" value="2" />
         </breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/lab23a/WriteModeController.java</url>
-          <line>57</line>
-          <option name="timeStamp" value="37" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

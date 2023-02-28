@@ -2,14 +2,17 @@ package com.example.lab23a;
 
 import com.example.lab23a.model.Folder;
 
+/**
+ * Class for controllers, that are dependent on some folder of the study sets.
+ * Used to view, modify or get information from the folder.
+ * It includes working with all available study sets, since all sets considered as a folder.
+ */
 public abstract class AttachedToFolderController extends ActivePaneController {
 	protected Folder folder;
 
 	public AttachedToFolderController() {
 		super();
 	}
-
-
 
 	public Folder getFolder() {
 		return folder;

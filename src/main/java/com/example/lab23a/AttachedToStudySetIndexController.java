@@ -2,6 +2,10 @@ package com.example.lab23a;
 
 import com.example.lab23a.model.SetIndex;
 
+/**
+ * Controller that allows to create or modify set index.
+ * Can work only with one set index at a time.
+ */
 public abstract class AttachedToStudySetIndexController extends ActivePaneController {
 	protected SetIndex index;
 	

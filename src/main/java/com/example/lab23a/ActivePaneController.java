@@ -5,18 +5,27 @@ import javafx.scene.layout.Pane;
 
 import java.io.IOException;
 
+/**
+ * Class that controls the UI controls of some specific page.
+ */
 public abstract class ActivePaneController {
 
 	protected WorkspaceController parentController;
     private Pane content;
 
-    public void setParent(WorkspaceController controller) {
-		parentController = controller;
-	}
+    /**
+     *
+     * @return workspace controller, from which the data to the controller is loaded
+     */
 	public WorkspaceController getParent() {
 		return parentController;
 	}
 
+    /**
+     *
+     * @param parentController - workspace controller, from which all the data will be loaded
+     * @return initialized controller that can be used as current active
+     */
     public ActivePaneController load(WorkspaceController parentController) {
         FXMLLoader fxmlLoader = new FXMLLoader();
         fxmlLoader.setLocation(parentController.getClass().getResource(getFilename()));
@@ -34,9 +43,15 @@ public abstract class ActivePaneController {
     public ActivePaneController() {
 
     }
-    
+
+    /**
+     * Prepare elements of the interface for user
+     */
     public abstract void initContent();
-    
+
+    /**
+     * Action to do, when the pane is closed
+     */
     public void onClose() {
     	saveUserData();
     }
