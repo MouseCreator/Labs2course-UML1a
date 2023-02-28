@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e5cf57ee-045d-45a8-8c9b-3b141fc334b5" name="Changes" comment="Added active pane documentation">
+    <list default="true" id="e5cf57ee-045d-45a8-8c9b-3b141fc334b5" name="Changes" comment="Added additional window documentation">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/AdditionalWindowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/AdditionalWindowController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/lab23a/PDF/PDFConvertorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/lab23a/PDF/PDFConvertorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/lab23a/model/FolderListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/lab23a/model/FolderListTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -201,14 +203,7 @@
       <updated>1669462838387</updated>
       <workItem from="1677113641860" duration="5726000" />
       <workItem from="1677480431304" duration="8101000" />
-      <workItem from="1677539181797" duration="3244000" />
-    </task>
-    <task id="LOCAL-00022" summary="Extended documentation">
-      <created>1674681252536</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1674681252536</updated>
+      <workItem from="1677539181797" duration="4124000" />
     </task>
     <task id="LOCAL-00023" summary="Fixed typos">
       <created>1674762278060</created>
@@ -546,7 +541,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677543789633</updated>
     </task>
-    <option name="localTasksCounter" value="71" />
+    <task id="LOCAL-00071" summary="Added additional window documentation">
+      <created>1677544075396</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1677544075397</updated>
+    </task>
+    <option name="localTasksCounter" value="72" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -567,7 +569,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="Extended loaded scenes. Fixed progress string bug" />
     <MESSAGE value="Added study set list documentation" />
     <MESSAGE value="Added server class" />
     <MESSAGE value="Added client handler" />
@@ -592,7 +593,8 @@
     <MESSAGE value="Returned abstract term list, because it can be used in learn mode" />
     <MESSAGE value="Added term list documentation" />
     <MESSAGE value="Added active pane documentation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added active pane documentation" />
+    <MESSAGE value="Added additional window documentation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added additional window documentation" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

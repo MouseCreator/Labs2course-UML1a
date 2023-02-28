@@ -1,6 +1,5 @@
 package com.example.lab23a.PDF;
 
-import com.example.lab23a.PDF.PDFConvertor;
 import com.example.lab23a.model.Dates;
 import com.example.lab23a.model.SetIndex;
 import com.example.lab23a.model.StudyTerm;
