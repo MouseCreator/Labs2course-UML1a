@@ -85,7 +85,6 @@ public class Main extends Application {
 				scene.getRoot().getTransforms().setAll(scale);
 				pane.setPrefWidth(newWidth / scaleFactor);
 				pane.setPrefHeight(newHeight / scaleFactor);
-
 			} else {
 				pane.setPrefWidth(Math.max(initWidth, newWidth));
 				pane.setPrefHeight(Math.max(initHeight, newHeight));
