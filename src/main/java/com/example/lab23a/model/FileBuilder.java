@@ -286,31 +286,34 @@ public class FileBuilder {
         catch (Exception e) {
             System.err.println(e.getMessage());
         }
-    	return new UserLearnStyle();
+    	return new UserLearnStyle(new UserOptions(), new UserStreak(), new UserSavedInfo());
     }
     private static UserLearnStyle styleFromStructure(LinkedList<String> structure) {
-    	UserLearnStyle result = new UserLearnStyle();
+
+        UserOptions options = new UserOptions();
+        UserStreak streak = new UserStreak();
+        UserSavedInfo info = new UserSavedInfo();
         while (!structure.isEmpty()) {
         	String line = structure.removeFirst();
             String[] initializerAndValue = line.trim().split(commandDelimiter());
             String initializer = initializerAndValue[0];
             String fieldValue = initializerAndValue[1];
             switch (initializer) {
-                case INFO_LAST_USED -> result.setLastUsedIndex(Integer.parseInt(fieldValue));
-                case INFO_LAST_FOLDER -> result.setLastUsedIndexFolder(Integer.parseInt(fieldValue));
-                case INFO_SHUFFLE_OF -> result.setShuffleOn( Boolean.parseBoolean(fieldValue));
-                case INFO_AUTOSAVE -> result.setAutoSaveOn(Boolean.parseBoolean(fieldValue));
-                case INFO_LAST_STUDIED -> result.setLastStudied(Dates.fromString(fieldValue));
-                case INFO_CURRENT_STREAK -> result.setStreak(Integer.parseInt(fieldValue));
-                case INFO_SAVED_PATH -> result.updateLastSavedFileAbsolutePath(fieldValue);
+                case INFO_LAST_USED -> info.setLastUsedIndex(Integer.parseInt(fieldValue));
+                case INFO_LAST_FOLDER -> info.setLastUsedIndexFolder(Integer.parseInt(fieldValue));
+                case INFO_SHUFFLE_OF -> options.setShuffleOn( Boolean.parseBoolean(fieldValue));
+                case INFO_AUTOSAVE -> options.setAutoSaveOn(Boolean.parseBoolean(fieldValue));
+                case INFO_LAST_STUDIED -> streak.setLastStudied(Dates.fromString(fieldValue));
+                case INFO_CURRENT_STREAK -> streak.setStreak(Integer.parseInt(fieldValue));
+                case INFO_SAVED_PATH -> info.updateLastSavedFileAbsolutePath(fieldValue);
             }
         }
-        return result;
+        return new UserLearnStyle(options, streak, info);
     }
 
     /**
      *
-     * @param style - information, stored in user's data
+     * @param style - user data that contains all the information to be saved
      * Saves this information locally in data/info
      */
     public static void writeInfo(UserLearnStyle style) {
@@ -324,14 +327,14 @@ public class FileBuilder {
         }
     }
 
-    private static String infoToStructure(UserLearnStyle style) {
-    	return formatField(INFO_LAST_USED, style.getLastUsedIndex()) +
-    			formatField(INFO_LAST_FOLDER, style.getLastUsedIndexFolder())+
-    			formatField(INFO_SHUFFLE_OF, style.getIsShuffleOn())+
-    			formatField(INFO_AUTOSAVE, style.getAutosaveOn())+
-    			formatField(INFO_LAST_STUDIED, Dates.toDateFormat(style.getLastStudied())) +
-    			formatField(INFO_CURRENT_STREAK, style.getStreak()) +
-                formatField(INFO_SAVED_PATH, style.getLastSavedFileAbsolutePath());
+    private static String infoToStructure(UserLearnStyle data) {
+    	return formatField(INFO_LAST_USED, data.getInfo().getLastUsedIndex()) +
+    			formatField(INFO_LAST_FOLDER, data.getInfo().getLastUsedIndexFolder())+
+    			formatField(INFO_SHUFFLE_OF, data.getOptions().getIsShuffleOn())+
+    			formatField(INFO_AUTOSAVE, data.getOptions().getAutosaveOn())+
+    			formatField(INFO_LAST_STUDIED, Dates.toDateFormat(data.getStreak().getLastStudied())) +
+    			formatField(INFO_CURRENT_STREAK, data.getStreak().getStreak()) +
+                formatField(INFO_SAVED_PATH, data.getInfo().getLastSavedFileAbsolutePath());
     }
 
     /**

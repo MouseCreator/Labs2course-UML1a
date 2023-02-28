@@ -150,14 +150,14 @@ public class ExportController extends AdditionalWindowController{
         Window stage = parent.getWindow();
         File file = fileChooser.showSaveDialog(stage);
         if (file != null) {
-            parent.getUserData().getStyle().updateLastSavedFileAbsolutePath(file.getParent());
+            parent.getUserData().getUserInfo().updateLastSavedFileAbsolutePath(file.getParent());
             parent.getUserData().saveData();
             getPDF(file);
         }
     }
     private FileChooser initFileChooser() {
         FileChooser fileChooser = new FileChooser();
-        fileChooser.setInitialDirectory(new File(this.getParent().getUserData().getStyle().getLastSavedFileAbsolutePath()));
+        fileChooser.setInitialDirectory(new File(this.getParent().getUserData().getUserInfo().getLastSavedFileAbsolutePath()));
         fileChooser.setTitle("Save PDF");
         fileChooser.setInitialFileName(filenameField.getText());
         fileChooser.getExtensionFilters().addAll(new FileChooser.ExtensionFilter("PDF document","*.pdf"));

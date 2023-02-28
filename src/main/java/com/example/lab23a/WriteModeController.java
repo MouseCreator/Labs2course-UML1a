@@ -56,7 +56,7 @@ public class WriteModeController extends AttachedToStudySetIndexController imple
 	public void initContent() {
 		checker = new WriteAnswerChecker();
 		termsContainer = new WriteModeTermsContainer(FileBuilder.readTerms(index.getID()),
-				getParent().getUserData().getStyle());
+				getParent().getUserData().getUserOptions());
 		refreshInterface();
 		loadNextTerm();
 	}
@@ -78,7 +78,7 @@ public class WriteModeController extends AttachedToStudySetIndexController imple
 	}
 	private void updateLastStudied() {
 		index.updateLastStudied();
-		getParent().getUserData().getStyle().updateStreak();
+		getParent().getUserData().getUserStreak().updateStreak();
 	}
 	private void toTempResults() {
 		if (termsContainer.isFullStudied()) {

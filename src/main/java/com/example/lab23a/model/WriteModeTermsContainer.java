@@ -15,7 +15,7 @@ public class WriteModeTermsContainer {
 	private int rightAnswered;
 	private int currentCorrect;
 
-	public WriteModeTermsContainer(TermList origin, UserLearnStyle style) {
+	public WriteModeTermsContainer(TermList origin, UserOptions options) {
 		this.origin = origin;
 		currentRest = origin.size();
 		currentAnswered = 0;
@@ -24,11 +24,11 @@ public class WriteModeTermsContainer {
 		studyResult.refresh();
 		toNextPeriod = new StudyTermList();
 		initAttempts();
-		initStrategy(new StudyTermList(origin), style);
+		initStrategy(new StudyTermList(origin), options);
 	}
 
-	private void initStrategy(StudyTermList from, UserLearnStyle style) {
-		if (style.getIsShuffleOn())
+	private void initStrategy(StudyTermList from, UserOptions options) {
+		if (options.getIsShuffleOn())
 			this.termPickStrategy = new WriteModeShuffleStrategy(from);
 		else
 			this.termPickStrategy = new WriteModeStrategy(from);

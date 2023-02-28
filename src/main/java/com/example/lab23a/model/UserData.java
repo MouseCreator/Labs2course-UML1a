@@ -1,22 +1,28 @@
 package com.example.lab23a.model;
 
+/**
+ * Stores and updates user's information, including options, folders and study sets
+ */
 public class UserData {
-	private int lastUsedIndexFolder = 0;
 	private SetIndexList indexList;
-	private UserLearnStyle style;
 	private FolderList folderList;
-
-
 	private int lastUsedIndex;
 	private int lastFolderIndex;
 	private Thread saveIndexThread;
+
+	private UserOptions userOptions;
+	private UserStreak userStreak;
+	private UserSavedInfo userInfo;
 
 	public UserData() {
 		this.folderList = new FolderList();
 		this.indexList = new SetIndexList();
 		this.lastUsedIndex = 0;
 	}
-	
+
+	/**
+	 * Receives information from file system
+	 */
 	public void load() {
 		indexList = FileBuilder.readIndexFile();
 		initStyle();
@@ -24,29 +30,37 @@ public class UserData {
 	}
 	
 	private void initStyle() {
-		style = FileBuilder.readInfo();
-		lastUsedIndex = style.getLastUsedIndex();
-		lastUsedIndexFolder = style.getLastUsedIndexFolder();
-		style.initStreak();
+		UserLearnStyle style = FileBuilder.readInfo();
+		this.userInfo = style.getInfo();
+		this.userOptions = style.getOptions();
+		this.userStreak = style.getStreak();
+		userStreak.initStreak();
 	}
+
+	/**
+	 * Saves data to file system
+	 */
 	public void saveData() {
 		saveIndex();
 	}
-	
+
+	/**
+	 * Updates index list file
+	 */
 	public void saveIndex() {
-		toStyle();
-		FileBuilder.writeInfo(style);
+
+		FileBuilder.writeInfo(toStyle());
 		FileBuilder.writeIndexFile(indexList);
 		FileBuilder.writeFolderIndexList(folderList);
 	}
-	public void toStyle() {
-		style.setLastUsedIndex(lastUsedIndex);
-		style.setLastUsedIndexFolder(lastUsedIndexFolder);
+
+	public UserLearnStyle toStyle() {
+		return new UserLearnStyle(userOptions, userStreak, userInfo);
 	}
 	
 	
 	public void autoSave() {
-		if (!style.getAutosaveOn())
+		if (!userOptions.getAutosaveOn())
 			return;
 		if (saveIndexThread == null || !saveIndexThread.isAlive()) {
 			AutoSaveTask saveTask = new AutoSaveTask(this);
@@ -70,9 +84,6 @@ public class UserData {
 		
 		this.getIndexList().insert(index);
 		
-	}
-	public UserLearnStyle getStyle() {
-		return style;
 	}
 	public SetIndex genNewIndex() {
 		return new SetIndex(this.lastUsedIndex+1);
@@ -111,6 +122,22 @@ public class UserData {
 		this.folderList.remove(folder);
 		FileBuilder.deleteFolder(folder.getIndex());
 	}
+
+	public UserOptions getUserOptions() {
+		return userOptions;
+	}
+
+
+
+
+	public UserStreak getUserStreak() {
+		return userStreak;
+	}
+
+	public UserSavedInfo getUserInfo() {
+		return userInfo;
+	}
+
 
 
 
