@@ -1,19 +1,19 @@
 package com.example.lab23a.model;
 
+/**
+ * Class used for transferring information from user data to file builder.
+ */
 public class UserLearnStyle {
 
 	public UserOptions getOptions() {
 		return options;
 	}
 
-
-
 	private final UserOptions options;
 
 	public UserStreak getStreak() {
 		return streak;
 	}
-
 
 	private final UserStreak streak;
 

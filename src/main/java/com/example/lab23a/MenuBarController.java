@@ -6,7 +6,7 @@ public class MenuBarController {
     private WorkspaceController parentController;
 	
 	public void switchToEditor() {
-		parentController.loadPage(new EditorController().load(parentController, parentController.getUserData().genNewIndex()));
+		parentController.loadPage(new EditorController().load(parentController, parentController.getUserData().generateNewIndex()));
 	}
 	public void switchToSetOpen()  {
 		parentController.loadPage(new SetOpenController().load(parentController));

@@ -16,7 +16,7 @@ class UserDataTest {
         data.insertNewSet(new SetIndex(1));
         data.insertNewSet(new SetIndex(2));
         assertEquals(data.getIndexList().size(),2);
-        SetIndex generated = data.genNewIndex();
+        SetIndex generated = data.generateNewIndex();
         assertEquals(generated.getID(), 3);
     }
 
