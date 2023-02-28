@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e5cf57ee-045d-45a8-8c9b-3b141fc334b5" name="Changes" comment="Added term list documentation">
+    <list default="true" id="e5cf57ee-045d-45a8-8c9b-3b141fc334b5" name="Changes" comment="Added active pane documentation">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/ActivePaneController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/ActivePaneController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/AttachedToFolderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/AttachedToFolderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/AttachedToStudySetIndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/AttachedToStudySetIndexController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/AdditionalWindowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/AdditionalWindowController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -203,14 +201,7 @@
       <updated>1669462838387</updated>
       <workItem from="1677113641860" duration="5726000" />
       <workItem from="1677480431304" duration="8101000" />
-      <workItem from="1677539181797" duration="2957000" />
-    </task>
-    <task id="LOCAL-00021" summary="Fixed changing access bug">
-      <created>1674680435615</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1674680435615</updated>
+      <workItem from="1677539181797" duration="3244000" />
     </task>
     <task id="LOCAL-00022" summary="Extended documentation">
       <created>1674681252536</created>
@@ -548,7 +539,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677486375704</updated>
     </task>
-    <option name="localTasksCounter" value="70" />
+    <task id="LOCAL-00070" summary="Added active pane documentation">
+      <created>1677543789633</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1677543789633</updated>
+    </task>
+    <option name="localTasksCounter" value="71" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -569,7 +567,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="Created loadable SetOpen Scene" />
     <MESSAGE value="Extended loaded scenes. Fixed progress string bug" />
     <MESSAGE value="Added study set list documentation" />
     <MESSAGE value="Added server class" />
@@ -594,7 +591,8 @@
     <MESSAGE value="Removed abstract term list" />
     <MESSAGE value="Returned abstract term list, because it can be used in learn mode" />
     <MESSAGE value="Added term list documentation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added term list documentation" />
+    <MESSAGE value="Added active pane documentation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added active pane documentation" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

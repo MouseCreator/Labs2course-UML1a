@@ -15,14 +15,28 @@ public abstract class AdditionalWindowController {
     private int height = 480;
 
     protected Stage stage;
+
+    /**
+     * Provides access for additional window to its scene.
+     * @param stage - stage, created by workspace controller and opened as additional window
+     */
     public void setStage(Stage stage) {
         this.stage = stage;
     }
 
+    /**
+     *
+     * @return filename of the FXML file to load content
+     */
     public abstract String getFilename();
     public AdditionalWindowController() {
     }
 
+    /**
+     *
+     * @param parent - workspace controller to load data from
+     * @return initialized additional window that may be opened
+     */
     protected AdditionalWindowController load(WorkspaceController parent) {
         this.parent = parent;
         FXMLLoader fxmlLoader = new FXMLLoader();
@@ -38,17 +52,34 @@ public abstract class AdditionalWindowController {
         }
     }
 
+    /**
+     *
+     * @return workspace controller, that created the additional window
+     */
     public WorkspaceController getParent() {
         return parent;
     }
 
+    /**
+     *
+     * @return root element for page's content
+     */
     public Pane getContent() {
         return content;
     }
 
+    /**
+     *
+     * @return height in pixels of the created window
+     */
     public int getHeight() {
         return height;
     }
+
+    /**
+     *
+     * @return width in pixels of the created window
+     */
 
     public int getWidth() {
         return width;
