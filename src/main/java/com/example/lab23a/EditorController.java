@@ -20,6 +20,9 @@ import com.example.lab23a.model.FileBuilder;
 import com.example.lab23a.model.StudyTerm;
 import com.example.lab23a.model.TermList;
 
+/**
+ * Class that controls study set editor
+ */
 public class EditorController extends AttachedToStudySetIndexController implements Initializable{
 
 
@@ -52,24 +55,19 @@ public class EditorController extends AttachedToStudySetIndexController implemen
     
     private final LinkedList<EditItemController> controllerList = new LinkedList<>();
 
-    public void setKeyEvent() {
+    private void setKeyEvent() {
     	rightScrollPane.setOnKeyPressed(event -> {
-			try {
-				if (keyCombinationFastSave.match(event)) {
-					onSave();
-				}
-				else if (keyCombinationNewTerm.match(event)) {
-					addEmptyTerm();
-				}
-				else if (keyCombinationLearn.match(event)) {
-					onSaveAndLearn();
-				}
-				else if (event.getCode().equals(KeyCode.DELETE)) {
-					deleteTerm();
-				}
+			if (keyCombinationFastSave.match(event)) {
+				onSave();
 			}
-			catch (IOException e) {
-				e.printStackTrace();
+			else if (keyCombinationNewTerm.match(event)) {
+				addEmptyTerm();
+			}
+			else if (keyCombinationLearn.match(event)) {
+				onSaveAndLearn();
+			}
+			else if (event.getCode().equals(KeyCode.DELETE)) {
+				deleteTerm();
 			}
 		});
     }
@@ -111,6 +109,10 @@ public class EditorController extends AttachedToStudySetIndexController implemen
 		termCreatorList.getItems().add(itemLoader.load());
 		return itemLoader;
 	}
+
+	/**
+	 * Adds new empty term in the end of the list
+	 */
 	public void addEmptyTerm() {
 		hasUnsavedChanges = true;
 		EditItemController editItem = initEmptyTerm();
@@ -133,15 +135,26 @@ public class EditorController extends AttachedToStudySetIndexController implemen
 		editItem.fromTerm(term);
 		controllerList.add(editItem);
 	}
-	
+
+	/**
+	 * Deselects the selected term
+	 */
 	public void deselect() {
 		termCreatorList.getSelectionModel().clearSelection();
 	}
+
+	/**
+	 * Moves selected item one item down if possible
+	 */
 	public void pushDown()  {
 		if (selectedIndex >= elementCount - 1|| selectedIndex == -1)
 			return;
 		push(selectedIndex, selectedIndex + 1);
 	}
+
+	/**
+	 * Moves selected item one item up if possible
+	 */
 	public void pushUp()  {
 		if (selectedIndex < 1)
 			return;
@@ -170,8 +183,11 @@ public class EditorController extends AttachedToStudySetIndexController implemen
 		this.controllerList.get(index1).setNumber(this.controllerList.get(index2).getNumber());
 		this.controllerList.get(index2).setNumber(tempNumber);
 	}
-	
-	public void deleteTerm() throws IOException {
+
+	/**
+	 * Removes the selected term from the list
+	 */
+	public void deleteTerm() {
 		hasUnsavedChanges = true;
 		if (selectedIndex == -1)
 			return;
@@ -185,7 +201,9 @@ public class EditorController extends AttachedToStudySetIndexController implemen
 		controllerList.remove(current);
 	}
 
-	
+	/**
+	 * Saves the study set to user data and file system
+	 */
 	public void onSave() {
 		hasUnsavedChanges = false;
 		index.setName(getStudyIndexName());
@@ -197,14 +215,21 @@ public class EditorController extends AttachedToStudySetIndexController implemen
 		
 		FileBuilder.writeTerms(index.getID(), terms);
 	}
+
+	/**
+	 *
+	 * @return the name of created study set
+	 */
 	public String getStudyIndexName() {
 		String name = setNameField.getText();
 		if (name == null)
 			return "";
 		return name;
 	}
-	
-	
+
+	/**
+	 * Saves all terms and loads set learn page
+	 */
 	public void onSaveAndLearn() {
 		onSave();
 		getParent().loadPage(new WriteModeController().load(parentController, index));
@@ -222,7 +247,10 @@ public class EditorController extends AttachedToStudySetIndexController implemen
 		this.getParent().getUserData().removeStudySet(index);
 		this.getParent().loadPage(new SetOpenController().load(parentController));
 	}
-	
+
+	/**
+	 * Removes the set and loads set opener
+ 	 */
 	public void deleteSetAndConfirm() {
 		this.getParent().displayDeletionPopUp(this::deleteSet);
 	}
@@ -257,6 +285,9 @@ public class EditorController extends AttachedToStudySetIndexController implemen
     	return true;
     }
 
+	/**
+	 * Specifies that editor controller has unsaved changes and cannot be safely left
+	 */
 	public void addUnsavedChanges() {
 		this.hasUnsavedChanges = true;
 	}

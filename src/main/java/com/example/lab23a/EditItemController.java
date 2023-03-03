@@ -11,6 +11,9 @@ import javafx.scene.control.TextField;
 import com.example.lab23a.model.StudyProgress;
 import com.example.lab23a.model.StudyTerm;
 
+/**
+ * Item of the list in editor mode. Can be edited by user and converted to study term
+ */
 public class EditItemController implements Initializable{
 
     @FXML
@@ -26,9 +29,12 @@ public class EditItemController implements Initializable{
     
     private StudyProgress progress = StudyProgress.NOT_LEARNED;
     private int number;
-    
-    
-    public StudyTerm toTerm() {
+
+	/**
+	 *
+	 * @return study term, created from content fields
+	 */
+	public StudyTerm toTerm() {
     	String term = termTextField.getText();
     	if (term == null)
     		term = "";
@@ -42,20 +48,38 @@ public class EditItemController implements Initializable{
     	setNumber(number);
     	fromTerm(term);
     }
-    
-    public void fromTerm(StudyTerm term) {
+
+	/**
+	 * Sets item's content to term's properties
+	 * @param term - term, from which the controller will be created
+	 */
+	public void fromTerm(StudyTerm term) {
     	this.progress = term.getProgress();
     	termTextField.setText(term.getTerm());
     	definitionTextField.setText(term.getDefinition());
     }
-    
-    public void setNumber(int number) {
+
+	/**
+	 *
+	 * @param number - the order of the item in the list
+	 */
+	public void setNumber(int number) {
     	this.number = number;
     	this.termNumber.setText("Term " + number);
     }
+
+	/**
+	 *
+	 * @return order of the item
+	 */
     public int getNumber() {
     	return number;
     }
+
+	/**
+	 *
+	 * @param editor - the page, the created the item
+	 */
     public void setEditor(EditorController editor) {
     	this.editor = editor;
     }

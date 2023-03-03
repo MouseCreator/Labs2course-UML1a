@@ -140,6 +140,10 @@ public class StudyTerm {
 		setProgress(StudyProgress.NOT_LEARNED);
 	}
 
+    /**
+     *
+     * @return progress as readable string
+     */
     public String getProgressString() {
         return progressString;
     }
