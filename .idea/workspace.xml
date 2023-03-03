@@ -7,12 +7,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e5cf57ee-045d-45a8-8c9b-3b141fc334b5" name="Changes" comment="Shared user learn style's responsibilities among smaller classes">
+    <list default="true" id="e5cf57ee-045d-45a8-8c9b-3b141fc334b5" name="Changes" comment="Added user data documentation">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/MenuBarController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/MenuBarController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/UserData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/UserData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/UserLearnStyle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/UserLearnStyle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/lab23a/model/UserDataTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/lab23a/model/UserDataTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,26 +40,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;create.test.in.the.same.root&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/mysha/IdeaProjects/Labs2course-UML1a&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "create.test.in.the.same.root": "true",
+    "last_opened_file_path": "C:/Users/mysha/IdeaProjects/AlgSem4Lab1InJava",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\mysha\IdeaProjects\Lab23a\src\main\resources" />
@@ -208,14 +205,8 @@
       <workItem from="1677113641860" duration="5726000" />
       <workItem from="1677480431304" duration="8101000" />
       <workItem from="1677539181797" duration="4898000" />
-      <workItem from="1677545938456" duration="5846000" />
-    </task>
-    <task id="LOCAL-00028" summary="Minor refactoring changes">
-      <created>1674775445164</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1674775445164</updated>
+      <workItem from="1677545938456" duration="6338000" />
+      <workItem from="1677710099978" duration="668000" />
     </task>
     <task id="LOCAL-00029" summary="Added missing documentation">
       <created>1674858483592</created>
@@ -553,7 +544,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677552412272</updated>
     </task>
-    <option name="localTasksCounter" value="77" />
+    <task id="LOCAL-00077" summary="Added user data documentation">
+      <created>1677553316869</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1677553316869</updated>
+    </task>
+    <option name="localTasksCounter" value="78" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -574,7 +572,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="Added additional window class" />
     <MESSAGE value="Renamed destination to filename" />
     <MESSAGE value="Made folder view loadable" />
     <MESSAGE value="Fixed parent controller bug" />
@@ -599,7 +596,8 @@
     <MESSAGE value="Added generated documentation. Commented dejavu.css in stylesheets." />
     <MESSAGE value="Renamed doc to docs" />
     <MESSAGE value="Shared user learn style's responsibilities among smaller classes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Shared user learn style's responsibilities among smaller classes" />
+    <MESSAGE value="Added user data documentation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added user data documentation" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
