@@ -7,11 +7,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e5cf57ee-045d-45a8-8c9b-3b141fc334b5" name="Changes" comment="Changed access modifier for export data. Added docs">
+    <list default="true" id="e5cf57ee-045d-45a8-8c9b-3b141fc334b5" name="Changes" comment="Added editor documentation + minor changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/EditItemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/EditItemController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/EditorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/EditorController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/StudyTerm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/StudyTerm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/PopUpTemplateWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/PopUpTemplateWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/SetOpenController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/SetOpenController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/WriteModeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/WriteModeController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -209,14 +210,7 @@
       <workItem from="1677539181797" duration="4898000" />
       <workItem from="1677545938456" duration="6338000" />
       <workItem from="1677710099978" duration="668000" />
-      <workItem from="1677858579154" duration="8181000" />
-    </task>
-    <task id="LOCAL-00035" summary="Removed unnecessary methods">
-      <created>1674946797308</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1674946797308</updated>
+      <workItem from="1677858579154" duration="8351000" />
     </task>
     <task id="LOCAL-00036" summary="Removed index from Convertor, because it wasn't useful.">
       <created>1674951092856</created>
@@ -554,7 +548,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677886175821</updated>
     </task>
-    <option name="localTasksCounter" value="84" />
+    <task id="LOCAL-00084" summary="Added editor documentation + minor changes">
+      <created>1677886855918</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1677886855918</updated>
+    </task>
+    <option name="localTasksCounter" value="85" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -575,7 +576,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="Made Export Controller additional window. Changed default modality." />
     <MESSAGE value="Added load methods documentation." />
     <MESSAGE value="Added FileBuilder test and benchmark" />
     <MESSAGE value="Added folder view documentation" />
@@ -600,7 +600,8 @@
     <MESSAGE value="Added item controller documentation" />
     <MESSAGE value="Removed extra method. Added docs." />
     <MESSAGE value="Changed access modifier for export data. Added docs" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed access modifier for export data. Added docs" />
+    <MESSAGE value="Added editor documentation + minor changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added editor documentation + minor changes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -19,7 +19,9 @@ import com.example.lab23a.model.FileBuilder;
 import com.example.lab23a.model.Folder;
 import com.example.lab23a.model.SetIndexList;
 
-
+/**
+ * Class that controls opener page
+ */
 public class SetOpenController extends AttachedToFolderController implements Initializable {
 	@FXML
 	public ScrollPane scroll;

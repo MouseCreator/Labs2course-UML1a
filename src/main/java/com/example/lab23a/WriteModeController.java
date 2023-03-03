@@ -12,6 +12,9 @@ import javafx.scene.control.TextField;
 import javafx.scene.layout.Pane;
 import javafx.scene.paint.Color;
 
+/**
+ * Class that controls write mode
+ */
 public class WriteModeController extends AttachedToStudySetIndexController implements Initializable {
 
 

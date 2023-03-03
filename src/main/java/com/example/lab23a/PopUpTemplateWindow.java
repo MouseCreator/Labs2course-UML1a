@@ -1,5 +1,8 @@
 package com.example.lab23a;
 
+/**
+ * Template class for pop-up windows
+ */
 public class PopUpTemplateWindow {
 	/**
 	 * Name of the window
