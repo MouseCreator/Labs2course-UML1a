@@ -17,7 +17,7 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.Pane;
 
 /**
- * Page with information about study set, including its name, progress and all of the terms
+ * Controls page with information about study set, including its name, progress and all of the terms
  */
 public class SetInfoController extends AttachedToStudySetIndexController implements Initializable{
 
