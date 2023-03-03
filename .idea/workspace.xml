@@ -7,7 +7,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e5cf57ee-045d-45a8-8c9b-3b141fc334b5" name="Changes" comment="Added user data documentation" />
+    <list default="true" id="e5cf57ee-045d-45a8-8c9b-3b141fc334b5" name="Changes" comment="Added user data documentation">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uml/ClassDiagram.drawio" beforeDir="false" afterPath="$PROJECT_DIR$/Uml/ClassDiagram.drawio" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -204,7 +207,7 @@
       <workItem from="1677539181797" duration="4898000" />
       <workItem from="1677545938456" duration="6338000" />
       <workItem from="1677710099978" duration="668000" />
-      <workItem from="1677858579154" duration="612000" />
+      <workItem from="1677858579154" duration="2038000" />
     </task>
     <task id="LOCAL-00029" summary="Added missing documentation">
       <created>1674858483592</created>
