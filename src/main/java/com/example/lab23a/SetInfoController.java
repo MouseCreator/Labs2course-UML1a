@@ -16,12 +16,18 @@ import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.Pane;
 
+/**
+ * Page with information about study set, including its name, progress and all of the terms
+ */
 public class SetInfoController extends AttachedToStudySetIndexController implements Initializable{
 
     public SetInfoController() {
 		super();
 	}
 
+	/**
+	 * All terms of the study set
+	 */
 	private TermList studyTerms;
     private final ObservableList<StudyTerm> observableList = FXCollections.observableArrayList();
     @FXML
@@ -86,22 +92,42 @@ public class SetInfoController extends AttachedToStudySetIndexController impleme
 	private void initFolderButton() {
 		this.removeFromThisFolderBtn.setVisible(getParent().getLastActive().getIndex() != Folder.ALL_SETS);
 	}
+
+	/**
+	 * Moves to learning screen
+	 */
 	public void startLearning() {
 		getParent().loadPage(new WriteModeController().load(parentController, index));
 	}
-	
+
+	/**
+	 * Removes the progress from all terms of the set
+	 * @throws IOException - progress panel could not be created
+	 */
 	public void onRefresh() throws IOException {
 		studyTerms.refresh();
 		index.setElementsMastered(0);
 		initItem(index);
 		displayTerms();
 	}
+
+	/**
+	 * Moves to the editor screen
+	 */
 	public void onEdit() {
 		getParent().loadPage(new EditorController(index));
 	}
+
+	/**
+	 * Adds set index to specified folder
+	 */
 	public void onAddToFolder() {
 		getParent().openAdditionalWindow(new FolderViewController().load(parentController, index));
 	}
+
+	/**
+	 * Removes set index from the folder it was openned from
+	 */
 	public void onRemoveFromFolder() {
 		getParent().getUserData().removeSetFromFolder(index, getParent().getLastActive());
 		getParent().refreshLastActive();

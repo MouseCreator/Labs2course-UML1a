@@ -87,9 +87,18 @@ public abstract class AdditionalWindowController {
 
     public abstract String getTitle();
 
+    /**
+     * Changes the height of the window
+     * @param height - new height
+     */
     protected void setHeight(int height) {
         this.height = height;
     }
+
+    /**
+     * Changes the width of the window
+     * @param width - new width
+     */
     protected void setWidth(int width) {
         this.width = width;
     }
