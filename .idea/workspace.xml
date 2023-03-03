@@ -7,8 +7,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e5cf57ee-045d-45a8-8c9b-3b141fc334b5" name="Changes" comment="Added item controller documentation">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/IconLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/IconLoader.java" afterDir="false" />
+    <list default="true" id="e5cf57ee-045d-45a8-8c9b-3b141fc334b5" name="Changes" comment="Removed extra method. Added docs.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/ExportController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/ExportController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -206,14 +207,7 @@
       <workItem from="1677539181797" duration="4898000" />
       <workItem from="1677545938456" duration="6338000" />
       <workItem from="1677710099978" duration="668000" />
-      <workItem from="1677858579154" duration="7276000" />
-    </task>
-    <task id="LOCAL-00033" summary="Added documentation">
-      <created>1674944842539</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1674944842539</updated>
+      <workItem from="1677858579154" duration="7492000" />
     </task>
     <task id="LOCAL-00034" summary="Bug-fix: Removed public class, copy of Write Progress, in the enum.">
       <created>1674946493295</created>
@@ -551,7 +545,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677885791892</updated>
     </task>
-    <option name="localTasksCounter" value="82" />
+    <task id="LOCAL-00082" summary="Removed extra method. Added docs.">
+      <created>1677885943138</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1677885943138</updated>
+    </task>
+    <option name="localTasksCounter" value="83" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -572,7 +573,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="Fixed open in Workspace error: used deprecated constructor" />
     <MESSAGE value="Made write results loadable" />
     <MESSAGE value="Made Export Controller additional window. Changed default modality." />
     <MESSAGE value="Added load methods documentation." />
@@ -597,7 +597,8 @@
     <MESSAGE value="Added controller for pop-up documentation" />
     <MESSAGE value="Added menu bar documentation" />
     <MESSAGE value="Added item controller documentation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added item controller documentation" />
+    <MESSAGE value="Removed extra method. Added docs." />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed extra method. Added docs." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

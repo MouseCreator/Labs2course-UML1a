@@ -56,6 +56,10 @@ public class ExportController extends AdditionalWindowController{
     private TermList terms;
     @FXML
     private Label fontLabel;
+
+    /**
+     * Sets footer color to the color in specified color picker
+     */
     @FXML
     public void changeFooterColor() {
        footer.setFill(footerColorPicker.getValue());
@@ -67,13 +71,17 @@ public class ExportController extends AdditionalWindowController{
         float blue = (float) color.getBlue();
         return new java.awt.Color(red, green, blue);
     }
-
+    /**
+     * Sets header color to the color in specified color picker
+     */
     @FXML
     void changeHeaderColor() {
         header.setFill(titleColorPicker.getValue());
         parameters.getPalette().setHeader(fxToAwtColor(titleColorPicker.getValue()));
     }
-
+    /**
+     * Sets table legend (heading) color to the color in specified color picker
+     */
     @FXML
     void changeLegendColor() {
         for (Object obj : legendColor.getChildren().toArray()) {
@@ -82,7 +90,9 @@ public class ExportController extends AdditionalWindowController{
         }
         parameters.getPalette().setLegend(fxToAwtColor(legendColorPicker.getValue()));
     }
-
+    /**
+     * Sets table cells color to the color in specified color picker
+     */
     @FXML
     void changeTermsColor() {
         for (Object outer : termsBox.getChildren().toArray()) {
@@ -97,18 +107,24 @@ public class ExportController extends AdditionalWindowController{
     private void setTextColor() {
         parameters.getPalette().setTextColor(textCheckBox.isSelected() ? java.awt.Color.white : java.awt.Color.black);
     }
+    /**
+     * Exports PDF file and closes the scene
+     */
     @FXML
     void export() {
         setTextColor();
         savePDF();
         stage.close();
     }
+    /**
+     * Closes export window without exporting the file
+     */
     @FXML
     void cancel() {
         stage.close();
     }
 
-    public void setExportData(SetIndex index, TermList list) {
+    private void setExportData(SetIndex index, TermList list) {
         this.index = index;
         this.terms = list;
         filenameField.setText(index.getNotEmptyName());
@@ -170,6 +186,13 @@ public class ExportController extends AdditionalWindowController{
         document.close();
     }
 
+    /**
+     *
+     * @param parentController - the workspace controller to create window
+     * @param index - index to export
+     * @param studyTerms - terms of the exporting index
+     * @return initialized instance of export controller
+     */
     public ExportController load(WorkspaceController parentController, SetIndex index, TermList studyTerms) {
         ExportController exportController = (ExportController) super.load(parentController);
         exportController.setExportData(index, studyTerms);
