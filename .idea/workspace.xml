@@ -7,11 +7,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e5cf57ee-045d-45a8-8c9b-3b141fc334b5" name="Changes" comment="Added user data documentation">
+    <list default="true" id="e5cf57ee-045d-45a8-8c9b-3b141fc334b5" name="Changes" comment="Added pop up documentation">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/AdditionalWindowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/AdditionalWindowController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/PopUpTemplateWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/PopUpTemplateWindow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/SetInfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/SetInfoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/PopupController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/PopupController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -209,14 +207,7 @@
       <workItem from="1677539181797" duration="4898000" />
       <workItem from="1677545938456" duration="6338000" />
       <workItem from="1677710099978" duration="668000" />
-      <workItem from="1677858579154" duration="6711000" />
-    </task>
-    <task id="LOCAL-00029" summary="Added missing documentation">
-      <created>1674858483592</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1674858483592</updated>
+      <workItem from="1677858579154" duration="6880000" />
     </task>
     <task id="LOCAL-00030" summary="More documentation">
       <created>1674858839642</created>
@@ -554,7 +545,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677553316869</updated>
     </task>
-    <option name="localTasksCounter" value="78" />
+    <task id="LOCAL-00078" summary="Added pop up documentation">
+      <created>1677885376366</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1677885376366</updated>
+    </task>
+    <option name="localTasksCounter" value="79" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -575,7 +573,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="Renamed destination to filename" />
     <MESSAGE value="Made folder view loadable" />
     <MESSAGE value="Fixed parent controller bug" />
     <MESSAGE value="Fixed adding set to folder mode" />
@@ -600,7 +597,8 @@
     <MESSAGE value="Renamed doc to docs" />
     <MESSAGE value="Shared user learn style's responsibilities among smaller classes" />
     <MESSAGE value="Added user data documentation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added user data documentation" />
+    <MESSAGE value="Added pop up documentation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added pop up documentation" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
