@@ -6,6 +6,10 @@ import com.example.lab23a.model.SetIndex;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.ProgressBar;
+
+/**
+ * Class that controls elements of the grid in set opener
+ */
 public class ItemController {
 
 	@FXML
@@ -28,6 +32,10 @@ public class ItemController {
     
     private SetIndex index;
 
+	/**
+	 *
+	 * @param from - the index that is to be shown in the grid item
+	 */
     public void setData(SetIndex from) {
     	this.index = from;
     	itemNameLabel.setText(from.getName());
@@ -46,8 +54,12 @@ public class ItemController {
     	}
     	termCountLabel.setText(from.getElementsCount() + " terms");
     }
-    
-    public SetIndex getIndex() {
+
+	/**
+	 *
+	 * @return the index that item controller is created from
+	 */
+	public SetIndex getIndex() {
     	return index;
     }
     
