@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lab23a.MenuBarController">
+   <children>
+      <MenuBar fx:id="CommonMenuBar" minWidth="1280.0" prefHeight="20.0">
+         <menus>
+            <Menu mnemonicParsing="false" text="Sets">
+              <items>
+                <MenuItem fx:id="NewSetItem" mnemonicParsing="false" onAction="#switchToEditor" text="New" />
+                  <MenuItem fx:id="OpenSetItem" mnemonicParsing="false" onAction="#switchToSetOpen" text="Open" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Folders">
+              <items>
+                <MenuItem fx:id="viewFolderItem" mnemonicParsing="false" onAction="#viewFolderList" text="Open" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Profile">
+              <items>
+                <MenuItem fx:id="ViewProfileItem" mnemonicParsing="false" onAction="#switchToProfile" text="View" />
+              </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>

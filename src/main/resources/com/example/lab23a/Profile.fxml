@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lab23a.ProfileController">
+   <children>
+      <HBox layoutX="37.0" layoutY="39.0" prefHeight="380.0" prefWidth="547.0">
+         <children>
+            <Label prefHeight="45.0" prefWidth="180.0" text="Profile">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Label>
+            <VBox prefHeight="380.0" prefWidth="374.0">
+               <children>
+                  <Label prefHeight="45.0" prefWidth="180.0" text="Settings">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <CheckBox fx:id="shuffleOnCheckBox" mnemonicParsing="false" prefHeight="29.0" prefWidth="185.0" text="Shuffle terms">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="autosaveCheckBox" mnemonicParsing="false" prefHeight="29.0" prefWidth="185.0" text="Autosave">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </CheckBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <ImageView fitHeight="444.0" fitWidth="872.0" layoutX="370.0" layoutY="199.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../data/gfx/MotivationSign.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="streakText" layoutX="518.0" layoutY="127.0" prefHeight="70.0" prefWidth="679.0" text="You have 10 days streak!" textFill="#767676">
+         <font>
+            <Font name="System Bold" size="48.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

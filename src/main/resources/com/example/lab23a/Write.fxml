@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lab23a.WriteModeController">
+   <children>
+      <Label fx:id="definitionLabel" layoutX="249.0" layoutY="93.0" prefHeight="58.0" prefWidth="688.0" text="Definition">
+         <font>
+            <Font name="System Bold" size="40.0" />
+         </font>
+      </Label>
+      <Label fx:id="commentLabel" alignment="TOP_LEFT" layoutX="249.0" layoutY="151.0" prefHeight="60.0" prefWidth="690.0" text="Correct!">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Pane layoutX="249.0" layoutY="181.8000030517578" prefHeight="26.0" prefWidth="803.0" />
+      <HBox layoutX="253.0" layoutY="212.0" prefHeight="43.0" prefWidth="934.0">
+         <children>
+            <TextField fx:id="termField" onAction="#onEnter" prefHeight="43.0" prefWidth="734.0">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </TextField>
+            <Pane prefHeight="43.0" prefWidth="22.0" />
+            <Pane prefHeight="43.0" prefWidth="58.0" />
+            <Button fx:id="enterBtn" mnemonicParsing="false" onAction="#confirmAnswer" prefHeight="43.0" prefWidth="126.0" text="Enter">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <HBox prefHeight="100.0" prefWidth="200.0" />
+         </children>
+      </HBox>
+      <Pane fx:id="changeAnswerPane" layoutX="249.0" layoutY="259.0" prefHeight="154.0" prefWidth="1018.0">
+         <children>
+            <Button layoutX="36.0" layoutY="29.0" mnemonicParsing="false" onAction="#onChangeToRightAnswer" prefHeight="40.0" prefWidth="162.0" text="No, I was correct">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button layoutX="234.0" layoutY="29.0" mnemonicParsing="false" onAction="#onChangeToRightAnswerAndSet" prefHeight="40.0" prefWidth="269.0" text="Change term to this answer">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <ProgressBar fx:id="currentPartBar" layoutX="40.0" layoutY="213.0" prefWidth="200.0" progress="0.0" />
+      <ProgressBar fx:id="totalBar" layoutX="40.0" layoutY="231.0" prefWidth="200.0" progress="0.0" style="-fx-accent: green;" />
+   </children>
+</AnchorPane>
