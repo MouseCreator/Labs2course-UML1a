@@ -7,8 +7,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e5cf57ee-045d-45a8-8c9b-3b141fc334b5" name="Changes" comment="Updated info docs">
-      <change beforePath="$PROJECT_DIR$/doc/stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/doc/stylesheet.css" afterDir="false" />
+    <list default="true" id="e5cf57ee-045d-45a8-8c9b-3b141fc334b5" name="Changes" comment="Updated stylesheet">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/AdditionalWindowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/AdditionalWindowController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/ExportController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/ExportController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/FolderViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/FolderViewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/IconLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/IconLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/PopUpWindows.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/PopUpWindows.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/ProfileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/ProfileController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -207,14 +213,7 @@
       <workItem from="1677539181797" duration="4898000" />
       <workItem from="1677545938456" duration="6338000" />
       <workItem from="1677710099978" duration="668000" />
-      <workItem from="1677858579154" duration="10067000" />
-    </task>
-    <task id="LOCAL-00039" summary="Added folders documentation">
-      <created>1675013657771</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1675013657771</updated>
+      <workItem from="1677858579154" duration="11001000" />
     </task>
     <task id="LOCAL-00040" summary="Added learn style (user info) documentation">
       <created>1675024566892</created>
@@ -552,7 +551,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677887572078</updated>
     </task>
-    <option name="localTasksCounter" value="88" />
+    <task id="LOCAL-00088" summary="Updated stylesheet">
+      <created>1677888741436</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1677888741436</updated>
+    </task>
+    <option name="localTasksCounter" value="89" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -573,7 +579,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="Added Write Mode Strategies" />
     <MESSAGE value="Moved shuffle from TermList to strategy" />
     <MESSAGE value="Removed study terms list.&#10;Shuffle was delegated to strategy" />
     <MESSAGE value="Removed abstract term list" />
@@ -598,7 +603,8 @@
     <MESSAGE value="Added controllers documentation" />
     <MESSAGE value="Updated documentation" />
     <MESSAGE value="Updated info docs" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated info docs" />
+    <MESSAGE value="Updated stylesheet" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated stylesheet" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

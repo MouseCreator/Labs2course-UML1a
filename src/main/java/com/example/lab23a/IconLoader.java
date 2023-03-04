@@ -4,6 +4,9 @@ import javafx.scene.image.Image;
 import javafx.stage.Stage;
 import com.example.lab23a.model.FileBuilder;
 
+/**
+ * Loads image files from file system
+ */
 public class IconLoader {
 	/**
 	 *

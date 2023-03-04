@@ -7,6 +7,9 @@ import javafx.scene.control.Label;
 import javafx.stage.Stage;
 import com.example.lab23a.model.WriteModeTermsContainer;
 
+/**
+ * Controls the additional window that displays results of the write mode.
+ */
 public class WriteResultsController extends AdditionalWindowController{
 	
 	@FXML

@@ -5,6 +5,9 @@ import javafx.fxml.FXML;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.Label;
 
+/**
+ * Controller for profile page
+ */
 public class ProfileController extends ActivePaneController {
 
 	@FXML

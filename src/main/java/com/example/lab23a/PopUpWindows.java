@@ -10,6 +10,9 @@ import javafx.stage.Stage;
 import javafx.stage.Window;
 import com.example.lab23a.model.FileBuilder;
 
+/**
+ * Class that contains popup controller and its scene
+ */
 public class PopUpWindows {
 	private PopupController controller;
 	

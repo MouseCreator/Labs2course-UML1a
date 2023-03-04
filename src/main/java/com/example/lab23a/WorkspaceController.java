@@ -19,6 +19,10 @@ import com.example.lab23a.model.FileBuilder;
 import com.example.lab23a.model.Folder;
 import com.example.lab23a.model.UserData;
 
+/**
+ * Class that controls the main processes in the application.
+ * Establishes the interaction between controllers, user data and windows.
+ */
 public class WorkspaceController implements Initializable {
 
     @FXML

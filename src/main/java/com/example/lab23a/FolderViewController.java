@@ -13,6 +13,10 @@ import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
+
+/**
+ * Controller for additional window that contains list of all folders
+ */
 public class FolderViewController extends AdditionalWindowController implements Initializable  {
 	/**
 	 * All folders that will be shown (loaded from UserData)

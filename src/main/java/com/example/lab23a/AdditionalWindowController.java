@@ -6,6 +6,9 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
+/**
+ * Class for secondary windows, created by main window
+ */
 public abstract class AdditionalWindowController {
     protected WorkspaceController parent;
 

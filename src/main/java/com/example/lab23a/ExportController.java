@@ -18,6 +18,9 @@ import org.apache.pdfbox.pdmodel.PDDocument;
 import java.io.File;
 import java.io.IOException;
 
+/**
+ * Controller for PDF export window
+ */
 public class ExportController extends AdditionalWindowController{
     @FXML
     private Slider fontSizeSlider;
