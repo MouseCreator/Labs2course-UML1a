@@ -9,7 +9,7 @@ class UserDataTest {
     private UserData data;
     @BeforeEach
     public void initializeData() {
-        data = new UserData();
+        data = UserData.getData();
     }
     @Test
     void insertNewSet() {

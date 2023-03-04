@@ -32,7 +32,7 @@ public class WorkspaceController implements Initializable {
     private Pane workspacePane;
 
     
-    private final UserData userData = new UserData();
+    private final UserData userData = UserData.getData();
 
     private PopUpWindows confirmWindow;
 

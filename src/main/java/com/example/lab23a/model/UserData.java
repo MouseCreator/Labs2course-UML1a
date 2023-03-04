@@ -5,6 +5,8 @@ package com.example.lab23a.model;
  */
 public class UserData {
 	private SetIndexList indexList;
+
+	private static final UserData data = new UserData();
 	private FolderList folderList;
 	private int lastUsedIndex;
 	private int lastFolderIndex;
@@ -14,10 +16,14 @@ public class UserData {
 	private UserStreak userStreak;
 	private UserSavedInfo userInfo;
 
-	public UserData() {
+	private UserData() {
 		this.folderList = new FolderList();
 		this.indexList = new SetIndexList();
 		this.lastUsedIndex = 0;
+	}
+
+	public static UserData getData() {
+		return data;
 	}
 
 	/**
