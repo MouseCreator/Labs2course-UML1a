@@ -28,10 +28,9 @@ public class WriteModeTermsContainer {
 	}
 
 	private void initStrategy(StudyTermList from, UserOptions options) {
-		if (options.getIsShuffleOn())
-			this.termPickStrategy = new WriteModeShuffleStrategy(from);
-		else
-			this.termPickStrategy = new WriteModeStrategy(from);
+		WriteModeStrategyChooser chooser = new WriteModeStrategyChooser();
+		this.termPickStrategy = chooser.getStrategy(options);
+		this.termPickStrategy.setTerms(from);
 	}
 	/**
 	 * Has to be called between two study sessions (periods) of one study set.

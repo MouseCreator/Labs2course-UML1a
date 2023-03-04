@@ -5,7 +5,9 @@ public class WriteModeStrategy {
     protected StudyTermList initialStudyTerms;
 
     protected StudyTermList remainingTerms;
-    public WriteModeStrategy(StudyTermList list) {
+    public WriteModeStrategy() {
+    }
+    public void setTerms(StudyTermList list) {
         this.initialStudyTerms = list;
         update(list);
     }
@@ -15,5 +17,9 @@ public class WriteModeStrategy {
     }
     public StudyTerm getNextTerms() {
         return remainingTerms.pop();
+    }
+
+    public boolean isApplicable(UserOptions options) {
+        return !options.getIsShuffleOn();
     }
 }

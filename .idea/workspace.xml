@@ -7,12 +7,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e5cf57ee-045d-45a8-8c9b-3b141fc334b5" name="Changes" comment="Created injector and annotation">
+    <list default="true" id="e5cf57ee-045d-45a8-8c9b-3b141fc334b5" name="Changes" comment="Applied singleton for UserData">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/WriteModeStrategyChooser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/WorkspaceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/WorkspaceController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/lib/Injector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/lib/Injector.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/UserData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/UserData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/lab23a/model/UserDataTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/lab23a/model/UserDataTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/lib/Inject.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/lib/Injector.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/WriteModeShuffleStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/WriteModeShuffleStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/WriteModeStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/WriteModeStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/WriteModeTermsContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/WriteModeTermsContainer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -213,14 +215,7 @@
       <workItem from="1677545938456" duration="6338000" />
       <workItem from="1677710099978" duration="668000" />
       <workItem from="1677858579154" duration="11001000" />
-      <workItem from="1677948735671" duration="3255000" />
-    </task>
-    <task id="LOCAL-00041" summary="Added write mode documentation">
-      <created>1675072253123</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1675072253123</updated>
+      <workItem from="1677948735671" duration="5757000" />
     </task>
     <task id="LOCAL-00042" summary="Refactoring in search method">
       <created>1675613278691</created>
@@ -558,7 +553,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677950393655</updated>
     </task>
-    <option name="localTasksCounter" value="90" />
+    <task id="LOCAL-00090" summary="Applied singleton for UserData">
+      <created>1677952017665</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1677952017665</updated>
+    </task>
+    <option name="localTasksCounter" value="91" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -579,7 +581,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="Removed study terms list.&#10;Shuffle was delegated to strategy" />
     <MESSAGE value="Removed abstract term list" />
     <MESSAGE value="Returned abstract term list, because it can be used in learn mode" />
     <MESSAGE value="Added term list documentation" />
@@ -604,7 +605,8 @@
     <MESSAGE value="Updated info docs" />
     <MESSAGE value="Updated stylesheet" />
     <MESSAGE value="Created injector and annotation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created injector and annotation" />
+    <MESSAGE value="Applied singleton for UserData" />
+    <option name="LAST_COMMIT_MESSAGE" value="Applied singleton for UserData" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
