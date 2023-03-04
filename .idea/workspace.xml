@@ -8,96 +8,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e5cf57ee-045d-45a8-8c9b-3b141fc334b5" name="Changes" comment="Updated documentation">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/allclasses-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/allclasses-index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/allpackages-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/allpackages-index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/com.example.lab23a/com/example/lab23a/ActivePaneController.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/com.example.lab23a/com/example/lab23a/ActivePaneController.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/com.example.lab23a/com/example/lab23a/AdditionalWindowController.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/com.example.lab23a/com/example/lab23a/AdditionalWindowController.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/com.example.lab23a/com/example/lab23a/AttachedToFolderController.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/com.example.lab23a/com/example/lab23a/AttachedToFolderController.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/com.example.lab23a/com/example/lab23a/AttachedToStudySetIndexController.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/com.example.lab23a/com/example/lab23a/AttachedToStudySetIndexController.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/com.example.lab23a/com/example/lab23a/EditItemController.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/com.example.lab23a/com/example/lab23a/EditItemController.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/com.example.lab23a/com/example/lab23a/EditorController.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/com.example.lab23a/com/example/lab23a/EditorController.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/com.example.lab23a/com/example/lab23a/ExportController.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/com.example.lab23a/com/example/lab23a/ExportController.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/com.example.lab23a/com/example/lab23a/FolderViewController.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/com.example.lab23a/com/example/lab23a/FolderViewController.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/com.example.lab23a/com/example/lab23a/IconLoader.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/com.example.lab23a/com/example/lab23a/IconLoader.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/com.example.lab23a/com/example/lab23a/ItemController.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/com.example.lab23a/com/example/lab23a/ItemController.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/com.example.lab23a/com/example/lab23a/Main.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/com.example.lab23a/com/example/lab23a/Main.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/com.example.lab23a/com/example/lab23a/MenuBarController.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/com.example.lab23a/com/example/lab23a/MenuBarController.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/com.example.lab23a/com/example/lab23a/PDF/PDFBounds.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/com.example.lab23a/com/example/lab23a/PDF/PDFBounds.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/com.example.lab23a/com/example/lab23a/PDF/PDFCell.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/com.example.lab23a/com/example/lab23a/PDF/PDFCell.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/com.example.lab23a/com/example/lab23a/PDF/PDFContent.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/com.example.lab23a/com/example/lab23a/PDF/PDFContent.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/com.example.lab23a/com/example/lab23a/PDF/PDFConvertor.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/com.example.lab23a/com/example/lab23a/PDF/PDFConvertor.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/com.example.lab23a/com/example/lab23a/PDF/PDFDoubleCell.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/com.example.lab23a/com/example/lab23a/PDF/PDFDoubleCell.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/com.example.lab23a/com/example/lab23a/PDF/PDFPalette.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/com.example.lab23a/com/example/lab23a/PDF/PDFPalette.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/com.example.lab23a/com/example/lab23a/PDF/PDFParams.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/com.example.lab23a/com/example/lab23a/PDF/PDFParams.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/com.example.lab23a/com/example/lab23a/PDF/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/com.example.lab23a/com/example/lab23a/PDF/package-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/com.example.lab23a/com/example/lab23a/PDF/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/com.example.lab23a/com/example/lab23a/PDF/package-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/com.example.lab23a/com/example/lab23a/PopUpTemplateWindow.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/com.example.lab23a/com/example/lab23a/PopUpTemplateWindow.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/com.example.lab23a/com/example/lab23a/PopUpWindows.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/com.example.lab23a/com/example/lab23a/PopUpWindows.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/com.example.lab23a/com/example/lab23a/PopupController.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/com.example.lab23a/com/example/lab23a/PopupController.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/com.example.lab23a/com/example/lab23a/ProfileController.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/com.example.lab23a/com/example/lab23a/ProfileController.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/com.example.lab23a/com/example/lab23a/Server/ClientHandler.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/com.example.lab23a/com/example/lab23a/Server/ClientHandler.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/com.example.lab23a/com/example/lab23a/Server/JSParser.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/com.example.lab23a/com/example/lab23a/Server/JSParser.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/com.example.lab23a/com/example/lab23a/Server/Server.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/com.example.lab23a/com/example/lab23a/Server/Server.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/com.example.lab23a/com/example/lab23a/Server/SetIndexParsable.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/com.example.lab23a/com/example/lab23a/Server/SetIndexParsable.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/com.example.lab23a/com/example/lab23a/Server/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/com.example.lab23a/com/example/lab23a/Server/package-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/com.example.lab23a/com/example/lab23a/Server/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/com.example.lab23a/com/example/lab23a/Server/package-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/com.example.lab23a/com/example/lab23a/SetInfoController.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/com.example.lab23a/com/example/lab23a/SetInfoController.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/com.example.lab23a/com/example/lab23a/SetOpenController.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/com.example.lab23a/com/example/lab23a/SetOpenController.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/com.example.lab23a/com/example/lab23a/WorkspaceController.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/com.example.lab23a/com/example/lab23a/WorkspaceController.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/com.example.lab23a/com/example/lab23a/WriteModeController.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/com.example.lab23a/com/example/lab23a/WriteModeController.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/com.example.lab23a/com/example/lab23a/WriteResultsController.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/com.example.lab23a/com/example/lab23a/WriteResultsController.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/com.example.lab23a/com/example/lab23a/model/AbstractTermList.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/com.example.lab23a/com/example/lab23a/model/AbstractTermList.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/com.example.lab23a/com/example/lab23a/model/AutoSaveTask.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/com.example.lab23a/com/example/lab23a/model/AutoSaveTask.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/com.example.lab23a/com/example/lab23a/model/Dates.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/com.example.lab23a/com/example/lab23a/model/Dates.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/com.example.lab23a/com/example/lab23a/model/FileBuilder.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/com.example.lab23a/com/example/lab23a/model/FileBuilder.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/com.example.lab23a/com/example/lab23a/model/Folder.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/com.example.lab23a/com/example/lab23a/model/Folder.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/com.example.lab23a/com/example/lab23a/model/FolderList.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/com.example.lab23a/com/example/lab23a/model/FolderList.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/com.example.lab23a/com/example/lab23a/model/SetIndex.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/com.example.lab23a/com/example/lab23a/model/SetIndex.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/com.example.lab23a/com/example/lab23a/model/SetIndexList.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/com.example.lab23a/com/example/lab23a/model/SetIndexList.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/com.example.lab23a/com/example/lab23a/model/StudyProgress.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/com.example.lab23a/com/example/lab23a/model/StudyProgress.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/com.example.lab23a/com/example/lab23a/model/StudySet.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/com.example.lab23a/com/example/lab23a/model/StudySet.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/com.example.lab23a/com/example/lab23a/model/StudyTerm.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/com.example.lab23a/com/example/lab23a/model/StudyTerm.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/com.example.lab23a/com/example/lab23a/model/StudyTermList.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/com.example.lab23a/com/example/lab23a/model/StudyTermList.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/com.example.lab23a/com/example/lab23a/model/TermList.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/com.example.lab23a/com/example/lab23a/model/TermList.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/com.example.lab23a/com/example/lab23a/model/UserData.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/com.example.lab23a/com/example/lab23a/model/UserData.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/com.example.lab23a/com/example/lab23a/model/UserLearnStyle.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/com.example.lab23a/com/example/lab23a/model/UserLearnStyle.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/com.example.lab23a/com/example/lab23a/model/WriteAnswerChecker.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/com.example.lab23a/com/example/lab23a/model/WriteAnswerChecker.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/com.example.lab23a/com/example/lab23a/model/WriteModeShuffleStrategy.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/com.example.lab23a/com/example/lab23a/model/WriteModeShuffleStrategy.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/com.example.lab23a/com/example/lab23a/model/WriteModeStrategy.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/com.example.lab23a/com/example/lab23a/model/WriteModeStrategy.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/com.example.lab23a/com/example/lab23a/model/WriteModeTermsContainer.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/com.example.lab23a/com/example/lab23a/model/WriteModeTermsContainer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/com.example.lab23a/com/example/lab23a/model/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/com.example.lab23a/com/example/lab23a/model/package-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/com.example.lab23a/com/example/lab23a/model/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/com.example.lab23a/com/example/lab23a/model/package-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/com.example.lab23a/com/example/lab23a/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/com.example.lab23a/com/example/lab23a/package-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/com.example.lab23a/com/example/lab23a/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/com.example.lab23a/com/example/lab23a/package-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/com.example.lab23a/module-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/com.example.lab23a/module-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/help-doc.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/help-doc.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/index-files/index-1.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index-files/index-1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/index-files/index-10.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index-files/index-10.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/index-files/index-11.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index-files/index-11.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/index-files/index-12.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index-files/index-12.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/index-files/index-13.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index-files/index-13.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/index-files/index-14.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index-files/index-14.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/index-files/index-15.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index-files/index-15.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/index-files/index-16.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index-files/index-16.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/index-files/index-17.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index-files/index-17.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/index-files/index-18.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index-files/index-18.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/index-files/index-19.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index-files/index-19.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/index-files/index-2.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index-files/index-2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/index-files/index-3.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index-files/index-3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/index-files/index-4.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index-files/index-4.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/index-files/index-5.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index-files/index-5.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/index-files/index-6.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index-files/index-6.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/index-files/index-7.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index-files/index-7.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/index-files/index-8.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index-files/index-8.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/index-files/index-9.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index-files/index-9.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/member-search-index.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/member-search-index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/overview-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/overview-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/docs/stylesheet.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/type-search-index.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/type-search-index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/SetInfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/SetInfoController.java" afterDir="false" />
+    <list default="true" id="e5cf57ee-045d-45a8-8c9b-3b141fc334b5" name="Changes" comment="Updated info docs">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -295,21 +207,7 @@
       <workItem from="1677539181797" duration="4898000" />
       <workItem from="1677545938456" duration="6338000" />
       <workItem from="1677710099978" duration="668000" />
-      <workItem from="1677858579154" duration="8687000" />
-    </task>
-    <task id="LOCAL-00037" summary="Added dates documentation">
-      <created>1675011175404</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1675011175404</updated>
-    </task>
-    <task id="LOCAL-00038" summary="Added file builder documentation">
-      <created>1675012361992</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1675012361992</updated>
+      <workItem from="1677858579154" duration="9771000" />
     </task>
     <task id="LOCAL-00039" summary="Added folders documentation">
       <created>1675013657771</created>
@@ -640,7 +538,21 @@
       <option name="project" value="LOCAL" />
       <updated>1677887024467</updated>
     </task>
-    <option name="localTasksCounter" value="86" />
+    <task id="LOCAL-00086" summary="Updated documentation">
+      <created>1677887425052</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1677887425052</updated>
+    </task>
+    <task id="LOCAL-00087" summary="Updated info docs">
+      <created>1677887572078</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1677887572078</updated>
+    </task>
+    <option name="localTasksCounter" value="88" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -661,7 +573,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="Added folder view documentation" />
     <MESSAGE value="Added Write Mode Strategies" />
     <MESSAGE value="Moved shuffle from TermList to strategy" />
     <MESSAGE value="Removed study terms list.&#10;Shuffle was delegated to strategy" />
@@ -686,7 +597,8 @@
     <MESSAGE value="Added editor documentation + minor changes" />
     <MESSAGE value="Added controllers documentation" />
     <MESSAGE value="Updated documentation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated documentation" />
+    <MESSAGE value="Updated info docs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated info docs" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
