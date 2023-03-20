@@ -12,4 +12,5 @@ module com.example.lab23a {
     exports com.example.lab23a.model;
     exports com.example.lab23a.PDF;
     exports com.example.lab23a.Server;
+    exports com.example.lab23a.model.builder;
 }

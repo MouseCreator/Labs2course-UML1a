@@ -7,14 +7,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e5cf57ee-045d-45a8-8c9b-3b141fc334b5" name="Changes" comment="Applied singleton for UserData">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/WriteModeStrategyChooser.java" afterDir="false" />
+    <list default="true" id="e5cf57ee-045d-45a8-8c9b-3b141fc334b5" name="Changes" comment="Added chooser for strategy">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/builder/FileReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/builder/Saved.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/lib/Inject.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/lib/Injector.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/WriteModeShuffleStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/WriteModeShuffleStrategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/WriteModeStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/WriteModeStrategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/WriteModeTermsContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/WriteModeTermsContainer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uml/ГлосарійUPD.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Uml/ГлосарійUPD.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uml/Додаткове завдання 4.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,8 +26,8 @@
         <option value="Kotlin Class" />
         <option value="FxmlFile" />
         <option value="JUnit5 Test Class" />
-        <option value="AnnotationType" />
         <option value="Class" />
+        <option value="AnnotationType" />
       </list>
     </option>
   </component>
@@ -55,7 +54,7 @@
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
     &quot;create.test.in.the.same.root&quot;: &quot;true&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;18&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/mysha/IdeaProjects/AlgSem4Lab1InJava&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/mysha/IdeaProjects/Sem4AlgLab2&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -105,7 +104,7 @@
       <module name="Labs2course-UML1a" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.lab23a.model.*" />
+          <option name="PATTERN" value="com.example.lab23a.model.builder.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -124,7 +123,7 @@
       <module name="Labs2course-UML1a" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.lab23a.model.*" />
+          <option name="PATTERN" value="com.example.lab23a.model.builder.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -140,7 +139,7 @@
       <module name="Labs2course-UML1a" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.lab23a.model.*" />
+          <option name="PATTERN" value="com.example.lab23a.model.builder.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -172,7 +171,7 @@
       <module name="Labs2course-UML1a" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.lab23a.model.*" />
+          <option name="PATTERN" value="com.example.lab23a.model.builder.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -215,14 +214,13 @@
       <workItem from="1677545938456" duration="6338000" />
       <workItem from="1677710099978" duration="668000" />
       <workItem from="1677858579154" duration="11001000" />
-      <workItem from="1677948735671" duration="5757000" />
-    </task>
-    <task id="LOCAL-00042" summary="Refactoring in search method">
-      <created>1675613278691</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1675613278691</updated>
+      <workItem from="1677948735671" duration="6434000" />
+      <workItem from="1678008375543" duration="639000" />
+      <workItem from="1678043374945" duration="1211000" />
+      <workItem from="1678796268559" duration="489000" />
+      <workItem from="1679057919930" duration="602000" />
+      <workItem from="1679224137124" duration="15000" />
+      <workItem from="1679304686965" duration="506000" />
     </task>
     <task id="LOCAL-00043" summary="Cleaned code: removed active sets field">
       <created>1675617201525</created>
@@ -560,7 +558,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677952017665</updated>
     </task>
-    <option name="localTasksCounter" value="91" />
+    <task id="LOCAL-00091" summary="Added chooser for strategy">
+      <created>1677962537702</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1677962537702</updated>
+    </task>
+    <option name="localTasksCounter" value="92" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -581,7 +586,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="Removed abstract term list" />
     <MESSAGE value="Returned abstract term list, because it can be used in learn mode" />
     <MESSAGE value="Added term list documentation" />
     <MESSAGE value="Added active pane documentation" />
@@ -606,7 +610,8 @@
     <MESSAGE value="Updated stylesheet" />
     <MESSAGE value="Created injector and annotation" />
     <MESSAGE value="Applied singleton for UserData" />
-    <option name="LAST_COMMIT_MESSAGE" value="Applied singleton for UserData" />
+    <MESSAGE value="Added chooser for strategy" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added chooser for strategy" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
