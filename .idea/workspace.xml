@@ -7,12 +7,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e5cf57ee-045d-45a8-8c9b-3b141fc334b5" name="Changes" comment="Added annotations for index and folder">
+    <list default="true" id="e5cf57ee-045d-45a8-8c9b-3b141fc334b5" name="Changes" comment="Added documentation">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/builder/Collect.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/Folder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/Folder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/SetIndex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/SetIndex.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/builder/FileReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/builder/ClassParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/lab23a/model/builder/FileReaderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/lab23a/model/builder/FileReaderTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/builder/ClassParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/builder/ClassParser.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,8 +23,8 @@
         <option value="Kotlin Class" />
         <option value="FxmlFile" />
         <option value="Class" />
-        <option value="AnnotationType" />
         <option value="JUnit5 Test Class" />
+        <option value="AnnotationType" />
       </list>
     </option>
   </component>
@@ -221,21 +219,7 @@
       <workItem from="1678796268559" duration="489000" />
       <workItem from="1679057919930" duration="602000" />
       <workItem from="1679224137124" duration="15000" />
-      <workItem from="1679304686965" duration="1824000" />
-    </task>
-    <task id="LOCAL-00045" summary="Created loadable SetOpen Scene">
-      <created>1676849821557</created>
-      <option name="number" value="00045" />
-      <option name="presentableId" value="LOCAL-00045" />
-      <option name="project" value="LOCAL" />
-      <updated>1676849821557</updated>
-    </task>
-    <task id="LOCAL-00046" summary="Extended loaded scenes. Fixed progress string bug">
-      <created>1676852581291</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1676852581291</updated>
+      <workItem from="1679304686965" duration="3039000" />
     </task>
     <task id="LOCAL-00047" summary="Added study set list documentation">
       <created>1676853499888</created>
@@ -566,7 +550,21 @@
       <option name="project" value="LOCAL" />
       <updated>1679305812807</updated>
     </task>
-    <option name="localTasksCounter" value="94" />
+    <task id="LOCAL-00094" summary="Fixed access error">
+      <created>1679306526889</created>
+      <option name="number" value="00094" />
+      <option name="presentableId" value="LOCAL-00094" />
+      <option name="project" value="LOCAL" />
+      <updated>1679306526889</updated>
+    </task>
+    <task id="LOCAL-00095" summary="Added documentation">
+      <created>1679306945780</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1679306945780</updated>
+    </task>
+    <option name="localTasksCounter" value="96" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -587,8 +585,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="Added active pane documentation" />
-    <MESSAGE value="Added additional window documentation" />
     <MESSAGE value="Fixed imports in test" />
     <MESSAGE value="Fixed whitespaces" />
     <MESSAGE value="Added generated documentation" />
@@ -612,7 +608,9 @@
     <MESSAGE value="Added chooser for strategy" />
     <MESSAGE value="Added file reader class and test" />
     <MESSAGE value="Added annotations for index and folder" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added annotations for index and folder" />
+    <MESSAGE value="Fixed access error" />
+    <MESSAGE value="Added documentation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added documentation" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
