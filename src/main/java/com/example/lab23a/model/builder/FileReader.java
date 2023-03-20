@@ -1,15 +1,21 @@
 package com.example.lab23a.model.builder;
 
-import java.lang.reflect.Field;
+import com.example.lab23a.model.Folder;
+import com.example.lab23a.model.SetIndex;
 
+import java.lang.reflect.Field;
 public class FileReader {
-    private String parseToString(Class<?> dataClass, Object obj) {
+    private static String parseToString(Class<?> dataClass, Object obj) {
         Field[] fields = dataClass.getFields();
         StringBuilder builder = new StringBuilder(dataClass.getName());
+        builder.append("\n\t");
         try {
             for (Field field : fields) {
                 if (field.isAnnotationPresent(Saved.class)) {
-                    builder.append(field.getName()).append(" = ").append(field.get(obj));
+                    if (field.getAnnotationsByType(Saved.class)[0].name().isEmpty())
+                         builder.append(field.getName());
+                    else builder.append(field.getAnnotationsByType(Saved.class)[0].name());
+                    builder.append(" = ").append(field.get(obj)).append("\n\t");
                 }
             }
         } catch (Exception e) {
@@ -17,5 +23,12 @@ public class FileReader {
             return "";
         }
         return builder.toString();
+    }
+
+    public static String saveIndex(SetIndex index) {
+        return parseToString(SetIndex.class, index);
+    }
+    public static String saveIndex(Folder folder) {
+        return parseToString(Folder.class, folder);
     }
 }

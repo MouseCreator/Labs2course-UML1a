@@ -7,13 +7,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e5cf57ee-045d-45a8-8c9b-3b141fc334b5" name="Changes" comment="Added chooser for strategy">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/builder/FileReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/builder/Saved.java" afterDir="false" />
+    <list default="true" id="e5cf57ee-045d-45a8-8c9b-3b141fc334b5" name="Changes" comment="Added file reader class and test">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Uml/ГлосарійUPD.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Uml/ГлосарійUPD.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Uml/Додаткове завдання 4.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/SetIndex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/SetIndex.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/builder/FileReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/builder/FileReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/builder/Saved.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/builder/Saved.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,9 +23,9 @@
       <list>
         <option value="Kotlin Class" />
         <option value="FxmlFile" />
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
         <option value="AnnotationType" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -88,6 +86,7 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.example.lab23a.model.builder" />
       <recent name="com.example.lab23a.model" />
       <recent name="com.example.lab23a.Server" />
       <recent name="com.example.lab23a.PDF" />
@@ -220,14 +219,7 @@
       <workItem from="1678796268559" duration="489000" />
       <workItem from="1679057919930" duration="602000" />
       <workItem from="1679224137124" duration="15000" />
-      <workItem from="1679304686965" duration="506000" />
-    </task>
-    <task id="LOCAL-00043" summary="Cleaned code: removed active sets field">
-      <created>1675617201525</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1675617201525</updated>
+      <workItem from="1679304686965" duration="1098000" />
     </task>
     <task id="LOCAL-00044" summary="Added set open search documentation">
       <created>1675678840240</created>
@@ -565,7 +557,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677962537702</updated>
     </task>
-    <option name="localTasksCounter" value="92" />
+    <task id="LOCAL-00092" summary="Added file reader class and test">
+      <created>1679305221082</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1679305221082</updated>
+    </task>
+    <option name="localTasksCounter" value="93" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -586,7 +585,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="Returned abstract term list, because it can be used in learn mode" />
     <MESSAGE value="Added term list documentation" />
     <MESSAGE value="Added active pane documentation" />
     <MESSAGE value="Added additional window documentation" />
@@ -611,7 +609,8 @@
     <MESSAGE value="Created injector and annotation" />
     <MESSAGE value="Applied singleton for UserData" />
     <MESSAGE value="Added chooser for strategy" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added chooser for strategy" />
+    <MESSAGE value="Added file reader class and test" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added file reader class and test" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

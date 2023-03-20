@@ -1,13 +1,18 @@
 package com.example.lab23a.model;
 
+import com.example.lab23a.model.builder.Saved;
+
 import java.time.LocalDateTime;
 
 /**
  * Class that contains general information about study set without loading its term list
  */
 public class SetIndex {
+    @Saved
 	private String name;
+    @Saved(name = "count")
 	int elementsCount;
+    @Saved(name = "mastered")
 	int elementsMastered;
 	
 	private int index;
