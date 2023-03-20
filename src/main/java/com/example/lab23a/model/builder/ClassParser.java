@@ -4,6 +4,10 @@ import com.example.lab23a.model.Folder;
 import com.example.lab23a.model.SetIndex;
 
 import java.lang.reflect.Field;
+
+/**
+ * Class with static methods to parse objects to strings
+ */
 public class ClassParser {
     private static String parseToString(Class<?> dataClass, Object obj) {
         Field[] fields = dataClass.getDeclaredFields();
@@ -26,10 +30,21 @@ public class ClassParser {
         return builder.toString();
     }
 
-    public static String saveIndex(SetIndex index) {
+    /**
+     * Parses index to savable string
+     * @param index - index to parse
+     * @return string representation of the given set index
+     */
+    public static String parseIndex(SetIndex index) {
         return parseToString(SetIndex.class, index);
     }
-    public static String saveFolder(Folder folder) {
+
+    /**
+     * Parses folder to savable string
+     * @param folder - folder to parse
+     * @return string representation of the folder
+     */
+    public static String parseFolder(Folder folder) {
         return parseToString(Folder.class, folder);
     }
 }

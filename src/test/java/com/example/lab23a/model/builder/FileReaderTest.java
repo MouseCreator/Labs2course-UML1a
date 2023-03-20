@@ -10,14 +10,14 @@ class FileReaderTest {
     @Test
     void testForIndex() {
         SetIndex index = new SetIndex(1, "hello", 2);
-        String result = ClassParser.saveIndex(index);
+        String result = ClassParser.parseIndex(index);
         assertNotEquals("", result);
         System.out.println(result);
     }
     @Test
     void testForFolder() {
         Folder folder = new Folder(9, "folderName");
-        String result = ClassParser.saveFolder(folder);
+        String result = ClassParser.parseFolder(folder);
         assertNotEquals("", result);
         System.out.println(result);
     }
