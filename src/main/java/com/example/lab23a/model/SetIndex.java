@@ -12,9 +12,9 @@ public class SetIndex {
 	private String name;
     @Saved(name = "count")
 	int elementsCount;
-    @Saved(name = "mastered")
+
 	int elementsMastered;
-	
+    @Saved(name = "id")
 	private int index;
     private LocalDateTime lastStudied;
     private LocalDateTime created;

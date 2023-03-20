@@ -1,8 +1,12 @@
 package com.example.lab23a.model;
 
+import com.example.lab23a.model.builder.Saved;
+
 public class Folder {
+	@Saved
 	private int index;
 	public static int ALL_SETS = -2;
+	@Saved
 	private String name;
 	public Folder(int index) {
 		this.setIndex(index);
