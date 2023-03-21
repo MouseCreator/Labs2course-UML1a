@@ -1,11 +1,9 @@
 package com.example.lab23a.model;
 
 import java.time.LocalDate;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.NoSuchElementException;
+import java.util.*;
 
-public class SetIndexList {
+public class SetIndexList implements Iterable<SetIndex> {
 
     private ArrayList<SetIndex> indexList;
     public SetIndexList() {
@@ -93,6 +91,24 @@ public class SetIndexList {
     	}
 		throw new NoSuchElementException();
 	}
-    
+
+    @Override
+    public Iterator<SetIndex> iterator() {
+        return new Iterator<>() {
+            private int count = 0;
+            @Override public boolean hasNext() {
+                return count < size();
+            }
+
+            @Override
+            public void remove() {
+                throw new UnsupportedOperationException("Cannot remove element in SetIndex iterator");
+            }
+
+            public SetIndex next() {
+                return get(count++);
+            }
+        };
+    }
 }
 

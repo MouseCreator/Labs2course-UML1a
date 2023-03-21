@@ -7,10 +7,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e5cf57ee-045d-45a8-8c9b-3b141fc334b5" name="Changes" comment="Added documentation">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/builder/Collect.java" afterDir="false" />
+    <list default="true" id="e5cf57ee-045d-45a8-8c9b-3b141fc334b5" name="Changes" comment="Added iterator for Set Index">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/builder/Visitor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/builder/ClassParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/builder/ClassParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/SetIndex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/SetIndex.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/SetIndexList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/SetIndexList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/builder/ClassParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab23a/model/builder/ClassUnparser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/lab23a/model/builder/FileReaderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/lab23a/model/builder/FileReaderTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +28,7 @@
         <option value="Class" />
         <option value="JUnit5 Test Class" />
         <option value="AnnotationType" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -219,14 +223,8 @@
       <workItem from="1678796268559" duration="489000" />
       <workItem from="1679057919930" duration="602000" />
       <workItem from="1679224137124" duration="15000" />
-      <workItem from="1679304686965" duration="3039000" />
-    </task>
-    <task id="LOCAL-00047" summary="Added study set list documentation">
-      <created>1676853499888</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1676853499888</updated>
+      <workItem from="1679304686965" duration="7355000" />
+      <workItem from="1679359553667" duration="832000" />
     </task>
     <task id="LOCAL-00048" summary="Added server class">
       <created>1676855900992</created>
@@ -564,7 +562,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679306945780</updated>
     </task>
-    <option name="localTasksCounter" value="96" />
+    <task id="LOCAL-00096" summary="Added parse list method">
+      <created>1679307742309</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1679307742309</updated>
+    </task>
+    <option name="localTasksCounter" value="97" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -585,8 +590,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="Fixed imports in test" />
-    <MESSAGE value="Fixed whitespaces" />
     <MESSAGE value="Added generated documentation" />
     <MESSAGE value="Added generated documentation. Commented dejavu.css in stylesheets." />
     <MESSAGE value="Renamed doc to docs" />
@@ -610,7 +613,9 @@
     <MESSAGE value="Added annotations for index and folder" />
     <MESSAGE value="Fixed access error" />
     <MESSAGE value="Added documentation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added documentation" />
+    <MESSAGE value="Added parse list method" />
+    <MESSAGE value="Added iterator for Set Index" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added iterator for Set Index" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

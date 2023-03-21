@@ -9,27 +9,19 @@ import java.lang.reflect.Field;
  * Class with static methods to parse objects to strings
  * Visitor pattern implementation
  */
-public class ClassParser {
+public class ClassUnparser implements Visitor {
 
-    /**
-     * Parses index to savable string
-     * @param index - index to parse
-     * @return string representation of the given set index
-     */
-    public static String parseIndex(SetIndex index) {
-        return parseToString(SetIndex.class, index);
-    }
 
     /**
      * Parses folder to savable string
      * @param folder - folder to parse
      * @return string representation of the folder
      */
-    public static String parseFolder(Folder folder) {
+    public String parseFolder(Folder folder) {
         return parseToString(Folder.class, folder);
     }
 
-    private static String parseToString(Class<?> dataClass, Object obj) {
+    private String parseToString(Class<?> dataClass, Object obj) {
         Field[] fields = dataClass.getDeclaredFields();
         StringBuilder builder = new StringBuilder(dataClass.getName());
         builder.append("\n\t");
@@ -59,4 +51,16 @@ public class ClassParser {
         }
         return "";
     }
+
+    @Override
+    public void visitSetIndex(SetIndex index) {
+        str = parseToString(SetIndex.class, index);
+    }
+
+    @Override
+    public Object get() {
+        return str;
+    }
+
+    private String str;
 }
