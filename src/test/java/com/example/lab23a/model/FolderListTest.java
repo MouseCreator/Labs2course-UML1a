@@ -39,7 +39,7 @@ class FolderListTest {
 
     @Test
     void testToArray() {
-        ArrayList<Folder> arrayFolders = list.asArrayList();
+        ArrayList<Folder> arrayFolders = (ArrayList<Folder>) list.asList();
         assertTrue(Arrays.deepEquals(arrayFolders.toArray(), arrayTestFolders));
     }
 }

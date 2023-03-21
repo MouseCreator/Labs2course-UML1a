@@ -1,11 +1,15 @@
 package com.example.lab23a.model;
 
-import java.util.ArrayList;
-import java.util.Comparator;
+import com.example.lab23a.model.sort.NameSorterVisitor;
+import com.example.lab23a.model.sort.Sortable;
+import com.example.lab23a.model.sort.SortingVisitor;
 
-public class FolderList {
+import java.util.ArrayList;
+import java.util.List;
+
+public class FolderList implements Sortable {
 	private final ArrayList<Folder> folders;
-	private final Comparator<Folder> comparatorByName = Comparator.comparing(Folder::getName);
+
 
 	/**
 	 * creates empty list of folders
@@ -68,8 +72,9 @@ public class FolderList {
 	 * @return list with the same folders, sorted in alphabetic order
 	 */
 	public FolderList sortByName() {
+		NameSorterVisitor nameSorterVisitor = new NameSorterVisitor();
 		FolderList result = new FolderList(this);
-		result.folders.sort(comparatorByName);
+		result.acceptVisitor(nameSorterVisitor);
 		return result;
 	}
 
@@ -77,7 +82,12 @@ public class FolderList {
 	 *
 	 * @return array list, containing all folders in this list
 	 */
-	public ArrayList<Folder> asArrayList() {
+	public List<Folder> asList() {
 		return folders;
+	}
+
+	@Override
+	public void acceptVisitor(SortingVisitor visitor) {
+		visitor.visitFolderList(this);
 	}
 }

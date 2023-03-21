@@ -42,7 +42,7 @@ public class FolderViewController extends AdditionalWindowController implements 
 	public void loadData(FolderList folders) {
 		this.folders = folders.sortByName();
 		this.folderListView.getItems().clear();
-		this.folderListView.getItems().addAll(this.folders.asArrayList());
+		this.folderListView.getItems().addAll(this.folders.asList());
 	}
 
 	/**

@@ -1,9 +1,12 @@
 package com.example.lab23a.model;
 
+import com.example.lab23a.model.sort.Sortable;
+import com.example.lab23a.model.sort.SortingVisitor;
+
 import java.time.LocalDate;
 import java.util.*;
 
-public class SetIndexList implements Iterable<SetIndex> {
+public class SetIndexList implements Iterable<SetIndex>, Sortable {
 
     private ArrayList<SetIndex> indexList;
     public SetIndexList() {
@@ -109,6 +112,15 @@ public class SetIndexList implements Iterable<SetIndex> {
                 return get(count++);
             }
         };
+    }
+
+    @Override
+    public void acceptVisitor(SortingVisitor visitor) {
+        visitor.visitSetIndexList(this);
+    }
+
+    public List<SetIndex> asList() {
+        return this.indexList;
     }
 }
 
