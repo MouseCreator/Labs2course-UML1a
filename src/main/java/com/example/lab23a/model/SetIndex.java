@@ -1,7 +1,6 @@
 package com.example.lab23a.model;
 
 import com.example.lab23a.model.builder.Saved;
-import com.example.lab23a.model.builder.Visitor;
 
 import java.time.LocalDateTime;
 
@@ -18,9 +17,6 @@ public class SetIndex {
     @Saved(name = "id")
 	private int index;
 
-    public void acceptVisitor(Visitor visitor) {
-        visitor.visitSetIndex(this);
-    }
     private LocalDateTime lastStudied;
     private LocalDateTime created;
 

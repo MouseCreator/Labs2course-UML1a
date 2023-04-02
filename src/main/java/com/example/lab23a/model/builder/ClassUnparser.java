@@ -52,12 +52,10 @@ public class ClassUnparser implements Visitor {
         return "";
     }
 
-    @Override
     public void visitSetIndex(SetIndex index) {
         str = parseToString(SetIndex.class, index);
     }
 
-    @Override
     public Object get() {
         return str;
     }

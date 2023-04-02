@@ -34,8 +34,7 @@ public class EditorController extends AttachedToStudySetIndexController implemen
 
     @FXML
     private ListView<Pane> termCreatorList;
-    
-    
+
     private FXMLLoader itemLoader;
     
     private int elementCount = 0;
